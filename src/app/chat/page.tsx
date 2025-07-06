@@ -51,19 +51,10 @@ export default function ChatPage() {
       }
       setChecked(true);
       
-      // Kullanıcıya özel sohbet verilerini yükle
+      // Kullanıcıya özel sohbet verilerini her zaman yükle
       loadChatSessions(userEmail);
     }
   }, [router]);
-
-  useEffect(() => {
-    const token = document.cookie.split('; ').find(row => row.startsWith('token='))?.split('=')[1];
-    if (!token) {
-      router.push('/auth/login');
-      return;
-    }
-    scrollToBottom();
-  }, [sessions, currentSessionId, router]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -263,15 +254,6 @@ export default function ChatPage() {
       console.error('Sohbet verileri kaydedilirken hata:', error);
     }
   };
-
-  useEffect(() => {
-    if (sessions.length === 0) {
-      const userEmail = localStorage.getItem('userEmail');
-      if (userEmail) {
-        loadChatSessions(userEmail);
-      }
-    }
-  }, []);
 
   useEffect(() => {
     scrollToBottom();
