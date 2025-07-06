@@ -1,0 +1,27 @@
+[
+  {
+    "userId": "fitturkai@demo.com",
+    "personalInfo": {
+      "name": "Sudenur Öztürk",
+      "age": 18,
+      "gender": "female",
+      "height": 160,
+      "weight": 65,
+      "activityLevel": "moderate"
+    },
+    "healthInfo": {
+      "allergies": [],
+      "conditions": [],
+      "medications": [],
+      "bloodType": ""
+    },
+    "preferences": {
+      "dietaryRestrictions": [],
+      "fitnessGoals": [],
+      "mealPreferences": [],
+      "workoutPreferences": []
+    },
+    "createdAt": "2025-06-11T13:59:05.387Z",
+    "updatedAt": "2025-06-25T16:46:31.117Z"
+  }
+]

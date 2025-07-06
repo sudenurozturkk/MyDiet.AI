@@ -1,0 +1,768 @@
+[
+  
+    
+  {
+    "_id": "1",
+    "userId": "user123",
+    "title": "Fit Muzlu Pancake",
+    "description": "Şekersiz, sağlıklı ve pratik bir pancake tarifi.",
+    "category": [
+      "tatlı",
+      "vejetaryen"
+    ],
+    "image": "",
+    "calories": 280,
+    "ingredients": [
+      "1 adet muz",
+      "2 adet yumurta",
+      "3 yemek kaşığı yulaf ezmesi",
+      "1 çay kaşığı tarçın"
+    ],
+    "steps": [
+      "Muzu çatalla ezin.",
+      "Yumurtaları ve yulafı ekleyip karıştırın.",
+      "Tavada arkalı önlü pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "2",
+    "userId": "user456",
+    "title": "Sebzeli Fırın Tavuk",
+    "description": "Protein ve lif deposu, doyurucu ana yemek.",
+    "category": [
+      "ana yemek"
+    ],
+    "image": "",
+    "calories": 420,
+    "ingredients": [
+      "2 parça tavuk göğsü",
+      "1 adet kabak",
+      "1 adet havuç",
+      "1 adet patates",
+      "Zeytinyağı, tuz, baharatlar"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Tavuk ve sebzeleri baharatlayıp fırın tepsisine dizin.",
+      "200 derecede 30-35 dk pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "t1",
+    "userId": "user123",
+    "title": "Çilekli Yoğurt Parfe",
+    "description": "Serinletici, hafif ve sağlıklı bir tatlı.",
+    "category": [
+      "tatlı",
+      "vejetaryen"
+    ],
+    "image": "",
+    "calories": 180,
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 avuç çilek",
+      "1 yemek kaşığı bal",
+      "2 yemek kaşığı yulaf"
+    ],
+    "steps": [
+      "Çilekleri doğrayın.",
+      "Tüm malzemeleri karıştırıp bardakta servis edin.",
+      "Buzdolabında 30 dk dinlendirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "t2",
+    "userId": "user456",
+    "title": "Fırında Elmalı Tatlı",
+    "description": "Şekersiz, fırında hafif elmalı tatlı.",
+    "category": [
+      "tatlı"
+    ],
+    "image": "",
+    "calories": 120,
+    "ingredients": [
+      "2 elma",
+      "1 tatlı kaşığı tarçın",
+      "1 yemek kaşığı ceviz"
+    ],
+    "steps": [
+      "Elmaları dilimleyin.",
+      "Üzerine tarçın ve ceviz serpin.",
+      "Fırında 180°C'de 20 dk pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "t3",
+    "userId": "user789",
+    "title": "Kakaolu Chia Puding",
+    "description": "Glutensiz, pratik ve sağlıklı tatlı.",
+    "category": [
+      "tatlı",
+      "vejetaryen"
+    ],
+    "image": "",
+    "calories": 220,
+    "ingredients": [
+      "2 yemek kaşığı chia tohumu",
+      "1 su bardağı süt",
+      "1 tatlı kaşığı kakao",
+      "1 tatlı kaşığı bal"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Buzdolabında 2 saat bekletin.",
+      "Üzerini meyveyle süsleyin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "t4",
+    "userId": "user123",
+    "title": "Fıstık Ezmeli Enerji Topları",
+    "description": "Atıştırmalık ve tatlı ihtiyacına sağlıklı çözüm.",
+    "category": [
+      "tatlı",
+      "atıştırmalık",
+      "vejetaryen"
+    ],
+    "image": "",
+    "calories": 150,
+    "ingredients": [
+      "3 yemek kaşığı yulaf",
+      "2 yemek kaşığı fıstık ezmesi",
+      "1 tatlı kaşığı bal",
+      "1 çay kaşığı kakao"
+    ],
+    "steps": [
+      "Tüm malzemeleri yoğurun.",
+      "Toplar yapıp buzdolabında 1 saat bekletin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "t5",
+    "userId": "user456",
+    "title": "Yoğurtlu Meyve Kasesi",
+    "description": "Tatlı isteğine sağlıklı çözüm.",
+    "category": [
+      "tatlı",
+      "meyve",
+      "vejetaryen"
+    ],
+    "image": "",
+    "calories": 160,
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 avuç karışık meyve",
+      "1 yemek kaşığı bal"
+    ],
+    "steps": [
+      "Meyveleri doğrayın.",
+      "Yoğurt ve bal ile karıştırıp servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "a1",
+    "userId": "user123",
+    "title": "Izgara Hindi Köfte",
+    "description": "Düşük yağlı, proteinli ana yemek.",
+    "category": [
+      "ana yemek"
+    ],
+    "image": "",
+    "calories": 380,
+    "ingredients": [
+      "250g hindi kıyma",
+      "1 yumurta",
+      "1 soğan",
+      "Baharatlar"
+    ],
+    "steps": [
+      "Tüm malzemeleri yoğurun.",
+      "Köfte şekli verin.",
+      "Izgarada pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "a2",
+    "userId": "user456",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Protein ve lif deposu, doyurucu ana yemek.",
+    "category": [
+      "ana yemek"
+    ],
+    "image": "",
+    "calories": 450,
+    "ingredients": [
+      "2 parça tavuk göğsü",
+      "1 adet kabak",
+      "1 adet havuç",
+      "1 adet patates",
+      "Zeytinyağı, tuz, baharatlar"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Tavuk ve sebzeleri baharatlayıp fırın tepsisine dizin.",
+      "200 derecede 30-35 dk pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "a3",
+    "userId": "user789",
+    "title": "Karnabahar Graten",
+    "description": "Fırında hafif ve sağlıklı ana yemek.",
+    "category": [
+      "ana yemek",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 küçük karnabahar",
+      "1 su bardağı süt",
+      "1 yumurta",
+      "Kaşar peyniri",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Karnabaharı haşlayın.",
+      "Diğer malzemelerle karıştırıp fırın kabına alın.",
+      "Üzerine kaşar serpip fırında pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "a4",
+    "userId": "user123",
+    "title": "Zeytinyağlı Taze Fasulye",
+    "description": "Klasik, hafif ve sağlıklı ana yemek.",
+    "category": [
+      "ana yemek",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "500g taze fasulye",
+      "1 soğan",
+      "2 domates",
+      "Zeytinyağı, tuz"
+    ],
+    "steps": [
+      "Fasulyeleri ayıklayın.",
+      "Soğan ve domatesle kavurun.",
+      "Fasulyeleri ekleyip pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "a5",
+    "userId": "user456",
+    "title": "Fırında Kabak Mücver",
+    "description": "Kızartmasız, hafif ve sağlıklı ana yemek.",
+    "category": [
+      "ana yemek",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "2 kabak",
+      "2 yumurta",
+      "3 yemek kaşığı un",
+      "Dereotu, tuz, karabiber"
+    ],
+    "steps": [
+      "Kabakları rendeleyin.",
+      "Tüm malzemeleri karıştırın.",
+      "Fırında 180°C'de 25 dk pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "at1",
+    "userId": "user123",
+    "title": "Fırında Nohut Cipsi",
+    "description": "Kıtır kıtır, sağlıklı atıştırmalık.",
+    "category": [
+      "atıştırmalık",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 su bardağı haşlanmış nohut",
+      "1 yemek kaşığı zeytinyağı",
+      "Baharatlar"
+    ],
+    "steps": [
+      "Nohutları baharat ve yağla karıştırın.",
+      "Fırında 200°C'de 20 dk pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "at2",
+    "userId": "user456",
+    "title": "Yoğurtlu Dip Sos",
+    "description": "Sebzelerle harika giden pratik dip sos.",
+    "category": [
+      "atıştırmalık",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "Tuz, nane"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Sebzelerle servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "at3",
+    "userId": "user789",
+    "title": "Fıstık Ezmeli Muz Dilimleri",
+    "description": "Tatlı krizine sağlıklı atıştırmalık.",
+    "category": [
+      "atıştırmalık",
+      "tatlı",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 muz",
+      "2 yemek kaşığı fıstık ezmesi",
+      "1 tatlı kaşığı kakao"
+    ],
+    "steps": [
+      "Muzu dilimleyin.",
+      "Üzerine fıstık ezmesi ve kakao sürün."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "at4",
+    "userId": "user123",
+    "title": "Ev Yapımı Granola Bar",
+    "description": "Şekersiz, doyurucu ve taşınabilir atıştırmalık.",
+    "category": [
+      "atıştırmalık",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "2 su bardağı yulaf",
+      "1/2 su bardağı bal",
+      "1/2 su bardağı fıstık ezmesi",
+      "Kuru meyve"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Fırında 180°C'de 20 dk pişirin.",
+      "Soğuyunca dilimleyin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "at5",
+    "userId": "user456",
+    "title": "Kavrulmuş Badem",
+    "description": "Kıtır ve sağlıklı atıştırmalık.",
+    "category": [
+      "atıştırmalık",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 su bardağı çiğ badem",
+      "1 tatlı kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Bademleri yağ ve tuzla karıştırın.",
+      "Fırında 180°C'de 10 dk kavurun."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "m1",
+    "userId": "user123",
+    "title": "Karpuzlu Smoothie",
+    "description": "Yaz için serinletici meyveli içecek.",
+    "category": [
+      "meyve",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "2 dilim karpuz",
+      "1/2 muz",
+      "1 su bardağı süt"
+    ],
+    "steps": [
+      "Tüm malzemeleri blenderdan geçirin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "m2",
+    "userId": "user456",
+    "title": "Elmalı Tarçınlı Salata",
+    "description": "Tatlı ve ferahlatıcı meyve salatası.",
+    "category": [
+      "meyve",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 elma",
+      "1 portakal",
+      "1 çay kaşığı tarçın"
+    ],
+    "steps": [
+      "Meyveleri doğrayın.",
+      "Tarçın ekleyip karıştırın."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "m3",
+    "userId": "user789",
+    "title": "Muzlu Yoğurtlu Dondurma",
+    "description": "Şekersiz, dondurulmuş meyve tatlısı.",
+    "category": [
+      "meyve",
+      "tatlı",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "2 muz",
+      "1 su bardağı yoğurt"
+    ],
+    "steps": [
+      "Muzları dondurun.",
+      "Yoğurtla blenderdan geçirin.",
+      "Hemen tüketin veya dondurun."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "m4",
+    "userId": "user123",
+    "title": "Portakallı Chia Puding",
+    "description": "C vitamini deposu, ferahlatıcı meyveli puding.",
+    "category": [
+      "meyve",
+      "tatlı",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 portakal",
+      "2 yemek kaşığı chia tohumu",
+      "1 su bardağı süt"
+    ],
+    "steps": [
+      "Portakalın suyunu sıkın.",
+      "Tüm malzemeleri karıştırıp buzdolabında bekletin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "m5",
+    "userId": "user456",
+    "title": "Kivili Yoğurt Kasesi",
+    "description": "Probiyotik ve vitamin deposu meyve kasesi.",
+    "category": [
+      "meyve",
+      "vejetaryen"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 kivi",
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı bal"
+    ],
+    "steps": [
+      "Kiviyi doğrayın.",
+      "Yoğurt ve bal ile karıştırıp servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "v1",
+    "userId": "user123",
+    "title": "Sebzeli Omlet",
+    "description": "Proteinli, sebzeli ve doyurucu kahvaltı.",
+    "category": [
+      "vejetaryen",
+      "ana yemek"
+    ],
+    "image": "",
+    "ingredients": [
+      "2 yumurta",
+      "1/2 kabak",
+      "1/2 biber",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Yumurtayla karıştırıp tavada pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "v2",
+    "userId": "user456",
+    "title": "Mercimek Köftesi",
+    "description": "Glutensiz, proteinli ve doyurucu atıştırmalık.",
+    "category": [
+      "vejetaryen",
+      "atıştırmalık"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 su bardağı mercimek",
+      "1 su bardağı ince bulgur",
+      "1 soğan",
+      "Baharatlar"
+    ],
+    "steps": [
+      "Mercimeği haşlayın.",
+      "Diğer malzemelerle yoğurun.",
+      "Şekil verip servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "v3",
+    "userId": "user789",
+    "title": "Fırında Sebzeli Mücver",
+    "description": "Kızartmasız, hafif ve sağlıklı mücver.",
+    "category": [
+      "vejetaryen",
+      "ana yemek"
+    ],
+    "image": "",
+    "ingredients": [
+      "2 kabak",
+      "2 yumurta",
+      "3 yemek kaşığı un",
+      "Dereotu, tuz, karabiber"
+    ],
+    "steps": [
+      "Kabakları rendeleyin.",
+      "Tüm malzemeleri karıştırın.",
+      "Fırında 180°C'de 25 dk pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "v4",
+    "userId": "user123",
+    "title": "Avokadolu Salata",
+    "description": "Sağlıklı yağ ve lif kaynağı salata.",
+    "category": [
+      "vejetaryen",
+      "atıştırmalık"
+    ],
+    "image": "",
+    "ingredients": [
+      "1 avokado",
+      "1 domates",
+      "1 salatalık",
+      "Limon, tuz"
+    ],
+    "steps": [
+      "Tüm malzemeleri doğrayıp karıştırın.",
+      "Limon ve tuz ekleyin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "v5",
+    "userId": "user456",
+    "title": "Közlenmiş Patlıcan Ezmesi",
+    "description": "Meze ve atıştırmalık olarak nefis bir seçenek.",
+    "category": [
+      "vejetaryen",
+      "atıştırmalık"
+    ],
+    "image": "",
+    "ingredients": [
+      "2 patlıcan",
+      "2 yemek kaşığı yoğurt",
+      "1 diş sarımsak",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "Diğer malzemelerle karıştırın."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "k1",
+    "userId": "user123",
+    "title": "Fit Muzlu Pancake",
+    "description": "Şekersiz, sağlıklı ve pratik bir pancake tarifi.",
+    "category": [
+      "tatlı",
+      "vejetaryen",
+      "kendi tariflerim"
+    ],
+    "image": "",
+    "calories": 280,
+    "ingredients": [
+      "1 adet muz",
+      "2 adet yumurta",
+      "3 yemek kaşığı yulaf ezmesi",
+      "1 çay kaşığı tarçın"
+    ],
+    "steps": [
+      "Muzu çatalla ezin.",
+      "Yumurtaları ve yulafı ekleyip karıştırın.",
+      "Tavada arkalı önlü pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "k2",
+    "userId": "user123",
+    "title": "Proteinli Yulaf Lapası",
+    "description": "Kahvaltı için pratik ve proteinli bir tarif.",
+    "category": [
+      "tatlı",
+      "vejetaryen",
+      "kendi tariflerim"
+    ],
+    "image": "",
+    "calories": 180,
+    "ingredients": [
+      "3 yemek kaşığı yulaf",
+      "1 su bardağı süt",
+      "1 ölçek protein tozu",
+      "1 muz"
+    ],
+    "steps": [
+      "Yulafı sütle pişirin.",
+      "Protein tozu ve muzu ekleyin.",
+      "Karıştırıp servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "k3",
+    "userId": "user123",
+    "title": "Sebzeli Omlet",
+    "description": "Kendi tarifim: bol sebzeli, doyurucu omlet.",
+    "category": [
+      "vejetaryen",
+      "ana yemek",
+      "kendi tariflerim"
+    ],
+    "image": "",
+    "calories": 180,
+    "ingredients": [
+      "2 yumurta",
+      "1/2 kabak",
+      "1/2 biber",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Yumurtayla karıştırıp tavada pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "k4",
+    "userId": "user123",
+    "title": "Fırında Kabak Mücver",
+    "description": "Kendi tarifim: kızartmasız, hafif mücver.",
+    "category": [
+      "ana yemek",
+      "vejetaryen",
+      "kendi tariflerim"
+    ],
+    "image": "",
+    "calories": 180,
+    "ingredients": [
+      "2 kabak",
+      "2 yumurta",
+      "3 yemek kaşığı un",
+      "Dereotu, tuz, karabiber"
+    ],
+    "steps": [
+      "Kabakları rendeleyin.",
+      "Tüm malzemeleri karıştırın.",
+      "Fırında 180°C'de 25 dk pişirin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "k5",
+    "userId": "user123",
+    "title": "Yoğurtlu Meyve Kasesi",
+    "description": "Kendi tarifim: tatlı isteğine sağlıklı çözüm.",
+    "category": [
+      "tatlı",
+      "meyve",
+      "vejetaryen",
+      "kendi tariflerim"
+    ],
+    "image": "",
+    "calories": 160,
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 avuç karışık meyve",
+      "1 yemek kaşığı bal"
+    ],
+    "steps": [
+      "Meyveleri doğrayın.",
+      "Yoğurt ve bal ile karıştırıp servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  }
+]

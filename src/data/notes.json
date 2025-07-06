@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "1",
+    "userId": "demo@fitturkai.com",
+    "title": "Egzersiz Notlarım",
+    "content": "Bugün 30 dakika yürüyüş yaptım. Kendimi çok iyi hissediyorum. Yarın da devam etmeyi planlıyorum.",
+    "tags": ["egzersiz", "yürüyüş", "motivasyon"],
+    "completed": false,
+    "createdAt": "2024-01-15T14:30:00Z",
+    "updatedAt": "2024-01-15T14:30:00Z"
+  },
+  {
+    "_id": "2", 
+    "userId": "demo@fitturkai.com",
+    "title": "Beslenme Planı",
+    "content": "Kahvaltı: Yulaf, muz, süt\nÖğle: Salata, tavuk göğsü\nAkşam: Sebze çorbası\n\nSu içmeyi unutma!",
+    "tags": ["beslenme", "plan", "sağlık"],
+    "completed": false,
+    "createdAt": "2024-01-14T09:15:00Z", 
+    "updatedAt": "2024-01-14T09:15:00Z"
+  },
+  {
+    "_id": "3",
+    "userId": "demo@fitturkai.com", 
+    "title": "Hedeflerim",
+    "content": "✅ Haftada 3 gün spor\n⏳ 5 kilo vermek\n⏳ Günde 2L su içmek\n⏳ 22:00'da yatmak",
+    "tags": ["hedefler", "motivasyon", "planlama"],
+    "completed": false,
+    "createdAt": "2024-01-13T16:45:00Z",
+    "updatedAt": "2024-01-15T10:20:00Z"
+  },
+  {
+    "_id": "4",
+    "userId": "demo@fitturkai.com",
+    "title": "Tarif Notları", 
+    "content": "Denediğim fit tarifler:\n- Muzlu pancake ✅\n- Chia puding ⏳\n- Sebzeli omlet ✅\n\nFavori: Muzlu pancake!",
+    "tags": ["tarifler", "yemek", "deneme"],
+    "completed": false,
+    "createdAt": "2024-01-12T11:30:00Z",
+    "updatedAt": "2024-01-14T15:20:00Z"
+  },
+  {
+    "_id": "5",
+    "userId": "demo@fitturkai.com",
+    "title": "Uyku Takibi",
+    "content": "Son 1 hafta uyku saatleri:\n• Pazartesi: 23:00-07:00 (8 saat)\n• Salı: 23:30-06:30 (7 saat)\n• Çarşamba: 22:30-06:30 (8 saat)\n\nOrtalama: 7.5 saat",
+    "tags": ["uyku", "takip", "sağlık"],
+    "completed": true,
+    "createdAt": "2024-01-10T20:00:00Z",
+    "updatedAt": "2024-01-15T08:00:00Z"
+  }
+]

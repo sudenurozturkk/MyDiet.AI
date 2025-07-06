@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles for Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base layer için font ve smooth scroll */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+  
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  * {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+}
+
+/* Scrollbar utilities */
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Modern yatay scroll bar */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 #f1f5f9;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #10b981, #0ea5e9);
+  border-radius: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+/* Chat specific animations */
+@keyframes messageSlideIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px) scale(0.95);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes typingBounce {
+  0%, 60%, 100% { 
+    transform: translateY(0); 
+  }
+  30% { 
+    transform: translateY(-4px); 
+  }
+}
+
+.message-enter {
+  animation: messageSlideIn 0.3s ease-out;
+}
+
+.typing-indicator {
+  animation: typingBounce 1.4s infinite ease-in-out;
+}
+
+/* Çiçek animasyonu */
+@keyframes flower-fadein {
+  from { opacity: 0; transform: translateY(40px) scale(0.7) rotate(-10deg);}
+  60% { opacity: 1; transform: translateY(-10px) scale(1.1) rotate(5deg);}
+  to { opacity: 1; transform: translateY(0) scale(1) rotate(0);}
+}
+.flower-anim-area {
+  min-height: 120px;
+}
+.flower-anim-area .flower-animate,
+.flower-anim-area .flower-emoji {
+  opacity: 0;
+  animation: flower-fadein 0.9s forwards;
+  animation-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
+  z-index: 1;
+  position: relative;
+}
+.flower-anim-area .flower-emoji {
+  position: absolute;
+  left: 0; right: 0; margin: auto;
+  font-size: 2.5rem;
+  top: 0;
+  pointer-events: none;
+  display: none;
+}
+.flower-anim-area .flower-animate[style*='display: none'] + .flower-emoji {
+  display: block;
+}
+.flower-anim-area .soil {
+  width: 38px;
+  height: 16px;
+  background: #a0522d;
+  border-radius: 50%;
+  margin-top: -10px;
+  z-index: 0;
+  position: relative;
+  box-shadow: 0 2px 8px #0002;
+}
+
+/* Focus ring improvements */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-emerald-400/20 focus:border-emerald-400;
+}
+
+/* Bu dosya, global CSS stillerini içerecektir. */ 

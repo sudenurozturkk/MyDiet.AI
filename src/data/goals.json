@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "Kilo Verme Hedefi",
+    "description": "3 ayda 8 kilo vermek",
+    "category": "weight_loss",
+    "targetValue": 8,
+    "currentValue": 2,
+    "unit": "kg",
+    "deadline": "2024-04-15",
+    "status": "active",
+    "createdAt": "2024-01-15T10:00:00Z",
+    "tips": [
+      "Günde 1.5-2 litre su için",
+      "Haftada 3-4 gün egzersiz yapın",
+      "Porsiyon kontrolü yapın",
+      "Yeterli uyku alın (7-8 saat)"
+    ]
+  },
+  {
+    "id": "2", 
+    "title": "Günlük Adım Hedefi",
+    "description": "Günde 10.000 adım atmak",
+    "category": "fitness",
+    "targetValue": 10000,
+    "currentValue": 7500,
+    "unit": "adım",
+    "deadline": "2024-12-31",
+    "status": "active",
+    "createdAt": "2024-01-10T09:00:00Z",
+    "tips": [
+      "Merdiven kullanın",
+      "Kısa mesafeleri yürüyün",
+      "Öğle molasında yürüyüş yapın",
+      "Akşam 15-20 dakika yürüyün"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Su İçme Hedefi", 
+    "description": "Günde 2.5 litre su içmek",
+    "category": "nutrition",
+    "targetValue": 2.5,
+    "currentValue": 1.8,
+    "unit": "litre",
+    "deadline": "2024-12-31",
+    "status": "active",
+    "createdAt": "2024-01-12T12:00:00Z",
+    "tips": [
+      "Yanınızda su şişesi bulundurun",
+      "Her öğün öncesi 1 bardak su için",
+      "Alarm kurup hatırlatıcı yapın",
+      "Meyve suyu yerine su tercih edin"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Kas Kütlesi Artırma",
+    "description": "6 ayda 3 kg kas kütlesi kazanmak", 
+    "category": "muscle_gain",
+    "targetValue": 3,
+    "currentValue": 0.8,
+    "unit": "kg",
+    "deadline": "2024-07-15",
+    "status": "active",
+    "createdAt": "2024-01-08T14:30:00Z",
+    "tips": [
+      "Haftada 3-4 gün kuvvet antrenmanı",
+      "Yeterli protein alımı (vücut ağırlığı x 1.6g)",
+      "Dinlenme günlerini atlamamak",
+      "Ağırlıkları kademeli artırmak"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Uyku Düzeni",
+    "description": "Her gece 7-8 saat kaliteli uyku",
+    "category": "wellness", 
+    "targetValue": 8,
+    "currentValue": 6.5,
+    "unit": "saat",
+    "deadline": "2024-12-31",
+    "status": "active",
+    "createdAt": "2024-01-05T20:00:00Z",
+    "tips": [
+      "Düzenli uyku saatleri belirleyin",
+      "Yatmadan 1 saat önce ekran kullanmayın",
+      "Yatak odası sıcaklığını 18-22°C tutun",
+      "Kafein alımını öğleden sonra azaltın"
+    ]
+  }
+] 

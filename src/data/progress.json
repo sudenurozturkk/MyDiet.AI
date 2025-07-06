@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "1",
+    "userId": "user123",
+    "date": "2024-06-01",
+    "weight": 70,
+    "bodyFat": 25,
+    "chest": 90,
+    "waist": 80,
+    "hip": 95,
+    "biceps": 32,
+    "thigh": 55,
+    "calf": 38,
+    "notes": "Başlangıç ölçümleri yapıldı.",
+    "createdAt": "2024-06-01T12:00:00.000Z",
+    "updatedAt": "2024-06-01T12:00:00.000Z"
+  }
+]
