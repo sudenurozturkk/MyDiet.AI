@@ -43,17 +43,21 @@ export default function ChatPage() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const userEmail = localStorage.getItem('userEmail');
-      if (!userEmail) {
-        router.push('/auth/login');
-        return;
+    const initializeChatSessions = async () => {
+      if (typeof window !== 'undefined') {
+        const userEmail = localStorage.getItem('userEmail');
+        if (!userEmail) {
+          router.push('/auth/login');
+          return;
+        }
+        setChecked(true);
+        
+        // Kullanıcıya özel sohbet verilerini her zaman yükle
+        await loadChatSessions(userEmail);
       }
-      setChecked(true);
-      
-      // Kullanıcıya özel sohbet verilerini her zaman yükle
-      loadChatSessions(userEmail);
-    }
+    };
+
+    initializeChatSessions();
   }, [router]);
 
   const scrollToBottom = () => {
@@ -187,14 +191,25 @@ export default function ChatPage() {
     }
   };
 
-  const loadChatSessions = (userEmail: string) => {
+  const loadChatSessions = async (userEmail: string) => {
     try {
-      const chatKey = `chatSessions_${userEmail}`;
-      const storedSessions = localStorage.getItem(chatKey);
+      const response = await fetch('http://localhost:8000/load-chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ userEmail }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Chat verileri yüklenemedi');
+      }
+
+      const data = await response.json();
       
-      if (storedSessions) {
+      if (data.sessions && data.sessions.length > 0) {
         // Kayıtlı sohbetler varsa yükle
-        const parsedSessions = JSON.parse(storedSessions).map((session: any) => ({
+        const parsedSessions = data.sessions.map((session: any) => ({
           ...session,
           createdAt: new Date(session.createdAt),
           messages: session.messages.map((msg: any) => ({
@@ -205,9 +220,8 @@ export default function ChatPage() {
         setSessions(parsedSessions);
         
         // Son aktif sohbeti yükle
-        const lastActiveSessionId = localStorage.getItem(`lastActiveSession_${userEmail}`);
-        if (lastActiveSessionId && parsedSessions.find((s: any) => s.id === lastActiveSessionId)) {
-          setCurrentSessionId(lastActiveSessionId);
+        if (data.activeSessionId && parsedSessions.find((s: any) => s.id === data.activeSessionId)) {
+          setCurrentSessionId(data.activeSessionId);
         } else if (parsedSessions.length > 0) {
           setCurrentSessionId(parsedSessions[0].id);
         }
@@ -239,17 +253,29 @@ export default function ChatPage() {
     saveChatSessions([newSession], newSession.id);
   };
 
-  const saveChatSessions = (sessions: ChatSession[], activeSessionId?: string) => {
+  const saveChatSessions = async (sessions: ChatSession[], activeSessionId?: string) => {
     try {
       const userEmail = localStorage.getItem('userEmail');
       if (!userEmail) return;
       
-      const chatKey = `chatSessions_${userEmail}`;
-      localStorage.setItem(chatKey, JSON.stringify(sessions));
-      
-      if (activeSessionId) {
-        localStorage.setItem(`lastActiveSession_${userEmail}`, activeSessionId);
+      const response = await fetch('http://localhost:8000/save-chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userEmail,
+          sessions,
+          activeSessionId
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Chat verileri kaydedilemedi');
       }
+
+      const result = await response.json();
+      console.log('Chat verileri kaydedildi:', result.message);
     } catch (error) {
       console.error('Sohbet verileri kaydedilirken hata:', error);
     }
