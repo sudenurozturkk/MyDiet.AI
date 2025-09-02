@@ -155,7 +155,7 @@ export default function HomePage() {
     if (token) {
       router.push('/profile');
     }
-  }, []);
+  }, [router]);
 
   if (loading) return <Loader />;
 

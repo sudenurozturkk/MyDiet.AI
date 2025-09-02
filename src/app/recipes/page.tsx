@@ -3,20 +3,20 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Search, 
-  Plus, 
-  Edit, 
-  Trash2, 
-  Clock, 
-  Users, 
+import {
+  Search,
+  Plus,
+  Edit,
+  Trash2,
+  Clock,
+  Users,
   Star,
   ChefHat,
   Camera,
   FileText,
   X,
   Save,
-  Loader2
+  Loader2,
 } from 'lucide-react';
 
 // shadcn/ui bileşenleri
@@ -25,12 +25,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
-import { 
-  Tooltip, 
-  TooltipContent, 
-  TooltipProvider, 
-  TooltipTrigger 
-} from '@/components/ui/tooltip';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import {
   Dialog,
   DialogContent,
@@ -38,7 +33,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 
 const CATEGORIES = [
   'Tümü',
@@ -78,9 +73,7 @@ export default function RecipesPage() {
   const [selectedRecipeForPlan, setSelectedRecipeForPlan] = useState<any>(null);
   const [planDay, setPlanDay] = useState('Pazartesi');
   const [planMealType, setPlanMealType] = useState('kahvaltı');
-  const daysOfWeek = [
-    'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'
-  ];
+  const daysOfWeek = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
   const mealTypes = [
     { value: 'kahvaltı', label: 'Kahvaltı' },
     { value: 'ara öğün 1', label: 'Ara Öğün 1' },
@@ -90,42 +83,25 @@ export default function RecipesPage() {
     { value: 'gece ara öğünü', label: 'Gece Ara Öğünü' },
   ];
 
-  const userEmail = typeof window !== 'undefined' ? localStorage.getItem('userEmail') : '';
-  const recipesKey = `recipes_${userEmail}`;
-
+  // Session kontrolü layout'ta; mount olduğunda API'den tarifleri çek
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      if (!userEmail) {
-        router.push('/auth/login');
-        return;
+    setChecked(true);
+    const load = async () => {
+      try {
+        const params = new URLSearchParams();
+        if (search?.trim()) params.set('q', search.trim());
+        params.set('page', '1');
+        params.set('pageSize', '1000');
+        const res = await fetch(`/api/recipes?${params.toString()}`);
+        const data = await res.json();
+        const apiItems = Array.isArray(data) ? data : Array.isArray(data?.items) ? data.items : [];
+        setRecipes(apiItems);
+      } catch {
+        setRecipes([]);
       }
-      setChecked(true);
-    }
-  }, [router, userEmail]);
-
-  useEffect(() => {
-    if (!checked) return;
-    const stored = localStorage.getItem(recipesKey);
-    let parsed = [];
-    try {
-      parsed = stored ? JSON.parse(stored) : [];
-    } catch {
-      parsed = [];
-    }
-    if (!stored || (Array.isArray(parsed) && parsed.length === 0)) {
-      import('../../data/recipes-clean.json').then((mod) => {
-        setRecipes(mod.default);
-        localStorage.setItem(recipesKey, JSON.stringify(mod.default));
-      });
-    } else {
-      setRecipes(parsed);
-    }
-  }, [checked, recipesKey]);
-
-  useEffect(() => {
-    if (!checked) return;
-    localStorage.setItem(recipesKey, JSON.stringify(recipes));
-  }, [recipes, checked, recipesKey]);
+    };
+    load();
+  }, [router, search]);
 
   const filteredRecipes = recipes.filter((r) => {
     const matchesSearch =
@@ -172,17 +148,13 @@ export default function RecipesPage() {
       return;
     }
 
-    const userEmail = localStorage.getItem('userEmail');
-    if (!userEmail) {
-      alert('Kullanıcı oturumu yok');
-      return;
-    }
+    // Session kontrolü layout'ta yapılır
 
     setIsLoading(true);
 
     const newRecipe = {
       _id: Date.now().toString(),
-      userId: userEmail,
+      userId: 'session',
       title: title.trim(),
       description: description.trim(),
       category,
@@ -192,16 +164,14 @@ export default function RecipesPage() {
       createdAt: new Date(),
       updatedAt: new Date(),
     };
-    
+
     try {
       // Yeni tarifi en başa ekle
       const updatedRecipes = [newRecipe, ...recipes];
       setRecipes(updatedRecipes);
-      
-      // localStorage'a kaydet
-      const recipesKey = `recipes_${userEmail}`;
-      localStorage.setItem(recipesKey, JSON.stringify(updatedRecipes));
-      
+
+      // Mongo API'ye kaydetme (gelecek geliştirme): Şimdilik UI state güncellendi
+
       // Form alanlarını temizle
       setTitle('');
       setDescription('');
@@ -210,7 +180,7 @@ export default function RecipesPage() {
       setIngredients([]);
       setSteps([]);
       setIsCreating(false);
-      
+
       // Başarı animasyonu
       setTimeout(() => {
         alert('Tarif başarıyla eklendi!');
@@ -227,7 +197,7 @@ export default function RecipesPage() {
     try {
       const recipesKey = `recipes_${userEmail}`;
       const storedRecipes = localStorage.getItem(recipesKey);
-      
+
       if (storedRecipes) {
         // Kullanıcıya özel tarifler varsa yükle
         const parsedRecipes = JSON.parse(storedRecipes);
@@ -252,7 +222,7 @@ export default function RecipesPage() {
 
   useEffect(() => {
     if (checked) {
-      const userEmail = localStorage.getItem('userEmail');
+      const userEmail = '';
       if (userEmail) {
         loadRecipes(userEmail).catch(console.error);
       }
@@ -272,17 +242,13 @@ export default function RecipesPage() {
 
   const handleUpdateRecipe = async () => {
     if (!editingRecipe) return;
-    
+
     if (!title.trim()) {
       alert('Tarif başlığı boş olamaz');
       return;
     }
 
-    const userEmail = localStorage.getItem('userEmail');
-    if (!userEmail) {
-      alert('Kullanıcı oturumu yok');
-      return;
-    }
+    // Session kontrolü layout'ta yapılır
 
     setIsLoading(true);
 
@@ -296,15 +262,13 @@ export default function RecipesPage() {
       steps,
       updatedAt: new Date(),
     };
-    
+
     try {
-      const updatedRecipes = recipes.map(r => r._id === editingRecipe._id ? updatedRecipe : r);
+      const updatedRecipes = recipes.map((r) => (r._id === editingRecipe._id ? updatedRecipe : r));
       setRecipes(updatedRecipes);
-      
-      // localStorage'a kaydet
-      const recipesKey = `recipes_${userEmail}`;
-      localStorage.setItem(recipesKey, JSON.stringify(updatedRecipes));
-      
+
+      // Mongo API'ye kaydetme (gelecek geliştirme): Şimdilik UI state güncellendi
+
       setEditingRecipe(null);
       setTitle('');
       setDescription('');
@@ -312,7 +276,7 @@ export default function RecipesPage() {
       setImage('');
       setIngredients([]);
       setSteps([]);
-      
+
       setTimeout(() => {
         alert('Tarif başarıyla güncellendi!');
       }, 500);
@@ -326,14 +290,10 @@ export default function RecipesPage() {
 
   const handleDeleteRecipe = (recipeId: string) => {
     if (confirm('Bu tarifi silmek istediğinizden emin misiniz?')) {
-      const updatedRecipes = recipes.filter(r => r._id !== recipeId);
+      const updatedRecipes = recipes.filter((r) => r._id !== recipeId);
       setRecipes(updatedRecipes);
-      
-      const userEmail = localStorage.getItem('userEmail');
-      if (userEmail) {
-        const recipesKey = `recipes_${userEmail}`;
-        localStorage.setItem(recipesKey, JSON.stringify(updatedRecipes));
-      }
+
+      // Mongo API'ye silme (gelecek geliştirme): Şimdilik UI state güncellendi
     }
   };
 
@@ -352,10 +312,10 @@ export default function RecipesPage() {
 
   return (
     <TooltipProvider>
-      <div 
+      <div
         className="min-h-screen"
         style={{
-          background: 'linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%)'
+          background: 'linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%)',
         }}
       >
         <main className="p-6">
@@ -389,7 +349,7 @@ export default function RecipesPage() {
             >
               {/* Sol taraf - Boş bırakılıyor */}
               <div className="flex-1"></div>
-              
+
               {/* Sağ taraf - Arama ve Ekleme butonu */}
               <div className="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto">
                 <div className="relative w-full sm:w-80">
@@ -402,11 +362,8 @@ export default function RecipesPage() {
                     className="pl-10 bg-white/90 backdrop-blur-sm border-0 shadow-lg"
                   />
                 </div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Button 
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Button
                     onClick={() => setIsCreating(true)}
                     className="bg-gradient-to-r from-fitness-blue to-fitness-green hover:from-fitness-blue/90 hover:to-fitness-green/90 text-white font-medium shadow-lg w-full sm:w-auto"
                   >
@@ -448,19 +405,19 @@ export default function RecipesPage() {
               <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
                 <DialogHeader>
                   <DialogTitle className="flex items-center gap-2 text-xl">
-                    {editingRecipe ? <Edit className="w-5 h-5 text-fitness-blue" /> : <Plus className="w-5 h-5 text-fitness-green" />}
+                    {editingRecipe ? (
+                      <Edit className="w-5 h-5 text-fitness-blue" />
+                    ) : (
+                      <Plus className="w-5 h-5 text-fitness-green" />
+                    )}
                     {editingRecipe ? 'Tarifi Düzenle' : 'Yeni Tarif'}
                   </DialogTitle>
-                  <DialogDescription>
-                    Tarifinizin detaylarını girin ve kaydedin.
-                  </DialogDescription>
+                  <DialogDescription>Tarifinizin detaylarını girin ve kaydedin.</DialogDescription>
                 </DialogHeader>
-                
+
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Başlık
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Başlık</label>
                     <Input
                       type="text"
                       value={title}
@@ -469,11 +426,9 @@ export default function RecipesPage() {
                       className="bg-white/90 backdrop-blur-sm"
                     />
                   </div>
-                  
+
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Açıklama
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Açıklama</label>
                     <Textarea
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
@@ -482,7 +437,7 @@ export default function RecipesPage() {
                       className="bg-white/90 backdrop-blur-sm"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Kategoriler
@@ -496,8 +451,8 @@ export default function RecipesPage() {
                             whileTap={{ scale: 0.95 }}
                             type="button"
                             className={`px-3 py-1 rounded-full border-2 text-sm font-medium transition-all duration-200 ${
-                              category.includes(cat) 
-                                ? 'bg-gradient-to-r from-fitness-blue to-fitness-green text-white border-transparent' 
+                              category.includes(cat)
+                                ? 'bg-gradient-to-r from-fitness-blue to-fitness-green text-white border-transparent'
                                 : 'bg-white/90 text-gray-600 border-gray-200 hover:border-fitness-blue/50'
                             }`}
                             onClick={() =>
@@ -512,15 +467,15 @@ export default function RecipesPage() {
                       )}
                     </div>
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2 flex items-center gap-2">
                       <Camera className="w-4 h-4" />
                       Resim
                     </label>
-                    <Input 
-                      type="file" 
-                      accept="image/*" 
+                    <Input
+                      type="file"
+                      accept="image/*"
                       onChange={handleImageChange}
                       className="bg-white/90 backdrop-blur-sm"
                     />
@@ -534,7 +489,7 @@ export default function RecipesPage() {
                       />
                     )}
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Malzemeler
@@ -567,7 +522,9 @@ export default function RecipesPage() {
                           <Button
                             variant="ghost"
                             size="sm"
-                            onClick={() => setIngredients(ingredients.filter((_, index) => index !== i))}
+                            onClick={() =>
+                              setIngredients(ingredients.filter((_, index) => index !== i))
+                            }
                             className="ml-auto p-1 h-6 w-6"
                           >
                             <X className="w-3 h-3" />
@@ -576,7 +533,7 @@ export default function RecipesPage() {
                       ))}
                     </div>
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Hazırlama Adımları
@@ -621,12 +578,12 @@ export default function RecipesPage() {
                     </div>
                   </div>
                 </div>
-                
+
                 <DialogFooter>
                   <Button variant="outline" onClick={resetForm}>
                     İptal
                   </Button>
-                  <Button 
+                  <Button
                     onClick={editingRecipe ? handleUpdateRecipe : handleCreateRecipe}
                     disabled={isLoading}
                     className="bg-gradient-to-r from-fitness-blue to-fitness-green hover:from-fitness-blue/90 hover:to-fitness-green/90"
@@ -675,7 +632,7 @@ export default function RecipesPage() {
                             <ChefHat className="w-16 h-16 text-fitness-blue/30" />
                           </div>
                         )}
-                        
+
                         {/* Action Buttons */}
                         <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                           <div className="flex gap-1">
@@ -697,7 +654,7 @@ export default function RecipesPage() {
                                 <p>Düzenle</p>
                               </TooltipContent>
                             </Tooltip>
-                            
+
                             <Tooltip>
                               <TooltipTrigger asChild>
                                 <Button
@@ -718,7 +675,7 @@ export default function RecipesPage() {
                             </Tooltip>
                           </div>
                         </div>
-                        
+
                         {/* Category Badge */}
                         {recipe.category?.[0] && (
                           <div className="absolute top-2 left-2">
@@ -731,32 +688,37 @@ export default function RecipesPage() {
                         {/* Difficulty Badge */}
                         {recipe.difficulty && (
                           <div className="absolute bottom-2 left-2">
-                            <Badge 
-                              variant="secondary" 
+                            <Badge
+                              variant="secondary"
                               className={`text-xs ${
-                                recipe.difficulty === 'kolay' ? 'bg-green-100 text-green-700' :
-                                recipe.difficulty === 'orta' ? 'bg-yellow-100 text-yellow-700' :
-                                'bg-red-100 text-red-700'
+                                recipe.difficulty === 'kolay'
+                                  ? 'bg-green-100 text-green-700'
+                                  : recipe.difficulty === 'orta'
+                                    ? 'bg-yellow-100 text-yellow-700'
+                                    : 'bg-red-100 text-red-700'
                               }`}
                             >
-                              {recipe.difficulty === 'kolay' ? 'Kolay' :
-                               recipe.difficulty === 'orta' ? 'Orta' : 'Zor'}
+                              {recipe.difficulty === 'kolay'
+                                ? 'Kolay'
+                                : recipe.difficulty === 'orta'
+                                  ? 'Orta'
+                                  : 'Zor'}
                             </Badge>
                           </div>
                         )}
                       </div>
-                      
+
                       <CardContent className="p-4">
-                        <CardTitle className="text-lg font-bold text-gray-900 mb-2 line-clamp-1">
+                        <CardTitle className="text-lg font-bold text-gray-900 mb-2 line-clamp-1 truncate min-w-0">
                           {recipe.title}
                         </CardTitle>
-                        
+
                         {recipe.description && (
-                          <p className="text-gray-600 text-sm line-clamp-2 mb-3">
+                          <p className="text-gray-600 text-sm line-clamp-2 truncate mb-3 min-w-0">
                             {recipe.description}
                           </p>
                         )}
-                        
+
                         <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
                           <div className="flex items-center gap-1">
                             <Clock className="w-3 h-3" />
@@ -775,26 +737,31 @@ export default function RecipesPage() {
                         {/* Ingredients Preview */}
                         {recipe.ingredients && recipe.ingredients.length > 0 && (
                           <div className="text-xs text-gray-500">
-                            <span className="font-medium">Malzemeler:</span> {recipe.ingredients.slice(0, 3).join(', ')}
-                            {recipe.ingredients.length > 3 && ` +${recipe.ingredients.length - 3} daha`}
+                            <span className="font-medium">Malzemeler:</span>{' '}
+                            {recipe.ingredients.slice(0, 3).join(', ')}
+                            {recipe.ingredients.length > 3 &&
+                              ` +${recipe.ingredients.length - 3} daha`}
                           </div>
                         )}
                         {/* Kart içeriğinde, ingredients önizlemesinden sonra steps özetini ekle */}
                         {recipe.steps && recipe.steps.length > 0 && (
                           <div className="text-xs text-gray-500 mt-2">
-                            <span className="font-medium">Adımlar:</span> {recipe.steps.slice(0,2).join(' → ')}
+                            <span className="font-medium">Adımlar:</span>{' '}
+                            {recipe.steps.slice(0, 2).join(' → ')}
                             {recipe.steps.length > 2 && (
                               <>
                                 ...
                                 <button
                                   className="ml-2 text-fitness-blue underline hover:text-fitness-green transition-colors text-xs"
-                                  onClick={e => {
+                                  onClick={(e) => {
                                     e.stopPropagation();
                                     setModalSteps(recipe.steps);
                                     setModalTitle(recipe.title);
                                     setOpenStepsModal(true);
                                   }}
-                                >Tüm adımları gör</button>
+                                >
+                                  Tüm adımları gör
+                                </button>
                               </>
                             )}
                           </div>
@@ -830,17 +797,14 @@ export default function RecipesPage() {
                 <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-fitness-blue/10 to-fitness-green/10 rounded-full flex items-center justify-center">
                   <ChefHat className="w-12 h-12 text-fitness-blue/50" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Henüz tarif bulunamadı
-                </h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Henüz tarif bulunamadı</h3>
                 <p className="text-gray-600 mb-4">
-                  {search || selectedCategory !== 'Tümü' 
+                  {search || selectedCategory !== 'Tümü'
                     ? 'Arama kriterlerinizi değiştirmeyi deneyin'
-                    : 'İlk tarifinizi ekleyerek başlayın!'
-                  }
+                    : 'İlk tarifinizi ekleyerek başlayın!'}
                 </p>
                 {!search && selectedCategory === 'Tümü' && (
-                  <Button 
+                  <Button
                     onClick={() => setIsCreating(true)}
                     className="bg-gradient-to-r from-fitness-blue to-fitness-green hover:from-fitness-blue/90 hover:to-fitness-green/90"
                   >
@@ -866,7 +830,9 @@ export default function RecipesPage() {
               ))}
             </ol>
             <DialogFooter>
-              <Button onClick={() => setOpenStepsModal(false)} variant="outline">Kapat</Button>
+              <Button onClick={() => setOpenStepsModal(false)} variant="outline">
+                Kapat
+              </Button>
             </DialogFooter>
           </DialogContent>
         </Dialog>
@@ -884,10 +850,12 @@ export default function RecipesPage() {
                 <select
                   className="w-full border rounded p-2"
                   value={planDay}
-                  onChange={e => setPlanDay(e.target.value)}
+                  onChange={(e) => setPlanDay(e.target.value)}
                 >
-                  {daysOfWeek.map(day => (
-                    <option key={day} value={day}>{day}</option>
+                  {daysOfWeek.map((day) => (
+                    <option key={day} value={day}>
+                      {day}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -896,16 +864,20 @@ export default function RecipesPage() {
                 <select
                   className="w-full border rounded p-2"
                   value={planMealType}
-                  onChange={e => setPlanMealType(e.target.value)}
+                  onChange={(e) => setPlanMealType(e.target.value)}
                 >
-                  {mealTypes.map(type => (
-                    <option key={type.value} value={type.value}>{type.label}</option>
+                  {mealTypes.map((type) => (
+                    <option key={type.value} value={type.value}>
+                      {type.label}
+                    </option>
                   ))}
                 </select>
               </div>
             </div>
             <DialogFooter>
-              <Button variant="outline" onClick={() => setOpenMealPlanModal(false)}>İptal</Button>
+              <Button variant="outline" onClick={() => setOpenMealPlanModal(false)}>
+                İptal
+              </Button>
               <Button
                 onClick={() => {
                   // localStorage'dan mealPlans'ı al
@@ -917,13 +889,15 @@ export default function RecipesPage() {
                     mealType: planMealType,
                     recipeId: selectedRecipeForPlan._id,
                     recipeTitle: selectedRecipeForPlan.title,
-                    calories: selectedRecipeForPlan.calories || 0
+                    calories: selectedRecipeForPlan.calories || 0,
                   };
                   // ekle ve kaydet
                   localStorage.setItem('mealPlans', JSON.stringify([...mealPlans, newPlan]));
                   setOpenMealPlanModal(false);
                 }}
-              >Ekle</Button>
+              >
+                Ekle
+              </Button>
             </DialogFooter>
           </DialogContent>
         </Dialog>
@@ -931,4 +905,3 @@ export default function RecipesPage() {
     </TooltipProvider>
   );
 }
-

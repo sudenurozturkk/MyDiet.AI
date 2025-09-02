@@ -15,6 +15,7 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 import { useState } from 'react';
+import { signOut } from 'next-auth/react';
 import { Menu, ChevronLeft, ChevronRight } from 'react-feather';
 
 const links = [
@@ -32,10 +33,13 @@ export default function DashboardSidebar() {
   const pathname = usePathname();
   const router = useRouter();
   const [collapsed, setCollapsed] = useState(false);
-  const handleLogout = () => {
-    document.cookie = 'token=; Max-Age=0; path=/';
-    localStorage.removeItem('userEmail');
-    router.push('/auth/login');
+  const handleLogout = async () => {
+    try {
+      localStorage.removeItem('userEmail');
+      await signOut({ callbackUrl: '/auth/login', redirect: true });
+    } catch {
+      router.push('/auth/login');
+    }
   };
   return (
     <motion.aside

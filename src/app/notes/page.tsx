@@ -2,8 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { PlusIcon, PencilIcon, TrashIcon, TagIcon, CheckIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import {
+  PlusIcon,
+  PencilIcon,
+  TrashIcon,
+  TagIcon,
+  CheckIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 
 type Note = {
   _id?: string;
@@ -30,45 +38,49 @@ export default function NotesPage() {
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
   const [checked, setChecked] = useState(false);
+  const { status } = useSession();
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const userEmail = localStorage.getItem('userEmail');
-      if (!userEmail) {
-        router.push('/auth/login');
-        return;
-      }
+    if (status === 'unauthenticated') {
+      router.replace('/auth/login');
+      return;
+    }
+    if (status === 'authenticated') {
       setChecked(true);
+      const userEmail =
+        typeof window !== 'undefined' ? localStorage.getItem('userEmail') || 'session' : 'session';
       loadNotes(userEmail);
     }
-  }, [router]);
+  }, [router, status]);
 
   const loadNotes = (userEmail: string) => {
     setIsLoading(true);
     setError(null);
-    
+
     try {
       const notesKey = `notes_${userEmail}`;
       const storedNotes = localStorage.getItem(notesKey);
-      
+
       if (storedNotes) {
         // Kullanıcıya özel notlar varsa yükle
         const parsedNotes = JSON.parse(storedNotes);
         setNotes(parsedNotes);
       } else {
         // İlk kez giriş yapıyorsa, genel notes.json'dan yükle
-        import('../../data/notes.json').then((mod) => {
-          const defaultNotes = mod.default.map((note: any) => ({
-            ...note,
-            userId: userEmail,
-            createdAt: new Date(note.createdAt),
-            updatedAt: new Date(note.updatedAt)
-          }));
-          setNotes(defaultNotes);
-          localStorage.setItem(notesKey, JSON.stringify(defaultNotes));
-        }).catch(() => {
-          setNotes([]);
-        });
+        import('../../data/notes.json')
+          .then((mod) => {
+            const defaultNotes = mod.default.map((note: any) => ({
+              ...note,
+              userId: userEmail,
+              createdAt: new Date(note.createdAt),
+              updatedAt: new Date(note.updatedAt),
+            }));
+            setNotes(defaultNotes);
+            localStorage.setItem(notesKey, JSON.stringify(defaultNotes));
+          })
+          .catch(() => {
+            setNotes([]);
+          });
       }
     } catch (err) {
       setError('Notlar yüklenirken hata oluştu');
@@ -90,7 +102,7 @@ export default function NotesPage() {
   const handleCreateNote = () => {
     setError(null);
     const userEmail = localStorage.getItem('userEmail');
-    
+
     if (!userEmail) {
       setError('Kullanıcı oturumu yok');
       return;
@@ -116,7 +128,7 @@ export default function NotesPage() {
       const updatedNotes = [newNote, ...notes];
       saveNotes(updatedNotes);
       resetForm();
-      
+
       // Başarı mesajı
       alert('Not başarıyla oluşturuldu!');
     } catch (err) {
@@ -126,12 +138,12 @@ export default function NotesPage() {
 
   const handleUpdateNote = (note: Note) => {
     setError(null);
-    
+
     if (!title.trim()) {
       setError('Not başlığı boş olamaz');
       return;
     }
-    
+
     try {
       const updatedNote: Note = {
         ...note,
@@ -140,11 +152,11 @@ export default function NotesPage() {
         tags: tags,
         updatedAt: new Date(),
       };
-      
-      const updatedNotes = notes.map(n => n._id === note._id ? updatedNote : n);
+
+      const updatedNotes = notes.map((n) => (n._id === note._id ? updatedNote : n));
       saveNotes(updatedNotes);
       resetForm();
-      
+
       // Başarı mesajı
       alert('Not başarıyla güncellendi!');
     } catch (err) {
@@ -154,12 +166,12 @@ export default function NotesPage() {
 
   const handleDeleteNote = (noteId: string) => {
     setError(null);
-    
+
     if (confirm('Bu notu silmek istediğinize emin misiniz?')) {
       try {
-        const updatedNotes = notes.filter(n => n._id !== noteId);
+        const updatedNotes = notes.filter((n) => n._id !== noteId);
         saveNotes(updatedNotes);
-        
+
         // Başarı mesajı
         alert('Not başarıyla silindi!');
       } catch (err) {
@@ -182,14 +194,28 @@ export default function NotesPage() {
     setActiveTags((prev) => (prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]));
   };
 
-  const handleToggleNoteCompleted = (noteId: string) => {
+  const handleToggleNoteCompleted = async (noteId: string) => {
+    const target = notes.find((n) => n._id?.toString() === noteId);
+    if (!target) return;
+    const optimistic = notes.map((n) =>
+      n._id?.toString() === noteId ? { ...n, completed: !n.completed, updatedAt: new Date() } : n
+    );
+    setNotes(optimistic);
+    saveNotes(optimistic);
     try {
-      const updatedNotes = notes.map(n =>
-        n._id === noteId ? { ...n, completed: !n.completed, updatedAt: new Date() } : n
-      );
-      saveNotes(updatedNotes);
+      await fetch('/api/notes', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          _id: noteId,
+          title: target.title,
+          content: target.content,
+          tags: target.tags,
+          completed: !target.completed,
+        }),
+      });
     } catch (err) {
-      setError('Not durumu güncellenemedi');
+      // sessiz hata, optimistic kalır
     }
   };
 
@@ -203,9 +229,11 @@ export default function NotesPage() {
   };
 
   const filteredNotes = notes.filter((note) => {
-    const matchesSearch = note.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         note.content.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesTags = activeTags.length === 0 || activeTags.some((tag) => note.tags.includes(tag));
+    const matchesSearch =
+      note.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      note.content.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesTags =
+      activeTags.length === 0 || activeTags.some((tag) => note.tags.includes(tag));
     return matchesSearch && matchesTags;
   });
 
@@ -387,7 +415,11 @@ export default function NotesPage() {
                 className={`card bg-white/90 dark:bg-neutral-900/80 rounded-2xl shadow-xl p-6 transition-all duration-200 border border-gray-100 dark:border-gray-800 hover:border-fitness-blue ${note.completed ? 'opacity-60' : ''}`}
               >
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className={`text-lg font-bold text-fitness-blue dark:text-fitness-green flex-1 truncate ${note.completed ? 'line-through text-green-600 dark:text-green-400' : ''}`}>{note.title}</h3>
+                  <h3
+                    className={`text-lg font-bold text-fitness-blue dark:text-fitness-green flex-1 truncate min-w-0 ${note.completed ? 'line-through text-green-600 dark:text-green-400' : ''}`}
+                  >
+                    {note.title}
+                  </h3>
                   <div className="flex space-x-2 items-center">
                     <button
                       onClick={() => handleToggleNoteCompleted(note._id?.toString() || '')}
@@ -415,7 +447,7 @@ export default function NotesPage() {
                     </button>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 whitespace-pre-wrap min-h-[60px]">
+                <p className="text-gray-700 dark:text-gray-200 mb-4 whitespace-pre-wrap min-h-[60px] line-clamp-4">
                   {note.content}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-2">

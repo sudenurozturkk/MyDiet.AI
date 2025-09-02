@@ -1,26 +1,30 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Settings, Bell, Eye, Moon, Sun } from 'react-feather';
+import { useTheme } from 'next-themes';
 
 export default function DashboardPage() {
-  const [darkMode, setDarkMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('darkMode') === 'true';
-    }
-    return false;
-  });
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    if (!mounted) return;
+    setDarkMode(theme === 'dark');
+  }, [mounted, theme]);
 
   const [settings, setSettings] = useState({
     emailNotifications: true,
     pushNotifications: true,
-    profileVisibility: true
+    profileVisibility: true,
   });
 
   const handleSettingChange = (setting: string) => {
-    setSettings(prev => ({
+    setSettings((prev) => ({
       ...prev,
-      [setting]: !prev[setting as keyof typeof prev]
+      [setting]: !prev[setting as keyof typeof prev],
     }));
   };
 
@@ -47,7 +51,7 @@ export default function DashboardPage() {
                   </p>
                 </div>
                 <button
-                  onClick={() => setDarkMode(!darkMode)}
+                  onClick={() => setTheme(darkMode ? 'light' : 'dark')}
                   className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
                     darkMode ? 'bg-fitness-green' : 'bg-gray-200'
                   }`}
@@ -91,9 +95,7 @@ export default function DashboardPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-gray-700 dark:text-gray-300">Push Bildirimleri</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Anlık bildirimler al
-                    </p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Anlık bildirimler al</p>
                   </div>
                   <button
                     onClick={() => handleSettingChange('pushNotifications')}

@@ -20,7 +20,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (status === 'authenticated') {
-      router.replace('/chat');
+      router.replace('/profile');
       return;
     }
     setChecked(true);
@@ -35,13 +35,13 @@ export default function LoginPage() {
       if (!email.trim()) {
         throw new Error('E-posta adresi boş olamaz');
       }
-      
+
       if (!password.trim()) {
         throw new Error('Şifre boş olamaz');
       }
 
-      if (password.length < 6) {
-        throw new Error('Şifre en az 6 karakter olmalıdır');
+      if (password.length < 8) {
+        throw new Error('Şifre en az 8 karakter olmalıdır');
       }
 
       const res = await signIn('credentials', {
@@ -50,7 +50,7 @@ export default function LoginPage() {
         redirect: false,
       });
       if (res?.error) throw new Error('Geçersiz e-posta veya şifre');
-      router.push('/chat');
+      router.push('/profile');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Bir hata oluştu');
     } finally {
@@ -88,15 +88,20 @@ export default function LoginPage() {
 
           <div className="mb-6 p-4 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-xl border border-emerald-200 dark:border-emerald-800">
             <p className="text-sm">
-              <strong>Demo Giriş:</strong><br />
-              E-posta: mydietai@demo.com<br />
+              <strong>Demo Giriş:</strong>
+              <br />
+              E-posta: mydietai@demo.com
+              <br />
               Şifre: 123456
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+              >
                 E-posta
               </label>
               <input
@@ -111,7 +116,10 @@ export default function LoginPage() {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+              >
                 Şifre
               </label>
               <div className="relative">
@@ -141,7 +149,10 @@ export default function LoginPage() {
                   type="checkbox"
                   className="h-4 w-4 text-emerald-500 focus:ring-emerald-400 border-slate-300 dark:border-slate-600 rounded"
                 />
-                <label htmlFor="remember" className="ml-2 block text-sm text-slate-700 dark:text-slate-300">
+                <label
+                  htmlFor="remember"
+                  className="ml-2 block text-sm text-slate-700 dark:text-slate-300"
+                >
                   Beni hatırla
                 </label>
               </div>

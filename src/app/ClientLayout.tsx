@@ -1,7 +1,6 @@
 'use client';
 import NavbarWrapper from '@/components/layout/NavbarWrapper';
 import SidebarWrapper from '@/components/layout/SidebarWrapper';
-import ChatWidget from '@/components/chat/ChatWidget';
 import { usePathname } from 'next/navigation';
 import { SessionProvider } from 'next-auth/react';
 
@@ -28,7 +27,8 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
         {isProtected && <SidebarWrapper />}
         <div className="flex-1">{children}</div>
       </div>
-      {isProtected && !isChatPage && <ChatWidget />}
+      {/* Profil ekranında ve diğer sayfalarda altta chat girişi görünmesin */}
+      {/* Sayfa altındaki mesaj/sohbet butonunu tamamen devre dışı bırakıldı */}
     </SessionProvider>
   );
-} 
+}

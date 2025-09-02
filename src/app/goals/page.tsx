@@ -40,12 +40,8 @@ export default function GoalsPage() {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const userEmail = localStorage.getItem('userEmail');
-      if (!userEmail) {
-        router.push('/auth/login');
-        return;
-      }
       setChecked(true);
+      const userEmail = localStorage.getItem('userEmail') || 'session';
       loadGoals(userEmail);
     }
   }, [router]);
@@ -53,32 +49,39 @@ export default function GoalsPage() {
   const loadGoals = (userEmail: string) => {
     setIsLoading(true);
     setError(null);
-    
+
     try {
       const goalsKey = `goals_${userEmail}`;
       const storedGoals = localStorage.getItem(goalsKey);
-      
+
       if (storedGoals) {
         // Kullanıcıya özel hedefler varsa yükle
         const parsedGoals = JSON.parse(storedGoals);
         setGoals(parsedGoals);
       } else {
         // İlk kez giriş yapıyorsa, genel goals.json'dan yükle
-        import('../../data/goals.json').then((mod) => {
-          const defaultGoals = mod.default.map((goal: any) => ({
-            ...goal,
-            _id: goal.id,
-            userId: userEmail,
-            type: goal.category === 'weight_loss' ? 'weight' : 
-                  goal.category === 'fitness' ? 'fitness' : 
-                  goal.category === 'nutrition' ? 'nutrition' : 'lifestyle',
-            milestones: []
-          }));
-          setGoals(defaultGoals);
-          localStorage.setItem(goalsKey, JSON.stringify(defaultGoals));
-        }).catch(() => {
-          setGoals([]);
-        });
+        import('../../data/goals.json')
+          .then((mod) => {
+            const defaultGoals = mod.default.map((goal: any) => ({
+              ...goal,
+              _id: goal.id,
+              userId: userEmail,
+              type:
+                goal.category === 'weight_loss'
+                  ? 'weight'
+                  : goal.category === 'fitness'
+                    ? 'fitness'
+                    : goal.category === 'nutrition'
+                      ? 'nutrition'
+                      : 'lifestyle',
+              milestones: [],
+            }));
+            setGoals(defaultGoals);
+            localStorage.setItem(goalsKey, JSON.stringify(defaultGoals));
+          })
+          .catch(() => {
+            setGoals([]);
+          });
       }
     } catch (err) {
       setError('Hedefler yüklenirken hata oluştu');
@@ -100,7 +103,7 @@ export default function GoalsPage() {
   const handleCreateGoal = () => {
     setError(null);
     const userEmail = localStorage.getItem('userEmail');
-    
+
     if (!userEmail) {
       setError('Kullanıcı oturumu yok');
       return;
@@ -126,7 +129,7 @@ export default function GoalsPage() {
       const updatedGoals = [newGoal, ...goals];
       saveGoals(updatedGoals);
       resetForm();
-      
+
       // Başarı mesajı
       alert('Hedef başarıyla oluşturuldu!');
     } catch (err) {
@@ -136,7 +139,7 @@ export default function GoalsPage() {
 
   const handleUpdateGoal = (goal: Goal) => {
     setError(null);
-    
+
     try {
       const updatedGoal = {
         ...goal,
@@ -150,10 +153,10 @@ export default function GoalsPage() {
         updatedAt: new Date(),
       };
 
-      const updatedGoals = goals.map(g => g._id === goal._id ? updatedGoal : g);
+      const updatedGoals = goals.map((g) => (g._id === goal._id ? updatedGoal : g));
       saveGoals(updatedGoals);
       resetForm();
-      
+
       // Başarı mesajı
       alert('Hedef başarıyla güncellendi!');
     } catch (err) {
@@ -163,12 +166,12 @@ export default function GoalsPage() {
 
   const handleDeleteGoal = (goalId: string) => {
     setError(null);
-    
+
     if (confirm('Bu hedefi silmek istediğinize emin misiniz?')) {
       try {
-        const updatedGoals = goals.filter(g => g._id !== goalId);
+        const updatedGoals = goals.filter((g) => g._id !== goalId);
         saveGoals(updatedGoals);
-        
+
         // Başarı mesajı
         alert('Hedef başarıyla silindi!');
       } catch (err) {
@@ -179,20 +182,20 @@ export default function GoalsPage() {
 
   const handleAddMilestone = (goal: Goal) => {
     if (!milestoneTitle.trim()) return;
-    
+
     const newMilestone = {
       id: Date.now().toString(),
       title: milestoneTitle.trim(),
       completed: false,
     };
-    
+
     const updatedGoal = {
       ...goal,
       milestones: [...goal.milestones, newMilestone],
       updatedAt: new Date(),
     };
-    
-    const updatedGoals = goals.map(g => g._id === goal._id ? updatedGoal : g);
+
+    const updatedGoals = goals.map((g) => (g._id === goal._id ? updatedGoal : g));
     saveGoals(updatedGoals);
     setMilestoneTitle('');
   };
@@ -207,8 +210,8 @@ export default function GoalsPage() {
       milestones: updatedMilestones,
       updatedAt: new Date(),
     };
-    
-    const updatedGoals = goals.map(g => g._id === goal._id ? updatedGoal : g);
+
+    const updatedGoals = goals.map((g) => (g._id === goal._id ? updatedGoal : g));
     saveGoals(updatedGoals);
 
     // Kilometre taşı tamamlandığında mini motivasyon mesajı
@@ -219,18 +222,18 @@ export default function GoalsPage() {
     }
   };
 
-  const handleToggleGoalCompleted = (goalId: string) => {
+  const handleToggleGoalCompleted = async (goalId: string) => {
     const goal = goals.find((g) => String(g._id) === goalId);
     if (!goal) return;
 
     const isCompleted = !goal.completed;
-    
+
     // Hedef tamamlanırken tüm kilometre taşlarını da tamamla
     let updatedMilestones = goal.milestones;
     if (goal.milestones && goal.milestones.length > 0) {
       updatedMilestones = goal.milestones.map((milestone: any) => ({
         ...milestone,
-        completed: isCompleted
+        completed: isCompleted,
       }));
     }
 
@@ -248,25 +251,33 @@ export default function GoalsPage() {
       updatedAt: new Date(),
     };
 
-    const updatedGoals = goals.map(g => String(g._id) === goalId ? updatedGoal : g);
-    saveGoals(updatedGoals);
+    const updatedGoals = goals.map((g) => (String(g._id) === goalId ? updatedGoal : g));
+    // Optimistic update
+    setGoals(updatedGoals);
+    try {
+      await fetch('/api/goals', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ _id: goalId, completed: isCompleted }),
+      });
+    } catch {}
 
     // Başarı mesajı göster
-    if (isCompleted) {
-      alert('🎉 Tebrikler! Hedefini başarıyla tamamladın! 🌟');
-    }
+    // Sessiz başarı
   };
 
   const handleDeleteMilestone = (goal: Goal, milestoneId: string) => {
-    const updatedMilestones = goal.milestones.filter((milestone: any) => milestone.id !== milestoneId);
-    
+    const updatedMilestones = goal.milestones.filter(
+      (milestone: any) => milestone.id !== milestoneId
+    );
+
     const updatedGoal = {
       ...goal,
       milestones: updatedMilestones,
       updatedAt: new Date(),
     };
-    
-    const updatedGoals = goals.map(g => g._id === goal._id ? updatedGoal : g);
+
+    const updatedGoals = goals.map((g) => (g._id === goal._id ? updatedGoal : g));
     saveGoals(updatedGoals);
   };
 
@@ -470,7 +481,11 @@ export default function GoalsPage() {
               >
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className={`text-lg font-bold flex-1 truncate ${goal.completed ? 'line-through text-green-600 dark:text-green-400' : 'text-fitness-blue dark:text-fitness-green'}`}>{goal.title}</h3>
+                    <h3
+                      className={`text-lg font-bold flex-1 truncate min-w-0 ${goal.completed ? 'line-through text-green-600 dark:text-green-400' : 'text-fitness-blue dark:text-fitness-green'}`}
+                    >
+                      {goal.title}
+                    </h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {goal.type === 'weight' && 'Kilo'}
                       {goal.type === 'fitness' && 'Fitness'}
@@ -509,7 +524,7 @@ export default function GoalsPage() {
                     </button>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 min-h-[40px]">
+                <p className="text-gray-700 dark:text-gray-200 mb-4 min-h-[40px] line-clamp-3">
                   {goal.description}
                 </p>
                 <div className="mb-4">
@@ -541,16 +556,20 @@ export default function GoalsPage() {
                 </div>
                 <div className="mb-4">
                   <h4 className="text-sm font-medium mb-2">
-                    Kilometre Taşları 
+                    Kilometre Taşları
                     {goal.milestones.length > 0 && (
                       <span className="text-xs text-gray-500 ml-2">
-                        ({goal.milestones.filter((m: any) => m.completed).length}/{goal.milestones.length})
+                        ({goal.milestones.filter((m: any) => m.completed).length}/
+                        {goal.milestones.length})
                       </span>
                     )}
                   </h4>
                   <div className="space-y-2">
                     {goal.milestones.map((milestone: any, idx: number) => (
-                      <div key={milestone.id || idx} className="flex items-center justify-between space-x-2">
+                      <div
+                        key={milestone.id || idx}
+                        className="flex items-center justify-between space-x-2"
+                      >
                         <div className="flex items-center space-x-2 flex-1">
                           <button
                             onClick={() => handleToggleMilestone(goal, milestone.id)}
@@ -568,8 +587,11 @@ export default function GoalsPage() {
                               </motion.div>
                             )}
                           </button>
-                          <span className={`text-sm transition-all duration-200 ${milestone.completed ? 'line-through text-emerald-600 dark:text-emerald-400 font-medium' : 'text-gray-700 dark:text-gray-200'}`}>
-                            {milestone.completed && '🎯 '}{milestone.title}
+                          <span
+                            className={`text-sm transition-all duration-200 ${milestone.completed ? 'line-through text-emerald-600 dark:text-emerald-400 font-medium' : 'text-gray-700 dark:text-gray-200'}`}
+                          >
+                            {milestone.completed && '🎯 '}
+                            {milestone.title}
                           </span>
                         </div>
                         <button
@@ -616,10 +638,10 @@ export default function GoalsPage() {
               className="mt-16 mb-8"
             >
               <div className="text-center mb-8">
-                <motion.h2 
+                <motion.h2
                   initial={{ scale: 0.8 }}
                   animate={{ scale: 1 }}
-                  transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                  transition={{ type: 'spring', stiffness: 260, damping: 20 }}
                   className="text-3xl font-bold bg-gradient-to-r from-fitness-green via-fitness-blue to-fitness-orange bg-clip-text text-transparent mb-4"
                 >
                   🎉 Tebrikler! Başarıların Burada! 🎉
@@ -631,7 +653,7 @@ export default function GoalsPage() {
                   Her tamamlanan hedef, sağlıklı yaşamına bir adım daha yaklaştırıyor 🌟
                 </p>
               </div>
-              
+
               <div className="bg-gradient-to-br from-green-50 via-blue-50 to-yellow-50 dark:from-green-900/20 dark:via-blue-900/20 dark:to-yellow-900/20 rounded-3xl p-8 border-2 border-fitness-green/30 shadow-2xl">
                 <div className="flex flex-wrap justify-center items-end gap-8">
                   {completedGoals.map((goal, idx) => {
@@ -642,15 +664,15 @@ export default function GoalsPage() {
                         initial={{ scale: 0, y: 50, rotate: -180 }}
                         animate={{ scale: 1, y: 0, rotate: 0 }}
                         transition={{
-                          type: "spring",
+                          type: 'spring',
                           stiffness: 200,
                           damping: 15,
-                          delay: idx * 0.3
+                          delay: idx * 0.3,
                         }}
-                        whileHover={{ 
-                          scale: 1.2, 
+                        whileHover={{
+                          scale: 1.2,
                           y: -10,
-                          transition: { duration: 0.2 }
+                          transition: { duration: 0.2 },
                         }}
                         className="relative flex flex-col items-center group cursor-pointer"
                       >
@@ -662,12 +684,12 @@ export default function GoalsPage() {
                           transition={{
                             repeat: Infinity,
                             duration: 2 + idx * 0.2,
-                            ease: "easeInOut"
+                            ease: 'easeInOut',
                           }}
                         >
                           {foodEmoji}
                         </motion.div>
-                        
+
                         {/* Başarı rozeti */}
                         <motion.div
                           initial={{ scale: 0 }}
@@ -677,8 +699,8 @@ export default function GoalsPage() {
                         >
                           ✓
                         </motion.div>
-                        
-                        <motion.div 
+
+                        <motion.div
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           transition={{ delay: idx * 0.3 + 0.7 }}
@@ -691,7 +713,7 @@ export default function GoalsPage() {
                             Tamamlandı!
                           </div>
                         </motion.div>
-                        
+
                         {/* Parıltı efekti */}
                         <motion.div
                           className="absolute inset-0 pointer-events-none"
@@ -701,7 +723,7 @@ export default function GoalsPage() {
                           transition={{
                             repeat: Infinity,
                             duration: 4,
-                            ease: "linear"
+                            ease: 'linear',
                           }}
                         >
                           <div className="absolute top-0 left-1/2 w-1 h-1 bg-yellow-400 rounded-full transform -translate-x-1/2" />
@@ -713,7 +735,7 @@ export default function GoalsPage() {
                     );
                   })}
                 </div>
-                
+
                 {/* Motivasyon mesajları */}
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -723,10 +745,14 @@ export default function GoalsPage() {
                 >
                   <div className="bg-white/50 dark:bg-neutral-800/50 rounded-2xl p-6 backdrop-blur-sm">
                     <p className="text-lg font-semibold text-fitness-blue dark:text-fitness-green mb-2">
-                      {completedGoals.length === 1 && "İlk hedefini tamamladın! Harika bir başlangıç! 🌱"}
-                      {completedGoals.length === 2 && "İkinci hedefin de tamam! Momentum kazanıyorsun! 🚀"}
-                      {completedGoals.length === 3 && "Üç hedef tamamlandı! Artık alışkanlık haline geldi! 💪"}
-                      {completedGoals.length >= 4 && `${completedGoals.length} hedef! Sen artık bir başarı makinesisin! 🏆`}
+                      {completedGoals.length === 1 &&
+                        'İlk hedefini tamamladın! Harika bir başlangıç! 🌱'}
+                      {completedGoals.length === 2 &&
+                        'İkinci hedefin de tamam! Momentum kazanıyorsun! 🚀'}
+                      {completedGoals.length === 3 &&
+                        'Üç hedef tamamlandı! Artık alışkanlık haline geldi! 💪'}
+                      {completedGoals.length >= 4 &&
+                        `${completedGoals.length} hedef! Sen artık bir başarı makinesisin! 🏆`}
                     </p>
                     <p className="text-sm text-gray-600 dark:text-gray-300">
                       Sağlıklı yaşam yolculuğunda her adım değerli. Böyle devam et! 🌟

@@ -6,15 +6,18 @@ interface ChatMessage {
 // Next.js app router API
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '';
 
-export async function generateResponse(messages: ChatMessage[], conversationId?: string): Promise<{ reply: string; conversationId: string; } | null> {
+export async function generateResponse(
+  messages: ChatMessage[],
+  conversationId?: string
+): Promise<{ reply: string; conversationId: string } | null> {
   try {
     // Son kullanıcı mesajını al
-    const lastUserMessage = messages.find(msg => msg.role === 'user')?.content || '';
-    
+    const lastUserMessage = messages.find((msg) => msg.role === 'user')?.content || '';
+
     if (!lastUserMessage.trim()) {
-      return 'Lütfen bir soru yazın.';
+      return null;
     }
-    
+
     // Next.js API'ye istek gönder
     const response = await fetch(`${API_BASE_URL}/api/chat`, {
       method: 'POST',
@@ -37,4 +40,4 @@ export async function generateResponse(messages: ChatMessage[], conversationId?:
     console.error('AI asistan hatası:', error);
     return null;
   }
-} 
+}

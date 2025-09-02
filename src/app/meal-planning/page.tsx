@@ -4,12 +4,12 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useForm } from 'react-hook-form';
-import { 
-  Plus, 
-  Trash2, 
-  Calendar, 
-  Utensils, 
-  Target, 
+import {
+  Plus,
+  Trash2,
+  Calendar,
+  Utensils,
+  Target,
   TrendingUp,
   Sun,
   Moon,
@@ -18,32 +18,27 @@ import {
   Clock,
   Zap,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
 } from 'lucide-react';
 
 // shadcn/ui bileşenleri
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { 
-  Select, 
-  SelectContent, 
-  SelectItem, 
-  SelectTrigger, 
-  SelectValue 
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from '@/components/ui/select';
-import { 
-  Tooltip, 
-  TooltipContent, 
-  TooltipProvider, 
-  TooltipTrigger 
-} from '@/components/ui/tooltip';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface Recipe {
   _id: string;
@@ -64,9 +59,7 @@ interface MealPlan {
   calories: number;
 }
 
-const daysOfWeek = [
-  'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'
-];
+const daysOfWeek = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
 
 const mealTypes = [
   { value: 'kahvaltı', label: 'Kahvaltı', icon: Coffee, color: 'bg-orange-100 text-orange-700' },
@@ -74,7 +67,12 @@ const mealTypes = [
   { value: 'öğle', label: 'Öğle Yemeği', icon: Sun, color: 'bg-yellow-100 text-yellow-700' },
   { value: 'ara öğün 2', label: 'Ara Öğün 2', icon: Apple, color: 'bg-green-100 text-green-700' },
   { value: 'akşam', label: 'Akşam Yemeği', icon: Moon, color: 'bg-blue-100 text-blue-700' },
-  { value: 'gece ara öğünü', label: 'Gece Ara Öğünü', icon: Clock, color: 'bg-purple-100 text-purple-700' },
+  {
+    value: 'gece ara öğünü',
+    label: 'Gece Ara Öğünü',
+    icon: Clock,
+    color: 'bg-purple-100 text-purple-700',
+  },
 ];
 
 export default function MealPlanningPage() {
@@ -96,18 +94,22 @@ export default function MealPlanningPage() {
 
   const fetchRecipes = async () => {
     try {
-      const response = await fetch('/api/recipes');
+      const params = new URLSearchParams();
+      params.set('page', '1');
+      params.set('pageSize', '1000');
+      const response = await fetch(`/api/recipes?${params.toString()}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
-      
+      const apiItems = Array.isArray(data) ? data : Array.isArray(data?.items) ? data.items : [];
+
       // Eğer API'den veri gelmezse, local dosyadan yükle
-      if (!data || data.length === 0) {
+      if (!apiItems || apiItems.length === 0) {
         const localRecipes = await import('@/data/recipes-clean.json');
         setRecipes(localRecipes.default || []);
       } else {
-        setRecipes(data);
+        setRecipes(apiItems);
       }
     } catch (error) {
       console.error('Recipes fetch error:', error);
@@ -145,7 +147,7 @@ export default function MealPlanningPage() {
       setAddError('Tarifler yüklenmedi. Lütfen sayfayı yenileyin.');
       return;
     }
-    const recipe = filteredRecipes.find((r: Recipe) => r._id === selectedRecipe);
+    const recipe = filteredRecipes.find((r: Recipe) => String(r._id) === String(selectedRecipe));
     if (!recipe) {
       setAddError('Seçilen tarif bulunamadı. Lütfen tekrar deneyin.');
       return;
@@ -154,9 +156,9 @@ export default function MealPlanningPage() {
       id: Date.now().toString(),
       day: selectedDay,
       mealType: selectedMealType as MealPlan['mealType'],
-      recipeId: selectedRecipe,
+      recipeId: String(selectedRecipe),
       recipeTitle: recipe.title,
-      calories: recipe.calories || 0
+      calories: recipe.calories || 0,
     };
     const updatedPlans = [...mealPlans, newMealPlan];
     saveMealPlans(updatedPlans);
@@ -165,12 +167,12 @@ export default function MealPlanningPage() {
   };
 
   const removeMealPlan = (id: string) => {
-    const updatedPlans = mealPlans.filter(plan => plan.id !== id);
+    const updatedPlans = mealPlans.filter((plan) => plan.id !== id);
     saveMealPlans(updatedPlans);
   };
 
   const getMealPlansForDay = (day: string) => {
-    return mealPlans.filter(plan => plan.day === day);
+    return mealPlans.filter((plan) => plan.day === day);
   };
 
   const getTotalCaloriesForDay = (day: string) => {
@@ -179,7 +181,7 @@ export default function MealPlanningPage() {
   };
 
   const getMealPlansForDayAndType = (day: string, mealType: string) => {
-    return mealPlans.filter(plan => plan.day === day && plan.mealType === mealType);
+    return mealPlans.filter((plan) => plan.day === day && plan.mealType === mealType);
   };
 
   // Tarifleri filtrele: Aynı başlığa veya aynı _id'ye sahip olanları tekilleştir
@@ -209,7 +211,7 @@ export default function MealPlanningPage() {
           </div>
         </div>
         <div className="p-3 sm:p-4 space-y-3 sm:space-y-4">
-          {mealTypes.map(mealType => {
+          {mealTypes.map((mealType) => {
             const dayMeals = getMealPlansForDayAndType(day, mealType.value);
             return (
               <div key={mealType.value} className="space-y-2">
@@ -221,7 +223,7 @@ export default function MealPlanningPage() {
                 </div>
                 <div className="space-y-2">
                   <AnimatePresence>
-                    {dayMeals.map(meal => (
+                    {dayMeals.map((meal) => (
                       <motion.div
                         key={meal.id}
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -231,7 +233,7 @@ export default function MealPlanningPage() {
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex-1 min-w-0">
-                            <p className="text-xs sm:text-sm font-medium text-gray-900 truncate">
+                            <p className="text-xs sm:text-sm font-medium text-gray-900 truncate min-w-0">
                               {meal.recipeTitle}
                             </p>
                             <p className="text-xs text-gray-500 flex items-center gap-1">
@@ -275,10 +277,10 @@ export default function MealPlanningPage() {
 
   return (
     <TooltipProvider>
-      <div 
+      <div
         className="min-h-screen"
         style={{
-          background: 'linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%)'
+          background: 'linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%)',
         }}
       >
         <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6 max-w-7xl">
@@ -319,15 +321,13 @@ export default function MealPlanningPage() {
               <CardContent>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Gün
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Gün</label>
                     <Select value={selectedDay} onValueChange={setSelectedDay}>
                       <SelectTrigger className="w-full">
                         <SelectValue placeholder="Gün seçin" />
                       </SelectTrigger>
                       <SelectContent>
-                        {daysOfWeek.map(day => (
+                        {daysOfWeek.map((day) => (
                           <SelectItem key={day} value={day}>
                             {day}
                           </SelectItem>
@@ -345,7 +345,7 @@ export default function MealPlanningPage() {
                         <SelectValue placeholder="Öğün türü seçin" />
                       </SelectTrigger>
                       <SelectContent>
-                        {mealTypes.map(type => (
+                        {mealTypes.map((type) => (
                           <SelectItem key={type.value} value={type.value}>
                             <div className="flex items-center gap-2">
                               <type.icon className="w-4 h-4" />
@@ -358,18 +358,18 @@ export default function MealPlanningPage() {
                   </div>
 
                   <div className="sm:col-span-2 lg:col-span-1">
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Tarif
-                    </label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Tarif</label>
                     <Select value={selectedRecipe} onValueChange={setSelectedRecipe}>
                       <SelectTrigger className="w-full">
                         <SelectValue placeholder="Tarif seçin" />
                       </SelectTrigger>
                       <SelectContent>
                         {filteredRecipes.length === 0 ? (
-                          <div className="text-xs text-red-500 p-2">Hiç tarif bulunamadı. Lütfen tarif ekleyin veya sayfayı yenileyin.</div>
+                          <div className="text-xs text-red-500 p-2">
+                            Hiç tarif bulunamadı. Lütfen tarif ekleyin veya sayfayı yenileyin.
+                          </div>
                         ) : (
-                          filteredRecipes.map(recipe => (
+                          filteredRecipes.map((recipe) => (
                             <SelectItem key={recipe._id} value={recipe._id}>
                               {recipe.title}
                             </SelectItem>
@@ -385,16 +385,14 @@ export default function MealPlanningPage() {
                       whileTap={{ scale: 0.95 }}
                       className="w-full"
                     >
-                      <Button 
+                      <Button
                         onClick={addMealPlan}
                         className="w-full h-10 text-white font-medium bg-gradient-to-r from-fitness-blue to-fitness-green hover:from-fitness-blue/90 hover:to-fitness-green/90"
                       >
                         <Plus className="w-4 h-4 mr-2" />
                         Ekle
                       </Button>
-                      {addError && (
-                        <div className="text-xs text-red-500 mt-2">{addError}</div>
-                      )}
+                      {addError && <div className="text-xs text-red-500 mt-2">{addError}</div>}
                       {addSuccess && (
                         <div className="text-xs text-green-600 mt-2">{addSuccess}</div>
                       )}
@@ -416,7 +414,7 @@ export default function MealPlanningPage() {
           <div className="md:hidden mb-6 sm:mb-8">
             <Carousel
               opts={{
-                align: "start",
+                align: 'start',
                 loop: true,
               }}
               className="w-full"
@@ -476,10 +474,16 @@ export default function MealPlanningPage() {
                   <div className="text-center">
                     <h3 className="text-lg font-medium text-gray-900 mb-2">Haftalık Toplam</h3>
                     <p className="text-3xl font-bold bg-gradient-to-r from-fitness-green to-fitness-blue bg-clip-text text-transparent">
-                      {daysOfWeek.reduce((total, day) => total + getTotalCaloriesForDay(day), 0)} kcal
+                      {daysOfWeek.reduce((total, day) => total + getTotalCaloriesForDay(day), 0)}{' '}
+                      kcal
                     </p>
                     <p className="text-sm text-gray-500 mt-1">
-                      Ortalama günlük: {Math.round(daysOfWeek.reduce((total, day) => total + getTotalCaloriesForDay(day), 0) / 7)} kcal
+                      Ortalama günlük:{' '}
+                      {Math.round(
+                        daysOfWeek.reduce((total, day) => total + getTotalCaloriesForDay(day), 0) /
+                          7
+                      )}{' '}
+                      kcal
                     </p>
                   </div>
                 </div>
@@ -490,4 +494,4 @@ export default function MealPlanningPage() {
       </div>
     </TooltipProvider>
   );
-} 
+}

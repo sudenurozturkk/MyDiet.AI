@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const stories = [
   {
@@ -30,14 +31,12 @@ export default function SuccessStories() {
             transition={{ duration: 0.7, delay: i * 0.2 }}
             viewport={{ once: true }}
           >
-            <img
+            <Image
               src={s.image}
               alt={s.name}
-              className="w-24 h-24 rounded-full object-cover border-4 border-fitness-green mb-4 md:mb-0 shadow"
-              onError={(e) =>
-                (e.currentTarget.src =
-                  'https://ui-avatars.com/api/?name=' + encodeURIComponent(s.name))
-              }
+              width={96}
+              height={96}
+              className="rounded-full object-cover border-4 border-fitness-green mb-4 md:mb-0 shadow"
             />
             <div>
               <p className="text-lg text-gray-700 dark:text-gray-200 mb-2">{s.story}</p>

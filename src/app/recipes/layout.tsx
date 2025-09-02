@@ -1,22 +1,16 @@
-"use client";
-import { useEffect, useState } from 'react';
+'use client';
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 
 export default function RecipesLayout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
-  const [checked, setChecked] = useState(false);
+  const { status } = useSession();
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const userEmail = localStorage.getItem('userEmail');
-      if (!userEmail) {
-        router.push('/auth/login');
-      } else {
-        setChecked(true);
-      }
-    }
-  }, [router]);
+    if (status === 'unauthenticated') router.replace('/auth/login');
+  }, [status, router]);
 
-  if (!checked) return null;
+  if (status === 'loading') return null;
   return <>{children}</>;
-} 
+}

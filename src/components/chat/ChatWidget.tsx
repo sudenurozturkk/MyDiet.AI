@@ -2,17 +2,17 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  PaperAirplaneIcon, 
-  UserIcon, 
-  SparklesIcon, 
+import {
+  PaperAirplaneIcon,
+  UserIcon,
+  SparklesIcon,
   ChatBubbleLeftRightIcon,
   XMarkIcon,
   PlusIcon,
   TrashIcon,
   ChevronUpIcon,
   ChevronDownIcon,
-  HeartIcon
+  HeartIcon,
 } from '@heroicons/react/24/outline';
 import { generateResponse } from '@/utils/api/ai-assistant';
 import { useSession } from 'next-auth/react';
@@ -47,13 +47,15 @@ export default function ChatWidget() {
     endRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
+  type ChatMsg = { role: 'user' | 'assistant'; content: string };
   const onSend = async () => {
     if (!input.trim() || loading) return;
-    const next = [...messages, { role: 'user', content: input }];
+    const userMsg: ChatMsg = { role: 'user', content: input };
+    const next: ChatMsg[] = [...messages, userMsg];
     setMessages(next);
     setInput('');
     setLoading(true);
-    const res = await generateResponse(next, conversationId);
+    const res = await generateResponse(next as any, conversationId);
     if (res) {
       setConversationId(res.conversationId);
       setMessages((prev) => [...prev, { role: 'assistant', content: res.reply }]);
@@ -72,7 +74,9 @@ export default function ChatWidget() {
       <div className="flex-1 overflow-y-auto space-y-3 p-4">
         {messages.map((m, i) => (
           <div key={i} className={m.role === 'user' ? 'text-right' : 'text-left'}>
-            <div className={`inline-block px-3 py-2 rounded-2xl ${m.role === 'user' ? 'bg-emerald-600 text-white' : 'bg-slate-100 dark:bg-slate-800'}`}>
+            <div
+              className={`inline-block px-3 py-2 rounded-2xl ${m.role === 'user' ? 'bg-emerald-600 text-white' : 'bg-slate-100 dark:bg-slate-800'}`}
+            >
               {m.content}
             </div>
           </div>
@@ -90,10 +94,14 @@ export default function ChatWidget() {
           placeholder="Mesaj yazın..."
           className="flex-1 px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700"
         />
-        <button onClick={onSend} disabled={loading} className="px-4 py-2 rounded-xl bg-emerald-600 text-white disabled:opacity-50">
+        <button
+          onClick={onSend}
+          disabled={loading}
+          className="px-4 py-2 rounded-xl bg-emerald-600 text-white disabled:opacity-50"
+        >
           Gönder
         </button>
       </div>
     </div>
   );
-} 
+}

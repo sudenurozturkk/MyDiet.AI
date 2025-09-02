@@ -7,6 +7,7 @@ import { cn } from '@/utils/cn';
 import Logo from '../Logo';
 import { motion, useAnimation } from 'framer-motion';
 import { Sun, Moon, Menu } from 'react-feather';
+import { useTheme } from 'next-themes';
 import DrawerSidebar from './DrawerSidebar';
 
 function getCookie(name: string) {
@@ -22,6 +23,7 @@ export function Navbar() {
   const router = useRouter();
   const [user, setUser] = useState<{ name?: string; email?: string } | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const { theme, setTheme } = useTheme();
   const [dark, setDark] = useState(false);
   const controls = useAnimation();
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -29,42 +31,27 @@ export function Navbar() {
 
   useEffect(() => {
     setMounted(true);
-    const darkMode = localStorage.getItem('darkMode') === 'true';
+    const darkMode =
+      typeof document !== 'undefined' ? document.documentElement.classList.contains('dark') : false;
     setDark(darkMode);
   }, []);
 
   useEffect(() => {
-    if (mounted) {
-      if (dark) {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('darkMode', 'true');
-      } else {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('darkMode', 'false');
-      }
-    }
-  }, [dark, mounted]);
+    if (!mounted) return;
+    setTheme(dark ? 'dark' : 'light');
+  }, [dark, mounted, setTheme]);
 
   useEffect(() => {
-    const token = getCookie('token');
-    if (token) {
-      fetch('/api/profile', {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
+    fetch('/api/profile', { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data && data.name) {
+          setUser({ name: data.name, email: data.email });
+        } else {
+          setUser(null);
+        }
       })
-        .then((res) => (res.ok ? res.json() : null))
-        .then((data) => {
-          if (data && data.name) {
-            setUser({ name: data.name, email: data.email });
-          } else {
-            setUser(null);
-          }
-        })
-        .catch(() => setUser(null));
-    } else {
-      setUser(null);
-    }
+      .catch(() => setUser(null));
   }, []);
 
   useEffect(() => {

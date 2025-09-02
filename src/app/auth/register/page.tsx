@@ -60,8 +60,8 @@ export default function RegisterPage() {
       return;
     }
 
-    if (formData.password.length < 6) {
-      setError('Şifre en az 6 karakter olmalıdır');
+    if (formData.password.length < 8) {
+      setError('Şifre en az 8 karakter olmalıdır');
       return;
     }
 
@@ -71,14 +71,22 @@ export default function RegisterPage() {
       const res = await fetch('/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: formData.name, email: formData.email, password: formData.password }),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          password: formData.password,
+        }),
       });
       if (!res.ok) {
         const data = await res.json();
         throw new Error(data.error || 'Kayıt başarısız');
       }
-      await signIn('credentials', { email: formData.email, password: formData.password, redirect: false });
-      router.push('/chat');
+      await signIn('credentials', {
+        email: formData.email,
+        password: formData.password,
+        redirect: false,
+      });
+      router.push('/profile');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Bir hata oluştu');
     } finally {
@@ -102,9 +110,7 @@ export default function RegisterPage() {
           <h1 className="text-3xl font-bold mt-4 bg-gradient-to-r from-emerald-500 to-sky-500 bg-clip-text text-transparent">
             Kayıt Ol
           </h1>
-          <p className="text-slate-600 dark:text-slate-300 mt-2">
-            MyDiet Ai ailesine katılın
-          </p>
+          <p className="text-slate-600 dark:text-slate-300 mt-2">MyDiet Ai ailesine katılın</p>
         </div>
 
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 p-8">
@@ -116,7 +122,10 @@ export default function RegisterPage() {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+              >
                 Ad Soyad
               </label>
               <input
@@ -132,7 +141,10 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+              >
                 E-posta
               </label>
               <input
@@ -148,7 +160,10 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+              >
                 Şifre
               </label>
               <div className="relative">
@@ -173,7 +188,10 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <label htmlFor="confirmPassword" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              <label
+                htmlFor="confirmPassword"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+              >
                 Şifre Tekrar
               </label>
               <div className="relative">

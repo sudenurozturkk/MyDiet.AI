@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -39,14 +40,12 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
               <div className="flex flex-col items-center bg-neutral-light dark:bg-fitness-dark rounded-2xl shadow-lg p-8 animate-fade-in">
-                <img
+                <Image
                   src={t.image}
                   alt={t.name}
-                  className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-fitness-blue shadow"
-                  onError={(e) =>
-                    (e.currentTarget.src =
-                      'https://ui-avatars.com/api/?name=' + encodeURIComponent(t.name))
-                  }
+                  width={80}
+                  height={80}
+                  className="rounded-full object-cover mb-4 border-4 border-fitness-blue shadow"
                 />
                 <p className="text-lg text-gray-700 dark:text-gray-200 mb-2 text-center">
                   “{t.text}”
