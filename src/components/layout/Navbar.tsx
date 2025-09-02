@@ -31,15 +31,12 @@ export function Navbar() {
 
   useEffect(() => {
     setMounted(true);
-    const darkMode =
-      typeof document !== 'undefined' ? document.documentElement.classList.contains('dark') : false;
-    setDark(darkMode);
   }, []);
 
   useEffect(() => {
     if (!mounted) return;
-    setTheme(dark ? 'dark' : 'light');
-  }, [dark, mounted, setTheme]);
+    setDark(theme === 'dark');
+  }, [theme, mounted]);
 
   useEffect(() => {
     fetch('/api/profile', { cache: 'no-store' })
