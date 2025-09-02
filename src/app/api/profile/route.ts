@@ -6,6 +6,7 @@ import { z } from 'zod';
 import { badRequest, unauthorized } from '@/lib/errors';
 import { getMongoClient } from '@/lib/mongodb';
 import { ObjectId } from 'mongodb';
+import { encryptObject, decryptObject } from '@/lib/crypto';
 
 export async function GET() {
   const session = (await getServerSession(authOptions as any)) as any;
@@ -14,7 +15,8 @@ export async function GET() {
   const client = await getMongoClient();
   const db = client.db();
   const user = await db.collection('users').findOne({ _id: new ObjectId(session.user.id) });
-  const profileData = (user as any)?.profile || {};
+  const rawProfile = (user as any)?.profile || {};
+  const profileData = decryptObject<any>(rawProfile?.__enc ?? '') || rawProfile;
 
   // Prisma'daki profil kaydı opsiyonel; MongoDB tek kaynak
   return NextResponse.json({ userId: session.user.id, ...profileData });
@@ -35,6 +37,7 @@ export async function PUT(request: Request) {
   if (!parsed.success) return badRequest('Geçersiz veri', parsed.error.flatten());
 
   const { name, goal, data } = parsed.data;
+  const encrypted = encryptObject<any>({ ...(goal ? { goal } : {}), ...(data ?? {}) });
 
   const client = await getMongoClient();
   const db = client.db();
@@ -42,12 +45,7 @@ export async function PUT(request: Request) {
     .collection('users')
     .updateOne(
       { _id: new ObjectId(session.user.id) },
-      {
-        $set: {
-          ...(name ? { name } : {}),
-          profile: { ...(goal ? { goal } : {}), ...(data ?? {}) },
-        },
-      },
+      { $set: { ...(name ? { name } : {}), profile: { __enc: encrypted } } },
       { upsert: false }
     );
 

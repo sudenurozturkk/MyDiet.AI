@@ -1,10 +1,11 @@
 import { NextResponse } from 'next/server';
 import { getMongoClient } from '@/lib/mongodb';
+import sanitize from 'mongo-sanitize';
 
 export async function GET(request: Request) {
   try {
     const url = new URL(request.url);
-    const q = url.searchParams.get('q')?.trim();
+    const q = sanitize(url.searchParams.get('q')?.trim() || '') as string;
     const page = Math.max(1, parseInt(url.searchParams.get('page') || '1', 10));
     const pageSize = Math.min(
       1000,

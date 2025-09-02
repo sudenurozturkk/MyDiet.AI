@@ -3,6 +3,8 @@ import { getMongoClient } from '@/lib/mongodb';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { z } from 'zod';
+import sanitize from 'mongo-sanitize';
+import { encryptObject, decryptObject } from '@/lib/crypto';
 
 const NoteSchema = z.object({
   _id: z.string().optional(),
@@ -17,27 +19,34 @@ export async function GET() {
   if (!session?.user?.id) return NextResponse.json({ error: 'Yetkisiz' }, { status: 401 });
   const client = await getMongoClient();
   const db = client.db();
-  const notes = await db
+  const raw = await db
     .collection('notes')
     .find({ userId: session.user.id })
     .sort({ createdAt: -1 })
     .toArray();
+  const notes = raw.map((n: any) => ({
+    ...n,
+    ...decryptObject<any>(n.__enc ?? '', {}),
+    __enc: undefined,
+  }));
   return NextResponse.json(notes);
 }
 
 export async function POST(request: Request) {
   const session = (await getServerSession(authOptions as any)) as any;
   if (!session?.user?.id) return NextResponse.json({ error: 'Yetkisiz' }, { status: 401 });
-  const body = await request.json().catch(() => null);
+  const body = sanitize(await request.json().catch(() => null));
   const parsed = NoteSchema.safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: 'Geçersiz veri' }, { status: 400 });
   const client = await getMongoClient();
   const db = client.db();
   const doc = {
     userId: session.user.id,
-    title: parsed.data.title,
-    content: parsed.data.content,
-    tags: parsed.data.tags,
+    __enc: encryptObject({
+      title: parsed.data.title,
+      content: parsed.data.content,
+      tags: parsed.data.tags,
+    }),
     completed: false,
     createdAt: new Date(),
     updatedAt: new Date(),
@@ -54,18 +63,21 @@ export async function PUT(request: Request) {
   if (process.env.NEXTAUTH_URL && origin && !origin.startsWith(process.env.NEXTAUTH_URL)) {
     return NextResponse.json({ error: 'Invalid origin' }, { status: 403 });
   }
-  const body = await request.json().catch(() => null);
+  const body = sanitize(await request.json().catch(() => null));
   const parsed = NoteSchema.extend({ _id: z.string() }).safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: 'Geçersiz veri' }, { status: 400 });
   const { _id, ...update } = parsed.data;
   const { ObjectId } = await import('mongodb');
   const client = await getMongoClient();
   const db = client.db();
+  const toEnc: any = { ...update };
+  delete toEnc._id;
+  const enc = encryptObject(toEnc);
   await db
     .collection('notes')
     .updateOne(
       { _id: new ObjectId(_id), userId: session.user.id },
-      { $set: { ...update, updatedAt: new Date() } }
+      { $set: { __enc: enc, updatedAt: new Date() } }
     );
   return NextResponse.json({ ok: true });
 }
