@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Eye, EyeOff } from 'react-feather';
 import Link from 'next/link';
 import Logo from '@/components/Logo';
+import { signIn } from 'next-auth/react';
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -67,12 +68,16 @@ export default function RegisterPage() {
     setIsLoading(true);
 
     try {
-      // Basit localStorage tabanlı kayıt
-      const token = 'user-token-' + Date.now();
-      document.cookie = `token=${token}; path=/; max-age=2592000`;
-      localStorage.setItem('userEmail', formData.email);
-      localStorage.setItem('userName', formData.name);
-      
+      const res = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: formData.name, email: formData.email, password: formData.password }),
+      });
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || 'Kayıt başarısız');
+      }
+      await signIn('credentials', { email: formData.email, password: formData.password, redirect: false });
       router.push('/chat');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Bir hata oluştu');
@@ -98,7 +103,7 @@ export default function RegisterPage() {
             Kayıt Ol
           </h1>
           <p className="text-slate-600 dark:text-slate-300 mt-2">
-            FitTürkAI ailesine katılın
+            MyDiet Ai ailesine katılın
           </p>
         </div>
 

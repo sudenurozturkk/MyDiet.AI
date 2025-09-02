@@ -23,7 +23,7 @@ const links = [
   { name: 'İlerleme', href: '/progress', icon: ChartBarIcon },
   { name: 'Tarifler', href: '/recipes', icon: FireIcon },
   { name: 'Öğün Planlama', href: '/meal-planning', icon: CalendarIcon },
-  { name: 'FitTürkAI Asistan', href: '/chat', icon: SparklesIcon },
+  { name: 'MyDiet Ai Asistan', href: '/chat', icon: SparklesIcon },
   { name: 'Profil', href: '/profile', icon: UserIcon },
   { name: 'Ayarlar', href: '/dashboard', icon: Cog6ToothIcon },
 ];
@@ -52,7 +52,7 @@ export default function DashboardSidebar() {
             className={`font-extrabold bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent select-none whitespace-nowrap transition-all duration-300 ${collapsed ? 'text-2xl' : 'text-xl md:text-2xl'}`}
             style={{ maxWidth: collapsed ? 32 : 140, overflow: 'hidden', textOverflow: 'ellipsis' }}
           >
-            {collapsed ? 'F' : 'FitTurkAI'}
+            {collapsed ? 'M' : 'MyDiet Ai'}
           </span>
         </div>
         <button

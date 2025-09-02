@@ -3,10 +3,10 @@ interface ChatMessage {
   content: string;
 }
 
-// Backend API URL'sini environment variable'dan al, yoksa default kullan
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+// Next.js app router API
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '';
 
-export async function generateResponse(messages: ChatMessage[]): Promise<string> {
+export async function generateResponse(messages: ChatMessage[], conversationId?: string): Promise<{ reply: string; conversationId: string; } | null> {
   try {
     // Son kullanıcı mesajını al
     const lastUserMessage = messages.find(msg => msg.role === 'user')?.content || '';
@@ -15,14 +15,15 @@ export async function generateResponse(messages: ChatMessage[]): Promise<string>
       return 'Lütfen bir soru yazın.';
     }
     
-    // Backend API'ye istek gönder
-    const response = await fetch(`${API_BASE_URL}/chat`, {
+    // Next.js API'ye istek gönder
+    const response = await fetch(`${API_BASE_URL}/api/chat`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        soru: lastUserMessage
+        message: lastUserMessage,
+        conversationId,
       }),
     });
 
@@ -31,9 +32,9 @@ export async function generateResponse(messages: ChatMessage[]): Promise<string>
     }
 
     const data = await response.json();
-    return data.cevap || 'Yanıt alınamadı.';
+    return { reply: data.reply, conversationId: data.conversationId };
   } catch (error) {
     console.error('AI asistan hatası:', error);
-    return 'Üzgünüm, şu anda AI asistanına bağlanamıyorum. Lütfen daha sonra tekrar deneyin.';
+    return null;
   }
 } 

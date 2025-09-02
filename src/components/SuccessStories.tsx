@@ -9,7 +9,7 @@ const stories = [
   },
   {
     name: 'Ali V.',
-    story: 'FitTurkAI ile kas kütlemi artırdım ve motivasyonumu hiç kaybetmedim. Teşekkürler!',
+    story: 'MyDiet Ai ile kas kütlemi artırdım ve motivasyonumu hiç kaybetmedim. Teşekkürler!',
     image: 'https://randomuser.me/api/portraits/men/43.jpg',
   },
 ];

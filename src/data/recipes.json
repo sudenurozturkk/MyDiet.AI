@@ -1,27 +1,30 @@
 [
-  
-    
   {
     "_id": "1",
     "userId": "user123",
     "title": "Fit Muzlu Pancake",
-    "description": "Şekersiz, sağlıklı ve pratik bir pancake tarifi.",
-    "category": [
-      "tatlı",
-      "vejetaryen"
-    ],
+    "description": "Şekersiz, sağlıklı ve pratik bir pancake tarifi. Protein ve lif deposu.",
+    "category": ["tatlı", "vejetaryen"],
     "image": "",
     "calories": 280,
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "difficulty": "kolay",
     "ingredients": [
       "1 adet muz",
       "2 adet yumurta",
       "3 yemek kaşığı yulaf ezmesi",
-      "1 çay kaşığı tarçın"
+      "1 çay kaşığı tarçın",
+      "1 çay kaşığı vanilya özü",
+      "1 tutam tuz"
     ],
     "steps": [
       "Muzu çatalla ezin.",
       "Yumurtaları ve yulafı ekleyip karıştırın.",
-      "Tavada arkalı önlü pişirin."
+      "Tarçın, vanilya ve tuz ekleyin.",
+      "Tavada arkalı önlü pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
@@ -30,398 +33,470 @@
     "_id": "2",
     "userId": "user456",
     "title": "Sebzeli Fırın Tavuk",
-    "description": "Protein ve lif deposu, doyurucu ana yemek.",
-    "category": [
-      "ana yemek"
-    ],
+    "description": "Protein ve lif deposu, doyurucu ana yemek. Düşük yağlı ve lezzetli.",
+    "category": ["ana yemek"],
     "image": "",
     "calories": 420,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "orta",
     "ingredients": [
       "2 parça tavuk göğsü",
       "1 adet kabak",
       "1 adet havuç",
       "1 adet patates",
-      "Zeytinyağı, tuz, baharatlar"
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik",
+      "2 diş sarımsak"
     ],
     "steps": [
       "Sebzeleri doğrayın.",
       "Tavuk ve sebzeleri baharatlayıp fırın tepsisine dizin.",
-      "200 derecede 30-35 dk pişirin."
+      "Zeytinyağı ve sarımsak ekleyin.",
+      "200 derecede 30-35 dk pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "t1",
+    "_id": "3",
     "userId": "user123",
     "title": "Çilekli Yoğurt Parfe",
-    "description": "Serinletici, hafif ve sağlıklı bir tatlı.",
-    "category": [
-      "tatlı",
-      "vejetaryen"
-    ],
+    "description": "Serinletici, hafif ve sağlıklı bir tatlı. Probiyotik kaynağı.",
+    "category": ["tatlı", "vejetaryen"],
     "image": "",
     "calories": 180,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 1,
+    "difficulty": "kolay",
     "ingredients": [
       "1 su bardağı yoğurt",
       "1 avuç çilek",
       "1 yemek kaşığı bal",
-      "2 yemek kaşığı yulaf"
+      "2 yemek kaşığı yulaf",
+      "1 çay kaşığı vanilya özü"
     ],
     "steps": [
       "Çilekleri doğrayın.",
       "Tüm malzemeleri karıştırıp bardakta servis edin.",
-      "Buzdolabında 30 dk dinlendirin."
+      "Buzdolabında 30 dk dinlendirin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "t2",
+    "_id": "4",
     "userId": "user456",
     "title": "Fırında Elmalı Tatlı",
-    "description": "Şekersiz, fırında hafif elmalı tatlı.",
-    "category": [
-      "tatlı"
-    ],
+    "description": "Şekersiz, fırında hafif elmalı tatlı. Lif ve vitamin deposu.",
+    "category": ["tatlı"],
     "image": "",
     "calories": 120,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "kolay",
     "ingredients": [
       "2 elma",
       "1 tatlı kaşığı tarçın",
-      "1 yemek kaşığı ceviz"
+      "1 yemek kaşığı ceviz",
+      "1 yemek kaşığı bal",
+      "1 çay kaşığı limon suyu"
     ],
     "steps": [
       "Elmaları dilimleyin.",
-      "Üzerine tarçın ve ceviz serpin.",
-      "Fırında 180°C'de 20 dk pişirin."
+      "Limon suyu ekleyin.",
+      "Üzerine tarçın, bal ve ceviz serpin.",
+      "Fırında 180°C'de 20 dk pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "t3",
+    "_id": "5",
     "userId": "user789",
     "title": "Kakaolu Chia Puding",
-    "description": "Glutensiz, pratik ve sağlıklı tatlı.",
-    "category": [
-      "tatlı",
-      "vejetaryen"
-    ],
+    "description": "Glutensiz, pratik ve sağlıklı tatlı. Omega-3 kaynağı.",
+    "category": ["tatlı", "vejetaryen"],
     "image": "",
     "calories": 220,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 1,
+    "difficulty": "kolay",
     "ingredients": [
       "2 yemek kaşığı chia tohumu",
       "1 su bardağı süt",
       "1 tatlı kaşığı kakao",
-      "1 tatlı kaşığı bal"
+      "1 tatlı kaşığı bal",
+      "1 çay kaşığı vanilya özü"
     ],
     "steps": [
       "Tüm malzemeleri karıştırın.",
       "Buzdolabında 2 saat bekletin.",
-      "Üzerini meyveyle süsleyin."
+      "Üzerini meyveyle süsleyin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "t4",
+    "_id": "6",
     "userId": "user123",
     "title": "Fıstık Ezmeli Enerji Topları",
-    "description": "Atıştırmalık ve tatlı ihtiyacına sağlıklı çözüm.",
-    "category": [
-      "tatlı",
-      "atıştırmalık",
-      "vejetaryen"
-    ],
+    "description": "Atıştırmalık ve tatlı ihtiyacına sağlıklı çözüm. Protein kaynağı.",
+    "category": ["tatlı", "atıştırmalık", "vejetaryen"],
     "image": "",
     "calories": 150,
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 8,
+    "difficulty": "kolay",
     "ingredients": [
       "3 yemek kaşığı yulaf",
       "2 yemek kaşığı fıstık ezmesi",
       "1 tatlı kaşığı bal",
-      "1 çay kaşığı kakao"
+      "1 çay kaşığı kakao",
+      "1 yemek kaşığı chia tohumu"
     ],
     "steps": [
       "Tüm malzemeleri yoğurun.",
-      "Toplar yapıp buzdolabında 1 saat bekletin."
+      "Toplar yapıp buzdolabında 1 saat bekletin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "t5",
+    "_id": "7",
     "userId": "user456",
     "title": "Yoğurtlu Meyve Kasesi",
-    "description": "Tatlı isteğine sağlıklı çözüm.",
-    "category": [
-      "tatlı",
-      "meyve",
-      "vejetaryen"
-    ],
+    "description": "Tatlı isteğine sağlıklı çözüm. Vitamin ve probiyotik deposu.",
+    "category": ["tatlı", "meyve", "vejetaryen"],
     "image": "",
     "calories": 160,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 1,
+    "difficulty": "kolay",
     "ingredients": [
       "1 su bardağı yoğurt",
       "1 avuç karışık meyve",
-      "1 yemek kaşığı bal"
+      "1 yemek kaşığı bal",
+      "1 yemek kaşığı yulaf",
+      "1 çay kaşığı tarçın"
     ],
     "steps": [
       "Meyveleri doğrayın.",
-      "Yoğurt ve bal ile karıştırıp servis edin."
+      "Yoğurt ve bal ile karıştırıp servis edin.",
+      "Üzerine yulaf ve tarçın serpin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "a1",
+    "_id": "8",
     "userId": "user123",
     "title": "Izgara Hindi Köfte",
-    "description": "Düşük yağlı, proteinli ana yemek.",
-    "category": [
-      "ana yemek"
-    ],
+    "description": "Düşük yağlı, proteinli ana yemek. Fitness dostu.",
+    "category": ["ana yemek"],
     "image": "",
     "calories": 380,
+    "prepTime": 20,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "orta",
     "ingredients": [
       "250g hindi kıyma",
       "1 yumurta",
       "1 soğan",
-      "Baharatlar"
+      "2 yemek kaşığı galeta unu",
+      "Tuz, karabiber, kekik",
+      "1 diş sarımsak"
     ],
     "steps": [
       "Tüm malzemeleri yoğurun.",
       "Köfte şekli verin.",
-      "Izgarada pişirin."
+      "Izgarada pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "a2",
+    "_id": "9",
     "userId": "user456",
     "title": "Fırında Sebzeli Tavuk",
-    "description": "Protein ve lif deposu, doyurucu ana yemek.",
-    "category": [
-      "ana yemek"
-    ],
+    "description": "Protein ve lif deposu, doyurucu ana yemek. Tek tepside.",
+    "category": ["ana yemek"],
     "image": "",
     "calories": 450,
+    "prepTime": 20,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "orta",
     "ingredients": [
       "2 parça tavuk göğsü",
       "1 adet kabak",
       "1 adet havuç",
       "1 adet patates",
-      "Zeytinyağı, tuz, baharatlar"
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik",
+      "2 diş sarımsak"
     ],
     "steps": [
       "Sebzeleri doğrayın.",
       "Tavuk ve sebzeleri baharatlayıp fırın tepsisine dizin.",
-      "200 derecede 30-35 dk pişirin."
+      "Zeytinyağı ve sarımsak ekleyin.",
+      "200 derecede 30-35 dk pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "a3",
+    "_id": "10",
     "userId": "user789",
     "title": "Karnabahar Graten",
-    "description": "Fırında hafif ve sağlıklı ana yemek.",
-    "category": [
-      "ana yemek",
-      "vejetaryen"
-    ],
+    "description": "Fırında hafif ve sağlıklı ana yemek. Kalsiyum kaynağı.",
+    "category": ["ana yemek", "vejetaryen"],
     "image": "",
+    "calories": 320,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
     "ingredients": [
       "1 küçük karnabahar",
       "1 su bardağı süt",
       "1 yumurta",
-      "Kaşar peyniri",
-      "Tuz, karabiber"
+      "50g kaşar peyniri",
+      "Tuz, karabiber",
+      "1 yemek kaşığı un"
     ],
     "steps": [
       "Karnabaharı haşlayın.",
       "Diğer malzemelerle karıştırıp fırın kabına alın.",
-      "Üzerine kaşar serpip fırında pişirin."
+      "Üzerine kaşar serpip fırında pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "a4",
+    "_id": "11",
     "userId": "user123",
     "title": "Zeytinyağlı Taze Fasulye",
-    "description": "Klasik, hafif ve sağlıklı ana yemek.",
-    "category": [
-      "ana yemek",
-      "vejetaryen"
-    ],
+    "description": "Klasik, hafif ve sağlıklı ana yemek. Lif deposu.",
+    "category": ["ana yemek", "vejetaryen"],
     "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
     "ingredients": [
       "500g taze fasulye",
       "1 soğan",
       "2 domates",
-      "Zeytinyağı, tuz"
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 diş sarımsak"
     ],
     "steps": [
       "Fasulyeleri ayıklayın.",
       "Soğan ve domatesle kavurun.",
-      "Fasulyeleri ekleyip pişirin."
+      "Fasulyeleri ekleyip pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "a5",
+    "_id": "12",
     "userId": "user456",
     "title": "Fırında Kabak Mücver",
-    "description": "Kızartmasız, hafif ve sağlıklı ana yemek.",
-    "category": [
-      "ana yemek",
-      "vejetaryen"
-    ],
+    "description": "Kızartmasız, hafif ve sağlıklı ana yemek. Lif kaynağı.",
+    "category": ["ana yemek", "vejetaryen"],
     "image": "",
+    "calories": 220,
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
     "ingredients": [
       "2 kabak",
       "2 yumurta",
       "3 yemek kaşığı un",
-      "Dereotu, tuz, karabiber"
+      "Dereotu, tuz, karabiber",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı"
     ],
     "steps": [
       "Kabakları rendeleyin.",
       "Tüm malzemeleri karıştırın.",
-      "Fırında 180°C'de 25 dk pişirin."
+      "Fırında 180°C'de 25 dk pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "at1",
+    "_id": "13",
     "userId": "user123",
     "title": "Fırında Nohut Cipsi",
-    "description": "Kıtır kıtır, sağlıklı atıştırmalık.",
-    "category": [
-      "atıştırmalık",
-      "vejetaryen"
-    ],
+    "description": "Kıtır kıtır, sağlıklı atıştırmalık. Protein kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen"],
     "image": "",
+    "calories": 180,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
     "ingredients": [
       "1 su bardağı haşlanmış nohut",
       "1 yemek kaşığı zeytinyağı",
-      "Baharatlar"
+      "Tuz, karabiber, kekik",
+      "1 çay kaşığı pul biber"
     ],
     "steps": [
       "Nohutları baharat ve yağla karıştırın.",
-      "Fırında 200°C'de 20 dk pişirin."
+      "Fırında 200°C'de 20 dk pişirin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "at2",
+    "_id": "14",
     "userId": "user456",
     "title": "Yoğurtlu Dip Sos",
-    "description": "Sebzelerle harika giden pratik dip sos.",
-    "category": [
-      "atıştırmalık",
-      "vejetaryen"
-    ],
+    "description": "Sebzelerle harika giden pratik dip sos. Probiyotik kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen"],
     "image": "",
+    "calories": 80,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
     "ingredients": [
       "1 su bardağı yoğurt",
       "1 diş sarımsak",
-      "Tuz, nane"
+      "Tuz, nane",
+      "1 yemek kaşığı limon suyu",
+      "1 çay kaşığı zeytinyağı"
     ],
     "steps": [
       "Tüm malzemeleri karıştırın.",
-      "Sebzelerle servis edin."
+      "Sebzelerle servis edin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "at3",
+    "_id": "15",
     "userId": "user789",
     "title": "Fıstık Ezmeli Muz Dilimleri",
-    "description": "Tatlı krizine sağlıklı atıştırmalık.",
-    "category": [
-      "atıştırmalık",
-      "tatlı",
-      "vejetaryen"
-    ],
+    "description": "Tatlı krizine sağlıklı atıştırmalık. Protein ve potasyum kaynağı.",
+    "category": ["atıştırmalık", "tatlı", "vejetaryen"],
     "image": "",
+    "calories": 140,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "kolay",
     "ingredients": [
       "1 muz",
       "2 yemek kaşığı fıstık ezmesi",
-      "1 tatlı kaşığı kakao"
+      "1 tatlı kaşığı kakao",
+      "1 yemek kaşığı bal"
     ],
     "steps": [
       "Muzu dilimleyin.",
-      "Üzerine fıstık ezmesi ve kakao sürün."
+      "Üzerine fıstık ezmesi ve kakao sürün.",
+      "Bal ekleyip servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "at4",
+    "_id": "16",
     "userId": "user123",
     "title": "Ev Yapımı Granola Bar",
-    "description": "Şekersiz, doyurucu ve taşınabilir atıştırmalık.",
-    "category": [
-      "atıştırmalık",
-      "vejetaryen"
-    ],
+    "description": "Şekersiz, doyurucu ve taşınabilir atıştırmalık. Enerji kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen"],
     "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 8,
+    "difficulty": "orta",
     "ingredients": [
       "2 su bardağı yulaf",
       "1/2 su bardağı bal",
       "1/2 su bardağı fıstık ezmesi",
-      "Kuru meyve"
+      "1/4 su bardağı kuru meyve",
+      "1 yemek kaşığı chia tohumu"
     ],
     "steps": [
       "Tüm malzemeleri karıştırın.",
       "Fırında 180°C'de 20 dk pişirin.",
-      "Soğuyunca dilimleyin."
+      "Soğuyunca dilimleyin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "at5",
+    "_id": "17",
     "userId": "user456",
     "title": "Kavrulmuş Badem",
-    "description": "Kıtır ve sağlıklı atıştırmalık.",
-    "category": [
-      "atıştırmalık",
-      "vejetaryen"
-    ],
+    "description": "Kıtır ve sağlıklı atıştırmalık. E vitamini kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen"],
     "image": "",
+    "calories": 160,
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 4,
+    "difficulty": "kolay",
     "ingredients": [
       "1 su bardağı çiğ badem",
       "1 tatlı kaşığı zeytinyağı",
-      "Tuz"
+      "Tuz",
+      "1 çay kaşığı tarçın"
     ],
     "steps": [
       "Bademleri yağ ve tuzla karıştırın.",
-      "Fırında 180°C'de 10 dk kavurun."
+      "Fırında 180°C'de 10 dk kavurun.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "m1",
+    "_id": "18",
     "userId": "user123",
     "title": "Karpuzlu Smoothie",
-    "description": "Yaz için serinletici meyveli içecek.",
-    "category": [
-      "meyve",
-      "vejetaryen"
-    ],
+    "description": "Yaz için serinletici meyveli içecek. Hidrasyon kaynağı.",
+    "category": ["meyve", "vejetaryen"],
     "image": "",
+    "calories": 120,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "kolay",
     "ingredients": [
       "2 dilim karpuz",
       "1/2 muz",
-      "1 su bardağı süt"
+      "1 su bardağı süt",
+      "1 yemek kaşığı bal",
+      "1 çay kaşığı limon suyu"
     ],
     "steps": [
       "Tüm malzemeleri blenderdan geçirin.",
@@ -431,336 +506,3781 @@
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "m2",
+    "_id": "19",
     "userId": "user456",
     "title": "Elmalı Tarçınlı Salata",
-    "description": "Tatlı ve ferahlatıcı meyve salatası.",
-    "category": [
-      "meyve",
-      "vejetaryen"
-    ],
+    "description": "Tatlı ve ferahlatıcı meyve salatası. Lif kaynağı.",
+    "category": ["meyve", "vejetaryen"],
     "image": "",
+    "calories": 100,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "kolay",
     "ingredients": [
       "1 elma",
       "1 portakal",
-      "1 çay kaşığı tarçın"
+      "1 çay kaşığı tarçın",
+      "1 yemek kaşığı bal",
+      "1 çay kaşığı limon suyu"
     ],
     "steps": [
       "Meyveleri doğrayın.",
-      "Tarçın ekleyip karıştırın."
+      "Tarçın, bal ve limon ekleyip karıştırın.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "m3",
+    "_id": "20",
     "userId": "user789",
     "title": "Muzlu Yoğurtlu Dondurma",
-    "description": "Şekersiz, dondurulmuş meyve tatlısı.",
-    "category": [
-      "meyve",
-      "tatlı",
-      "vejetaryen"
-    ],
+    "description": "Şekersiz, dondurulmuş meyve tatlısı. Probiyotik kaynağı.",
+    "category": ["meyve", "tatlı", "vejetaryen"],
     "image": "",
+    "calories": 140,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "kolay",
     "ingredients": [
       "2 muz",
-      "1 su bardağı yoğurt"
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı bal",
+      "1 çay kaşığı vanilya özü"
     ],
     "steps": [
       "Muzları dondurun.",
       "Yoğurtla blenderdan geçirin.",
-      "Hemen tüketin veya dondurun."
+      "Hemen tüketin veya dondurun.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "m4",
+    "_id": "21",
     "userId": "user123",
     "title": "Portakallı Chia Puding",
-    "description": "C vitamini deposu, ferahlatıcı meyveli puding.",
-    "category": [
-      "meyve",
-      "tatlı",
-      "vejetaryen"
-    ],
+    "description": "C vitamini deposu, ferahlatıcı meyveli puding. Omega-3 kaynağı.",
+    "category": ["meyve", "tatlı", "vejetaryen"],
     "image": "",
+    "calories": 180,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 1,
+    "difficulty": "kolay",
     "ingredients": [
       "1 portakal",
       "2 yemek kaşığı chia tohumu",
-      "1 su bardağı süt"
-    ],
-    "steps": [
-      "Portakalın suyunu sıkın.",
-      "Tüm malzemeleri karıştırıp buzdolabında bekletin."
-    ],
-    "createdAt": "2024-06-10T12:00:00.000Z",
-    "updatedAt": "2024-06-10T12:00:00.000Z"
-  },
-  {
-    "_id": "m5",
-    "userId": "user456",
-    "title": "Kivili Yoğurt Kasesi",
-    "description": "Probiyotik ve vitamin deposu meyve kasesi.",
-    "category": [
-      "meyve",
-      "vejetaryen"
-    ],
-    "image": "",
-    "ingredients": [
-      "1 kivi",
-      "1 su bardağı yoğurt",
+      "1 su bardağı süt",
       "1 yemek kaşığı bal"
     ],
     "steps": [
-      "Kiviyi doğrayın.",
-      "Yoğurt ve bal ile karıştırıp servis edin."
+      "Portakalın suyunu sıkın.",
+      "Tüm malzemeleri karıştırıp buzdolabında bekletin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "v1",
+    "_id": "22",
+    "userId": "user456",
+    "title": "Kivili Yoğurt Kasesi",
+    "description": "Probiyotik ve vitamin deposu meyve kasesi. C vitamini kaynağı.",
+    "category": ["meyve", "vejetaryen"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 1,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 kivi",
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı bal",
+      "1 yemek kaşığı yulaf",
+      "1 çay kaşığı tarçın"
+    ],
+    "steps": [
+      "Kiviyi doğrayın.",
+      "Yoğurt ve bal ile karıştırıp servis edin.",
+      "Üzerine yulaf ve tarçın serpin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "23",
     "userId": "user123",
     "title": "Sebzeli Omlet",
-    "description": "Proteinli, sebzeli ve doyurucu kahvaltı.",
-    "category": [
-      "vejetaryen",
-      "ana yemek"
-    ],
+    "description": "Proteinli, sebzeli ve doyurucu kahvaltı. Vitamin kaynağı.",
+    "category": ["vejetaryen", "ana yemek"],
     "image": "",
+    "calories": 280,
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "difficulty": "kolay",
     "ingredients": [
       "2 yumurta",
       "1/2 kabak",
       "1/2 biber",
-      "Tuz, karabiber"
+      "Tuz, karabiber",
+      "1 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı süt"
     ],
     "steps": [
       "Sebzeleri doğrayın.",
-      "Yumurtayla karıştırıp tavada pişirin."
+      "Yumurtayla karıştırıp tavada pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "v2",
+    "_id": "24",
     "userId": "user456",
     "title": "Mercimek Köftesi",
-    "description": "Glutensiz, proteinli ve doyurucu atıştırmalık.",
-    "category": [
-      "vejetaryen",
-      "atıştırmalık"
-    ],
+    "description": "Glutensiz, proteinli ve doyurucu atıştırmalık. Demir kaynağı.",
+    "category": ["vejetaryen", "atıştırmalık"],
     "image": "",
+    "calories": 200,
+    "prepTime": 30,
+    "cookTime": 0,
+    "servings": 6,
+    "difficulty": "orta",
     "ingredients": [
       "1 su bardağı mercimek",
       "1 su bardağı ince bulgur",
       "1 soğan",
-      "Baharatlar"
+      "Baharatlar",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı"
     ],
     "steps": [
       "Mercimeği haşlayın.",
       "Diğer malzemelerle yoğurun.",
-      "Şekil verip servis edin."
+      "Şekil verip servis edin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "v3",
+    "_id": "25",
     "userId": "user789",
     "title": "Fırında Sebzeli Mücver",
-    "description": "Kızartmasız, hafif ve sağlıklı mücver.",
-    "category": [
-      "vejetaryen",
-      "ana yemek"
-    ],
+    "description": "Kızartmasız, hafif ve sağlıklı mücver. Lif kaynağı.",
+    "category": ["vejetaryen", "ana yemek"],
     "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
     "ingredients": [
       "2 kabak",
       "2 yumurta",
       "3 yemek kaşığı un",
-      "Dereotu, tuz, karabiber"
+      "Dereotu, tuz, karabiber",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı"
     ],
     "steps": [
       "Kabakları rendeleyin.",
       "Tüm malzemeleri karıştırın.",
-      "Fırında 180°C'de 25 dk pişirin."
+      "Fırında 180°C'de 25 dk pişirin.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "v4",
+    "_id": "26",
     "userId": "user123",
     "title": "Avokadolu Salata",
-    "description": "Sağlıklı yağ ve lif kaynağı salata.",
-    "category": [
-      "vejetaryen",
-      "atıştırmalık"
-    ],
+    "description": "Sağlıklı yağ ve lif kaynağı salata. E vitamini kaynağı.",
+    "category": ["vejetaryen", "atıştırmalık"],
     "image": "",
+    "calories": 180,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "kolay",
     "ingredients": [
       "1 avokado",
       "1 domates",
       "1 salatalık",
-      "Limon, tuz"
+      "Limon, tuz",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı kekik"
     ],
     "steps": [
       "Tüm malzemeleri doğrayıp karıştırın.",
-      "Limon ve tuz ekleyin."
+      "Limon ve tuz ekleyin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "v5",
+    "_id": "27",
     "userId": "user456",
     "title": "Közlenmiş Patlıcan Ezmesi",
-    "description": "Meze ve atıştırmalık olarak nefis bir seçenek.",
-    "category": [
-      "vejetaryen",
-      "atıştırmalık"
-    ],
+    "description": "Meze ve atıştırmalık olarak nefis bir seçenek. Lif kaynağı.",
+    "category": ["vejetaryen", "atıştırmalık"],
     "image": "",
+    "calories": 120,
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
     "ingredients": [
       "2 patlıcan",
       "2 yemek kaşığı yoğurt",
       "1 diş sarımsak",
-      "Tuz"
+      "Tuz",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu"
     ],
     "steps": [
       "Patlıcanları közleyin.",
-      "Diğer malzemelerle karıştırın."
+      "Diğer malzemelerle karıştırın.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "k1",
-    "userId": "user123",
-    "title": "Fit Muzlu Pancake",
-    "description": "Şekersiz, sağlıklı ve pratik bir pancake tarifi.",
-    "category": [
-      "tatlı",
-      "vejetaryen",
-      "kendi tariflerim"
-    ],
-    "image": "",
-    "calories": 280,
-    "ingredients": [
-      "1 adet muz",
-      "2 adet yumurta",
-      "3 yemek kaşığı yulaf ezmesi",
-      "1 çay kaşığı tarçın"
-    ],
-    "steps": [
-      "Muzu çatalla ezin.",
-      "Yumurtaları ve yulafı ekleyip karıştırın.",
-      "Tavada arkalı önlü pişirin."
-    ],
-    "createdAt": "2024-06-10T12:00:00.000Z",
-    "updatedAt": "2024-06-10T12:00:00.000Z"
-  },
-  {
-    "_id": "k2",
+    "_id": "28",
     "userId": "user123",
     "title": "Proteinli Yulaf Lapası",
-    "description": "Kahvaltı için pratik ve proteinli bir tarif.",
-    "category": [
-      "tatlı",
-      "vejetaryen",
-      "kendi tariflerim"
-    ],
+    "description": "Kahvaltı için pratik ve proteinli bir tarif. Enerji kaynağı.",
+    "category": ["tatlı", "vejetaryen", "kendi tariflerim"],
     "image": "",
-    "calories": 180,
+    "calories": 320,
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 1,
+    "difficulty": "kolay",
     "ingredients": [
       "3 yemek kaşığı yulaf",
       "1 su bardağı süt",
       "1 ölçek protein tozu",
-      "1 muz"
+      "1 muz",
+      "1 yemek kaşığı bal",
+      "1 çay kaşığı tarçın"
     ],
     "steps": [
       "Yulafı sütle pişirin.",
       "Protein tozu ve muzu ekleyin.",
-      "Karıştırıp servis edin."
+      "Bal ve tarçın ekleyip karıştırın.",
+      "Sıcak servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "k3",
-    "userId": "user123",
-    "title": "Sebzeli Omlet",
-    "description": "Kendi tarifim: bol sebzeli, doyurucu omlet.",
-    "category": [
-      "vejetaryen",
-      "ana yemek",
-      "kendi tariflerim"
+    "_id": "29",
+    "userId": "userai",
+    "title": "Mercimek Çorbası",
+    "description": "Geleneksel Türk mutfağının vazgeçilmezi. Protein ve demir kaynağı, lif deposu.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 45,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 su bardağı kırmızı mercimek",
+      "1 soğan",
+      "1 havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, pul biber",
+      "1 yemek kaşığı salça",
+      "1 diş sarımsak"
     ],
+    "steps": [
+      "Mercimek ve sebzeleri yıkayın.",
+      "Soğanı zeytinyağında kavurun.",
+      "Salça ve sarımsağı ekleyin.",
+      "Mercimek ve sebzeleri ekleyin.",
+      "Su ekleyip pişirin.",
+      "Blenderdan geçirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "30",
+    "userId": "userai",
+    "title": "Ezogelin Çorbası",
+    "description": "Güneydoğu Anadolu'nun meşhur çorbası. Protein ve lif kaynağı.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
     "image": "",
     "calories": 180,
+    "prepTime": 20,
+    "cookTime": 40,
+    "servings": 6,
+    "difficulty": "orta",
     "ingredients": [
-      "2 yumurta",
-      "1/2 kabak",
-      "1/2 biber",
+      "1 su bardağı kırmızı mercimek",
+      "1/2 su bardağı bulgur",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, pul biber",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Mercimek ve bulguru yıkayın.",
+      "Soğanı kavurun.",
+      "Salça ve domatesleri ekleyin.",
+      "Mercimek ve bulguru ekleyin.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "31",
+    "userId": "userai",
+    "title": "Yayla Çorbası",
+    "description": "Yoğurtlu geleneksel çorba. Probiyotik ve protein kaynağı.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 yumurta",
+      "2 yemek kaşığı un",
+      "1 yemek kaşığı tereyağı",
+      "Tuz, nane",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Yoğurt, yumurta ve unu çırpın.",
+      "Suyu kaynatın.",
+      "Yoğurt karışımını ekleyin.",
+      "Tereyağı ve naneyi ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "32",
+    "userId": "userai",
+    "title": "Domates Çorbası",
+    "description": "C vitamini deposu geleneksel çorba. Antioksidan kaynağı.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 10,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 domates",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı un",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Domatesleri rendeleyin.",
+      "Soğanı kavurun.",
+      "Domatesleri ekleyin.",
+      "Un ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Blenderdan geçirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "33",
+    "userId": "userai",
+    "title": "Tavuklu Şehriye Çorbası",
+    "description": "Proteinli ve doyurucu geleneksel çorba. Bağışıklık güçlendirici.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "200g tavuk göğsü",
+      "1/2 su bardağı şehriye",
+      "1 havuç",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "4 su bardağı su"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Su ekleyip pişirin.",
+      "Şehriyeyi ekleyin.",
+      "Pişirip sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "34",
+    "userId": "userai",
+    "title": "Karnıyarık",
+    "description": "Geleneksel Türk yemeği. Lif ve protein kaynağı, düşük kalorili.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 25,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 patlıcan",
+      "250g kıyma",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "İç harcını hazırlayın.",
+      "Patlıcanları doldurun.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "35",
+    "userId": "userai",
+    "title": "İmambayıldı",
+    "description": "Geleneksel Türk yemeği. Lif ve sağlıklı yağ kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 260,
+    "prepTime": 25,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 patlıcan",
+      "2 soğan",
+      "4 domates",
+      "4 diş sarımsak",
+      "3 yemek kaşığı zeytinyağı",
       "Tuz, karabiber"
     ],
     "steps": [
-      "Sebzeleri doğrayın.",
-      "Yumurtayla karıştırıp tavada pişirin."
+      "Patlıcanları közleyin.",
+      "Soğan ve domatesleri kavurun.",
+      "Katmanlar halinde dizin.",
+      "Fırında pişirin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "k4",
-    "userId": "user123",
-    "title": "Fırında Kabak Mücver",
-    "description": "Kendi tarifim: kızartmasız, hafif mücver.",
-    "category": [
-      "ana yemek",
-      "vejetaryen",
-      "kendi tariflerim"
-    ],
+    "_id": "36",
+    "userId": "userai",
+    "title": "Zeytinyağlı Enginar",
+    "description": "Karaciğer dostu geleneksel yemek. Antioksidan kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
     "image": "",
     "calories": 180,
+    "prepTime": 20,
+    "cookTime": 45,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 enginar",
+      "1 soğan",
+      "1 havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 limon"
+    ],
+    "steps": [
+      "Enginarları temizleyin.",
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Su ekleyip pişirin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "37",
+    "userId": "userai",
+    "title": "Barbunya Pilaki",
+    "description": "Protein ve lif deposu geleneksel yemek. Demir kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 30,
+    "cookTime": 60,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı barbunya",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 havuç"
+    ],
+    "steps": [
+      "Barbunyayı haşlayın.",
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Barbunyayı ekleyin.",
+      "Pişirip soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "38",
+    "userId": "userai",
+    "title": "Kuru Fasulye",
+    "description": "Geleneksel Türk mutfağının vazgeçilmezi. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 320,
+    "prepTime": 30,
+    "cookTime": 90,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı kuru fasulye",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 havuç"
+    ],
+    "steps": [
+      "Fasulyeyi ıslatın.",
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Fasulyeyi ekleyin.",
+      "Pişirip sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "39",
+    "userId": "userai",
+    "title": "Nohut Yemeği",
+    "description": "Protein ve lif deposu geleneksel yemek. Demir kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 25,
+    "cookTime": 45,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı haşlanmış nohut",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 havuç"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Nohutu ekleyin.",
+      "Pişirip sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "40",
+    "userId": "userai",
+    "title": "Bulgur Pilavı",
+    "description": "Sağlıklı geleneksel pilav. Lif ve protein kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı bulgur",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Bulguru yıkayın.",
+      "Soğanı kavurun.",
+      "Bulguru ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "41",
+    "userId": "userai",
+    "title": "Sebzeli Bulgur Pilavı",
+    "description": "Vitamin ve lif deposu geleneksel pilav. Renkli sebzelerle.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı bulgur",
+      "1 soğan",
+      "1 havuç",
+      "1 kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Bulguru ekleyin.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "42",
+    "userId": "userai",
+    "title": "Pilav",
+    "description": "Geleneksel Türk pilavı. Karbonhidrat ve enerji kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı pirinç",
+      "1 soğan",
+      "2 yemek kaşığı tereyağı",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Pirinci yıkayın.",
+      "Soğanı kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "43",
+    "userId": "userai",
+    "title": "Izgara Köfte",
+    "description": "Geleneksel Türk köftesi. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 350,
+    "prepTime": 25,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g dana kıyma",
+      "1 soğan",
+      "2 yemek kaşığı galeta unu",
+      "Tuz, karabiber, kekik",
+      "1 yumurta",
+      "2 diş sarımsak"
+    ],
+    "steps": [
+      "Tüm malzemeleri yoğurun.",
+      "Köfte şekli verin.",
+      "Izgarada pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "44",
+    "userId": "userai",
+    "title": "Fırında Tavuk Baget",
+    "description": "Proteinli ve lezzetli geleneksel yemek. Düşük yağlı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 380,
+    "prepTime": 20,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Baharatlayın.",
+      "Fırın tepsisine dizin.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "45",
+    "userId": "userai",
+    "title": "Etli Sebze Güveç",
+    "description": "Protein ve vitamin deposu geleneksel yemek. Tek kapta.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 25,
+    "cookTime": 50,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana eti",
+      "1 soğan",
+      "1 havuç",
+      "1 kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "2 domates"
+    ],
+    "steps": [
+      "Et ve sebzeleri doğrayın.",
+      "Katmanlar halinde dizin.",
+      "Baharatlayın.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "46",
+    "userId": "userai",
+    "title": "Fırında Balık",
+    "description": "Omega-3 kaynağı geleneksel yemek. Protein deposu.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 levrek filetosu",
+      "1 limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Balıkları temizleyin.",
+      "Baharatlayın.",
+      "Limon ve sarımsak ekleyin.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "47",
+    "userId": "userai",
+    "title": "Cızlak (Ege Usulü Otlu Omlet)",
+    "description": "Ege bölgesinin geleneksel yemeği. Vitamin ve protein kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 yumurta",
+      "1 demet ıspanak",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 yemek kaşığı süt"
+    ],
+    "steps": [
+      "Ispanakları yıkayın.",
+      "Soğanı kavurun.",
+      "Ispanakları ekleyin.",
+      "Yumurtaları çırpın.",
+      "Tavada pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "48",
+    "userId": "userai",
+    "title": "Yoğurtlu Kabak Salatası",
+    "description": "Probiyotik ve vitamin deposu geleneksel salata. Hafif ve lezzetli.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 120,
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
     "ingredients": [
       "2 kabak",
-      "2 yumurta",
-      "3 yemek kaşığı un",
-      "Dereotu, tuz, karabiber"
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "Tuz, nane",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu"
     ],
     "steps": [
       "Kabakları rendeleyin.",
-      "Tüm malzemeleri karıştırın.",
-      "Fırında 180°C'de 25 dk pişirin."
+      "Yoğurt ve baharatları karıştırın.",
+      "Kabakları ekleyin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"
   },
   {
-    "_id": "k5",
-    "userId": "user123",
-    "title": "Yoğurtlu Meyve Kasesi",
-    "description": "Kendi tarifim: tatlı isteğine sağlıklı çözüm.",
-    "category": [
-      "tatlı",
-      "meyve",
-      "vejetaryen",
-      "kendi tariflerim"
+    "_id": "49",
+    "userId": "userai",
+    "title": "Gavurdağı Salatası",
+    "description": "Güneydoğu Anadolu'nun meşhur salatası. Vitamin ve antioksidan kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 domates",
+      "2 salatalık",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 çay kaşığı pul biber"
     ],
+    "steps": [
+      "Sebzeleri küp küp doğrayın.",
+      "Zeytinyağı ve baharatları ekleyin.",
+      "Karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "50",
+    "userId": "userai",
+    "title": "Patlıcan Salatası",
+    "description": "Geleneksel Türk salatası. Lif ve antioksidan kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
     "image": "",
     "calories": 160,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 patlıcan",
+      "2 yemek kaşığı yoğurt",
+      "1 diş sarımsak",
+      "Tuz",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "Kabuklarını soyun.",
+      "Diğer malzemelerle karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "51",
+    "userId": "userai",
+    "title": "Humus",
+    "description": "Orta Doğu'nun geleneksel yemeği. Protein ve lif kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 su bardağı haşlanmış nohut",
+      "2 yemek kaşığı tahin",
+      "1 diş sarımsak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, kimyon",
+      "1 limon"
+    ],
+    "steps": [
+      "Tüm malzemeleri blenderdan geçirin.",
+      "Kıvamını ayarlayın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "52",
+    "userId": "userai",
+    "title": "Baba Gannuş",
+    "description": "Orta Doğu'nun geleneksel yemeği. Lif ve antioksidan kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 patlıcan",
+      "2 yemek kaşığı tahin",
+      "1 diş sarımsak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, kimyon",
+      "1 limon"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "Kabuklarını soyun.",
+      "Tüm malzemelerle karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "53",
+    "userId": "userai",
+    "title": "Mercimek Köftesi",
+    "description": "Protein ve demir kaynağı geleneksel atıştırmalık. Glutensiz.",
+    "category": ["atıştırmalık", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 30,
+    "cookTime": 0,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 su bardağı mercimek",
+      "1 su bardağı ince bulgur",
+      "1 soğan",
+      "Baharatlar",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Mercimeği haşlayın.",
+      "Diğer malzemelerle yoğurun.",
+      "Şekil verin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "54",
+    "userId": "userai",
+    "title": "Fırında Nohut Cipsi",
+    "description": "Protein kaynağı sağlıklı atıştırmalık. Kıtır kıtır.",
+    "category": ["atıştırmalık", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı haşlanmış nohut",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik",
+      "1 çay kaşığı pul biber"
+    ],
+    "steps": [
+      "Nohutları baharat ve yağla karıştırın.",
+      "Fırında 200°C'de 20 dk pişirin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "55",
+    "userId": "userai",
+    "title": "Ev Yapımı Granola Bar",
+    "description": "Enerji kaynağı sağlıklı atıştırmalık. Şekersiz.",
+    "category": ["atıştırmalık", "vejetaryen"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 8,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı yulaf",
+      "1/2 su bardağı bal",
+      "1/2 su bardağı fıstık ezmesi",
+      "1/4 su bardağı kuru meyve",
+      "1 yemek kaşığı chia tohumu"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Fırında 180°C'de 20 dk pişirin.",
+      "Soğuyunca dilimleyin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "56",
+    "userId": "userai",
+    "title": "Kavrulmuş Badem",
+    "description": "E vitamini kaynağı sağlıklı atıştırmalık. Kıtır.",
+    "category": ["atıştırmalık", "vejetaryen"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı çiğ badem",
+      "1 tatlı kaşığı zeytinyağı",
+      "Tuz",
+      "1 çay kaşığı tarçın"
+    ],
+    "steps": [
+      "Bademleri yağ ve tuzla karıştırın.",
+      "Fırında 180°C'de 10 dk kavurun.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "57",
+    "userId": "userai",
+    "title": "Yoğurtlu Dip Sos",
+    "description": "Probiyotik kaynağı pratik dip sos. Sebzelerle harika.",
+    "category": ["atıştırmalık", "vejetaryen"],
+    "image": "",
+    "calories": 80,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
     "ingredients": [
       "1 su bardağı yoğurt",
-      "1 avuç karışık meyve",
+      "1 diş sarımsak",
+      "Tuz, nane",
+      "1 yemek kaşığı limon suyu",
+      "1 çay kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Sebzelerle servis edin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "58",
+    "userId": "userai",
+    "title": "Fıstık Ezmeli Muz Dilimleri",
+    "description": "Protein ve potasyum kaynağı sağlıklı atıştırmalık.",
+    "category": ["atıştırmalık", "tatlı", "vejetaryen"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 muz",
+      "2 yemek kaşığı fıstık ezmesi",
+      "1 tatlı kaşığı kakao",
       "1 yemek kaşığı bal"
     ],
     "steps": [
-      "Meyveleri doğrayın.",
-      "Yoğurt ve bal ile karıştırıp servis edin."
+      "Muzu dilimleyin.",
+      "Üzerine fıstık ezmesi ve kakao sürün.",
+      "Bal ekleyip servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "59",
+    "userId": "userai",
+    "title": "İşkembe Çorbası",
+    "description": "Geleneksel Türk çorbası. Protein ve kolajen kaynağı.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 20,
+    "cookTime": 120,
+    "servings": 6,
+    "difficulty": "zor",
+    "ingredients": [
+      "500g işkembe",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber, pul biber",
+      "1 yemek kaşığı sirke",
+      "4 su bardağı su"
+    ],
+    "steps": [
+      "İşkembeyi temizleyin.",
+      "Sebzelerle birlikte pişirin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "60",
+    "userId": "userai",
+    "title": "Tavuk Suyu Çorbası",
+    "description": "Bağışıklık güçlendirici geleneksel çorba. Protein kaynağı.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 15,
+    "cookTime": 60,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 tavuk göğsü",
+      "1 havuç",
+      "1 soğan",
+      "Tuz, karabiber",
+      "1 diş sarımsak",
+      "4 su bardağı su"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri suda pişirin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "61",
+    "userId": "userai",
+    "title": "Mantar Çorbası",
+    "description": "Vitamin ve mineral deposu geleneksel çorba. Antioksidan kaynağı.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g mantar",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 yemek kaşığı un",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Mantarları doğrayın.",
+      "Soğanla kavurun.",
+      "Un ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Blenderdan geçirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "62",
+    "userId": "userai",
+    "title": "Bezelye Çorbası",
+    "description": "Protein ve lif kaynağı geleneksel çorba. Vitamin deposu.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 su bardağı bezelye",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 yemek kaşığı un",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Bezelyeyi yıkayın.",
+      "Soğanla kavurun.",
+      "Un ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Blenderdan geçirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "63",
+    "userId": "userai",
+    "title": "Bamya Çorbası",
+    "description": "Lif ve protein kaynağı geleneksel çorba. Demir deposu.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 15,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g bamya",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Bamyayı temizleyin.",
+      "Sebzelerle kavurun.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "64",
+    "userId": "userai",
+    "title": "Hünkar Beğendi",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 30,
+    "cookTime": 45,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g kuzu eti",
+      "4 patlıcan",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "Eti pişirin.",
+      "Patlıcan püresi hazırlayın.",
+      "Üzerine eti koyun.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "65",
+    "userId": "userai",
+    "title": "Ali Nazik",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 380,
+    "prepTime": 25,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g kuzu eti",
+      "4 patlıcan",
+      "1 su bardağı yoğurt",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "Eti pişirin.",
+      "Yoğurtlu patlıcan püresi hazırlayın.",
+      "Üzerine eti koyun.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "66",
+    "userId": "userai",
+    "title": "Etli Ekmek",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 450,
+    "prepTime": 30,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g dana kıyma",
+      "1 soğan",
+      "2 domates",
+      "Hamur için un, su, tuz",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve harcı yayın.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "67",
+    "userId": "userai",
+    "title": "Lahmacun",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 380,
+    "prepTime": 25,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 soğan",
+      "2 domates",
+      "Hamur için un, su, tuz",
+      "Tuz, karabiber, pul biber",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve harcı yayın.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "68",
+    "userId": "userai",
+    "title": "Pide",
+    "description": "Geleneksel Türk yemeği. Karbonhidrat ve protein kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 30,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 soğan",
+      "Hamur için un, su, tuz",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yumurta"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve harcı koyun.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "69",
+    "userId": "userai",
+    "title": "Mantı",
+    "description": "Geleneksel Türk yemeği. Karbonhidrat ve protein kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 380,
+    "prepTime": 45,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "zor",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 soğan",
+      "Hamur için un, su, tuz",
+      "Tuz, karabiber",
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve mantı şekli verin.",
+      "Haşlayın.",
+      "Yoğurt ve sosla servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "70",
+    "userId": "userai",
+    "title": "İçli Köfte",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 350,
+    "prepTime": 40,
+    "cookTime": 15,
+    "servings": 6,
+    "difficulty": "zor",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 soğan",
+      "Hamur için bulgur, un, su",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve harcı koyun.",
+      "Kapatıp kızartın.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "71",
+    "userId": "userai",
+    "title": "Dolma",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 320,
+    "prepTime": 35,
+    "cookTime": 45,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 soğan",
+      "1 su bardağı pirinç",
+      "Asma yaprağı",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "İç harcını hazırlayın.",
+      "Yaprakları doldurun.",
+      "Tencerede pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "72",
+    "userId": "userai",
+    "title": "Sarma",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 300,
+    "prepTime": 40,
+    "cookTime": 50,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 soğan",
+      "1 su bardağı pirinç",
+      "Lahana yaprağı",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "İç harcını hazırlayın.",
+      "Yaprakları doldurun.",
+      "Tencerede pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "73",
+    "userId": "userai",
+    "title": "Kısır",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 25,
+    "cookTime": 0,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı ince bulgur",
+      "1 soğan",
+      "2 domates",
+      "Tuz, karabiber, pul biber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Bulguru ıslatın.",
+      "Sebzeleri doğrayın.",
+      "Tüm malzemeleri karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "74",
+    "userId": "userai",
+    "title": "Bulgur Pilavı",
+    "description": "Geleneksel Türk yemeği. Lif ve protein kaynağı.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 260,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı bulgur",
+      "1 soğan",
+      "2 domates",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Soğanı kavurun.",
+      "Domatesleri ekleyin.",
+      "Bulguru ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "75",
+    "userId": "userai",
+    "title": "Pilav",
+    "description": "Geleneksel Türk yemeği. Karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 300,
+    "prepTime": 10,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı pirinç",
+      "1 soğan",
+      "2 yemek kaşığı tereyağı",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Pirinci yıkayın.",
+      "Soğanı kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "76",
+    "userId": "userai",
+    "title": "Köfte",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 380,
+    "prepTime": 25,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g dana kıyma",
+      "1 soğan",
+      "2 yemek kaşığı galeta unu",
+      "Tuz, karabiber, kekik",
+      "1 yumurta",
+      "2 diş sarımsak"
+    ],
+    "steps": [
+      "Tüm malzemeleri yoğurun.",
+      "Köfte şekli verin.",
+      "Izgarada pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "77",
+    "userId": "userai",
+    "title": "Tavuk Sote",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 320,
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g tavuk göğsü",
+      "1 soğan",
+      "1 biber",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Zeytinyağında soteleyin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "78",
+    "userId": "userai",
+    "title": "Et Sote",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g dana eti",
+      "1 soğan",
+      "1 biber",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Et ve sebzeleri doğrayın.",
+      "Zeytinyağında soteleyin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "79",
+    "userId": "userai",
+    "title": "Balık Izgara",
+    "description": "Geleneksel Türk yemeği. Omega-3 kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 levrek filetosu",
+      "1 limon",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Balıkları temizleyin.",
+      "Baharatlayın.",
+      "Izgarada pişirin.",
+      "Limonla servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "80",
+    "userId": "userai",
+    "title": "Balık Buğulama",
+    "description": "Geleneksel Türk yemeği. Omega-3 kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 260,
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 levrek filetosu",
+      "1 soğan",
+      "1 havuç",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 limon"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Balık ve sebzeleri dizin.",
+      "Baharatları ekleyin.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "81",
+    "userId": "userai",
+    "title": "Cacık",
+    "description": "Geleneksel Türk yemeği. Probiyotik kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 120,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 salatalık",
+      "1 diş sarımsak",
+      "Tuz, nane",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu"
+    ],
+    "steps": [
+      "Salatalığı rendeleyin.",
+      "Yoğurt ve baharatları karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "82",
+    "userId": "userai",
+    "title": "Haydari",
+    "description": "Geleneksel Türk yemeği. Probiyotik kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "Tuz, nane",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu",
+      "1 yemek kaşığı ceviz"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "83",
+    "userId": "userai",
+    "title": "Ezme",
+    "description": "Geleneksel Türk yemeği. Vitamin kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 domates",
+      "1 salatalık",
+      "1 soğan",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Baharatları ekleyin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "84",
+    "userId": "userai",
+    "title": "Şakşuka",
+    "description": "Geleneksel Türk yemeği. Vitamin kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 patlıcan",
+      "2 domates",
+      "1 biber",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Sebzeleri közleyin.",
+      "Doğrayıp karıştırın.",
+      "Baharatları ekleyin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "85",
+    "userId": "userai",
+    "title": "Piyaz",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 su bardağı haşlanmış fasulye",
+      "1 soğan",
+      "1 domates",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı sirke"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Fasulyeyle karıştırın.",
+      "Baharatları ekleyin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "86",
+    "userId": "userai",
+    "title": "Bakla Ezmesi",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı haşlanmış bakla",
+      "1 diş sarımsak",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu",
+      "1 yemek kaşığı yoğurt"
+    ],
+    "steps": [
+      "Baklayı ezin.",
+      "Diğer malzemelerle karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "87",
+    "userId": "userai",
+    "title": "Fava",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 25,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı haşlanmış bakla",
+      "1 soğan",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu",
+      "1 yemek kaşığı un"
+    ],
+    "steps": [
+      "Baklayı ezin.",
+      "Soğanla kavurun.",
+      "Diğer malzemelerle karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "88",
+    "userId": "userai",
+    "title": "Kısır",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 su bardağı ince bulgur",
+      "1 soğan",
+      "2 domates",
+      "Tuz, karabiber, pul biber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Bulguru ıslatın.",
+      "Sebzeleri doğrayın.",
+      "Tüm malzemeleri karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "89",
+    "userId": "userai",
+    "title": "Kelle Paça",
+    "description": "Geleneksel Türk çorbası. Protein ve kolajen kaynağı.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 25,
+    "cookTime": 180,
+    "servings": 6,
+    "difficulty": "zor",
+    "ingredients": [
+      "1 koyun kellesi",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber, pul biber",
+      "1 yemek kaşığı sirke",
+      "6 su bardağı su"
+    ],
+    "steps": [
+      "Kelle ve ayakları temizleyin.",
+      "Sebzelerle birlikte pişirin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "90",
+    "userId": "userai",
+    "title": "Tarhana Çorbası",
+    "description": "Geleneksel Türk çorbası. Probiyotik ve protein kaynağı.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı tarhana",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "4 su bardağı su"
+    ],
+    "steps": [
+      "Soğanı kavurun.",
+      "Tarhanayı ekleyin.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "91",
+    "userId": "userai",
+    "title": "Arabaşı Çorbası",
+    "description": "Geleneksel Türk çorbası. Protein ve karbonhidrat kaynağı.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 30,
+    "cookTime": 60,
+    "servings": 6,
+    "difficulty": "zor",
+    "ingredients": [
+      "1 tavuk göğsü",
+      "1 su bardağı un",
+      "1 yumurta",
+      "Tuz, karabiber",
+      "2 yemek kaşığı tereyağı",
+      "6 su bardağı su"
+    ],
+    "steps": [
+      "Tavuk suyu hazırlayın.",
+      "Hamur hazırlayın.",
+      "Hamuru suya atın.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "92",
+    "userId": "userai",
+    "title": "Düğün Çorbası",
+    "description": "Geleneksel Türk çorbası. Protein ve karbonhidrat kaynağı.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 20,
+    "cookTime": 40,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 tavuk göğsü",
+      "1/2 su bardağı şehriye",
+      "1 yumurta",
+      "Tuz, karabiber",
+      "1 yemek kaşığı un",
+      "6 su bardağı su"
+    ],
+    "steps": [
+      "Tavuk suyu hazırlayın.",
+      "Şehriyeyi ekleyin.",
+      "Yumurta ve unu çırpın.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "93",
+    "userId": "userai",
+    "title": "Tutmaç Çorbası",
+    "description": "Geleneksel Türk çorbası. Protein ve karbonhidrat kaynağı.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 25,
+    "cookTime": 45,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 tavuk göğsü",
+      "1 su bardağı erişte",
+      "1 havuç",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "6 su bardağı su"
+    ],
+    "steps": [
+      "Tavuk suyu hazırlayın.",
+      "Erişteyi ekleyin.",
+      "Sebzeleri ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "94",
+    "userId": "userai",
+    "title": "Adana Kebap",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 480,
+    "prepTime": 30,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g kuzu kıyma",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber, pul biber",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Tüm malzemeleri yoğurun.",
+      "Şişe geçirin.",
+      "Izgarada pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "95",
+    "userId": "userai",
+    "title": "Urfa Kebap",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 460,
+    "prepTime": 25,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g dana kıyma",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Tüm malzemeleri yoğurun.",
+      "Şişe geçirin.",
+      "Izgarada pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "96",
+    "userId": "userai",
+    "title": "İskender Kebap",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 520,
+    "prepTime": 30,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g dana eti",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı tereyağı"
+    ],
+    "steps": [
+      "Eti pişirin.",
+      "Dilimleyin.",
+      "Pilav üzerine koyun.",
+      "Tereyağı ve sos ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "97",
+    "userId": "userai",
+    "title": "Döner Kebap",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 480,
+    "prepTime": 35,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g dana eti",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Eti marine edin.",
+      "Şişe geçirin.",
+      "Döner makinesinde pişirin.",
+      "Dilimleyip servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "98",
+    "userId": "userai",
+    "title": "Şiş Kebap",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 440,
+    "prepTime": 25,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g kuzu eti",
+      "1 soğan",
+      "2 biber",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Eti küp küp doğrayın.",
+      "Sebzelerle şişe geçirin.",
+      "Izgarada pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "99",
+    "userId": "userai",
+    "title": "Kuzu Tandır",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 520,
+    "prepTime": 40,
+    "cookTime": 180,
+    "servings": 6,
+    "difficulty": "zor",
+    "ingredients": [
+      "1 kg kuzu eti",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Eti marine edin.",
+      "Tandırda pişirin.",
+      "Dilimleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "100",
+    "userId": "userai",
+    "title": "Kuzu Pirzola",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 460,
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "8 adet kuzu pirzola",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı kekik"
+    ],
+    "steps": [
+      "Pirzolaları marine edin.",
+      "Izgarada pişirin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "101",
+    "userId": "userai",
+    "title": "Kuzu Kapama",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 480,
+    "prepTime": 30,
+    "cookTime": 120,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 kg kuzu eti",
+      "1 soğan",
+      "2 havuç",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Eti ve sebzeleri dizin.",
+      "Baharatları ekleyin.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "102",
+    "userId": "userai",
+    "title": "Kuzu Güveç",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 440,
+    "prepTime": 25,
+    "cookTime": 90,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "600g kuzu eti",
+      "1 soğan",
+      "2 patates",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Eti ve sebzeleri doğrayın.",
+      "Güveçte dizin.",
+      "Baharatları ekleyin.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "103",
+    "userId": "userai",
+    "title": "Kuzu Haşlama",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 400,
+    "prepTime": 20,
+    "cookTime": 90,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 kg kuzu eti",
+      "1 soğan",
+      "2 havuç",
+      "Tuz, karabiber",
+      "2 diş sarımsak",
+      "6 su bardağı su"
+    ],
+    "steps": [
+      "Eti ve sebzeleri suda pişirin.",
+      "Baharatları ekleyin.",
+      "Dilimleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "104",
+    "userId": "userai",
+    "title": "Kuzu Kızartma",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 520,
+    "prepTime": 25,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "600g kuzu eti",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı un"
+    ],
+    "steps": [
+      "Eti küp küp doğrayın.",
+      "Una bulayın.",
+      "Kızartın.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "105",
+    "userId": "userai",
+    "title": "Kuzu Kavurma",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 480,
+    "prepTime": 30,
+    "cookTime": 45,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "600g kuzu eti",
+      "1 soğan",
+      "2 diş sarımsak",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Eti küp küp doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "106",
+    "userId": "userai",
+    "title": "Kuzu Sote",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 460,
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g kuzu eti",
+      "1 soğan",
+      "2 biber",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Eti ve sebzeleri doğrayın.",
+      "Zeytinyağında soteleyin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "107",
+    "userId": "userai",
+    "title": "Kuzu Pilav",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 520,
+    "prepTime": 25,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g kuzu eti",
+      "2 su bardağı pirinç",
+      "1 soğan",
+      "Tuz, karabiber",
+      "2 yemek kaşığı tereyağı",
+      "4 su bardağı su"
+    ],
+    "steps": [
+      "Eti pişirin.",
+      "Pirinci yıkayın.",
+      "Eti ve pirinci karıştırın.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "108",
+    "userId": "userai",
+    "title": "Kuzu Mantı",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 480,
+    "prepTime": 45,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "zor",
+    "ingredients": [
+      "300g kuzu kıyma",
+      "1 soğan",
+      "Hamur için un, su, tuz",
+      "Tuz, karabiber",
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve mantı şekli verin.",
+      "Haşlayın.",
+      "Yoğurt ve sosla servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "109",
+    "userId": "userai",
+    "title": "Kuzu Dolma",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 440,
+    "prepTime": 35,
+    "cookTime": 45,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g kuzu kıyma",
+      "1 soğan",
+      "1 su bardağı pirinç",
+      "Asma yaprağı",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "İç harcını hazırlayın.",
+      "Yaprakları doldurun.",
+      "Tencerede pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "110",
+    "userId": "userai",
+    "title": "Kuzu Sarma",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 40,
+    "cookTime": 50,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g kuzu kıyma",
+      "1 soğan",
+      "1 su bardağı pirinç",
+      "Lahana yaprağı",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "İç harcını hazırlayın.",
+      "Yaprakları doldurun.",
+      "Tencerede pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "111",
+    "userId": "userai",
+    "title": "Kuzu Köfte",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 25,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g kuzu kıyma",
+      "1 soğan",
+      "2 yemek kaşığı galeta unu",
+      "Tuz, karabiber, kekik",
+      "1 yumurta",
+      "2 diş sarımsak"
+    ],
+    "steps": [
+      "Tüm malzemeleri yoğurun.",
+      "Köfte şekli verin.",
+      "Izgarada pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "112",
+    "userId": "userai",
+    "title": "Kuzu Pide",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 480,
+    "prepTime": 30,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g kuzu kıyma",
+      "1 soğan",
+      "Hamur için un, su, tuz",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yumurta"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve harcı koyun.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "113",
+    "userId": "userai",
+    "title": "Kuzu Lahmacun",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 25,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g kuzu kıyma",
+      "1 soğan",
+      "2 domates",
+      "Hamur için un, su, tuz",
+      "Tuz, karabiber, pul biber",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve harcı yayın.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "114",
+    "userId": "userai",
+    "title": "Kuzu Etli Ekmek",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 500,
+    "prepTime": 30,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g kuzu kıyma",
+      "1 soğan",
+      "2 domates",
+      "Hamur için un, su, tuz",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve harcı yayın.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "115",
+    "userId": "userai",
+    "title": "Kuzu İçli Köfte",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 400,
+    "prepTime": 40,
+    "cookTime": 15,
+    "servings": 6,
+    "difficulty": "zor",
+    "ingredients": [
+      "300g kuzu kıyma",
+      "1 soğan",
+      "Hamur için bulgur, un, su",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Hamuru yoğurun.",
+      "İç harcını hazırlayın.",
+      "Hamuru açın ve harcı koyun.",
+      "Kapatıp kızartın.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "116",
+    "userId": "userai",
+    "title": "Kuzu Karnıyarık",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 380,
+    "prepTime": 25,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 patlıcan",
+      "250g kuzu kıyma",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "İç harcını hazırlayın.",
+      "Patlıcanları doldurun.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "117",
+    "userId": "userai",
+    "title": "Kuzu Musakka",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 30,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 patlıcan",
+      "300g kuzu kıyma",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Patlıcanları kızartın.",
+      "İç harcını hazırlayın.",
+      "Katmanlar halinde dizin.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "118",
+    "userId": "userai",
+    "title": "Kuzu Hünkar Beğendi",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 480,
+    "prepTime": 30,
+    "cookTime": 45,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g kuzu eti",
+      "4 patlıcan",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "Eti pişirin.",
+      "Patlıcan püresi hazırlayın.",
+      "Üzerine eti koyun.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "119",
+    "userId": "userai",
+    "title": "Kuzu Ali Nazik",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 460,
+    "prepTime": 25,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g kuzu eti",
+      "4 patlıcan",
+      "1 su bardağı yoğurt",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "Eti pişirin.",
+      "Yoğurtlu patlıcan püresi hazırlayın.",
+      "Üzerine eti koyun.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "120",
+    "userId": "userai",
+    "title": "Kuzu İmambayıldı",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 440,
+    "prepTime": 25,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 patlıcan",
+      "2 soğan",
+      "4 domates",
+      "4 diş sarımsak",
+      "3 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Patlıcanları közleyin.",
+      "Soğan ve domatesleri kavurun.",
+      "Katmanlar halinde dizin.",
+      "Fırında pişirin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "121",
+    "userId": "userai",
+    "title": "Kuzu Zeytinyağlı Enginar",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 360,
+    "prepTime": 20,
+    "cookTime": 45,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 enginar",
+      "1 soğan",
+      "1 havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 limon"
+    ],
+    "steps": [
+      "Enginarları temizleyin.",
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Su ekleyip pişirin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "122",
+    "userId": "userai",
+    "title": "Kuzu Barbunya Pilaki",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 30,
+    "cookTime": 60,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı barbunya",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 havuç"
+    ],
+    "steps": [
+      "Barbunyayı haşlayın.",
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Barbunyayı ekleyin.",
+      "Pişirip soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "123",
+    "userId": "userai",
+    "title": "Kuzu Kuru Fasulye",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 500,
+    "prepTime": 30,
+    "cookTime": 90,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı kuru fasulye",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 havuç"
+    ],
+    "steps": [
+      "Fasulyeyi ıslatın.",
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Fasulyeyi ekleyin.",
+      "Pişirip sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "124",
+    "userId": "userai",
+    "title": "Kuzu Nohut Yemeği",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 460,
+    "prepTime": 25,
+    "cookTime": 45,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı haşlanmış nohut",
+      "1 soğan",
+      "2 domates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "1 havuç"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Nohutu ekleyin.",
+      "Pişirip sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "125",
+    "userId": "userai",
+    "title": "Kuzu Bulgur Pilavı",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 440,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı bulgur",
+      "1 soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Bulguru yıkayın.",
+      "Soğanı kavurun.",
+      "Bulguru ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "126",
+    "userId": "userai",
+    "title": "Kuzu Sebzeli Bulgur Pilavı",
+    "description": "Geleneksel Türk yemeği. Protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı bulgur",
+      "1 soğan",
+      "1 havuç",
+      "1 kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Zeytinyağında kavurun.",
+      "Bulguru ekleyin.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "127",
+    "userId": "userai",
+    "title": "Kuzu Pilav",
+    "description": "Geleneksel Türk yemeği. Protein ve karbonhidrat kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 480,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı pirinç",
+      "1 soğan",
+      "2 yemek kaşığı tereyağı",
+      "Tuz, karabiber",
+      "3 su bardağı su"
+    ],
+    "steps": [
+      "Pirinci yıkayın.",
+      "Soğanı kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Su ekleyip pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "128",
+    "userId": "userai",
+    "title": "Kuzu Köfte",
+    "description": "Geleneksel Türk yemeği. Protein ve demir kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 440,
+    "prepTime": 25,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g kuzu kıyma",
+      "1 soğan",
+      "2 yemek kaşığı galeta unu",
+      "Tuz, karabiber, kekik",
+      "1 yumurta",
+      "2 diş sarımsak"
+    ],
+    "steps": [
+      "Tüm malzemeleri yoğurun.",
+      "Köfte şekli verin.",
+      "Izgarada pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "129",
+    "userId": "userai",
+    "title": "Kuzu Tavuk Sote",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 420,
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g tavuk göğsü",
+      "1 soğan",
+      "1 biber",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Zeytinyağında soteleyin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "130",
+    "userId": "userai",
+    "title": "Kuzu Et Sote",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 520,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "400g dana eti",
+      "1 soğan",
+      "1 biber",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Et ve sebzeleri doğrayın.",
+      "Zeytinyağında soteleyin.",
+      "Baharatları ekleyin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "131",
+    "userId": "userai",
+    "title": "Kuzu Balık Izgara",
+    "description": "Geleneksel Türk yemeği. Omega-3 kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 380,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 levrek filetosu",
+      "1 limon",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Balıkları temizleyin.",
+      "Baharatlayın.",
+      "Izgarada pişirin.",
+      "Limonla servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "132",
+    "userId": "userai",
+    "title": "Kuzu Balık Buğulama",
+    "description": "Geleneksel Türk yemeği. Omega-3 kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 360,
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 levrek filetosu",
+      "1 soğan",
+      "1 havuç",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 limon"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Balık ve sebzeleri dizin.",
+      "Baharatları ekleyin.",
+      "Fırında pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "133",
+    "userId": "userai",
+    "title": "Kuzu Cacık",
+    "description": "Geleneksel Türk yemeği. Probiyotik kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 salatalık",
+      "1 diş sarımsak",
+      "Tuz, nane",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu"
+    ],
+    "steps": [
+      "Salatalığı rendeleyin.",
+      "Yoğurt ve baharatları karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "134",
+    "userId": "userai",
+    "title": "Kuzu Haydari",
+    "description": "Geleneksel Türk yemeği. Probiyotik kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "Tuz, nane",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu",
+      "1 yemek kaşığı ceviz"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "135",
+    "userId": "userai",
+    "title": "Kuzu Ezme",
+    "description": "Geleneksel Türk yemeği. Vitamin kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 domates",
+      "1 salatalık",
+      "1 soğan",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Baharatları ekleyin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "136",
+    "userId": "userai",
+    "title": "Kuzu Şakşuka",
+    "description": "Geleneksel Türk yemeği. Vitamin kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 patlıcan",
+      "2 domates",
+      "1 biber",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak"
+    ],
+    "steps": [
+      "Sebzeleri közleyin.",
+      "Doğrayıp karıştırın.",
+      "Baharatları ekleyin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "137",
+    "userId": "userai",
+    "title": "Kuzu Piyaz",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 320,
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 su bardağı haşlanmış fasulye",
+      "1 soğan",
+      "1 domates",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı sirke"
+    ],
+    "steps": [
+      "Sebzeleri doğrayın.",
+      "Fasulyeyle karıştırın.",
+      "Baharatları ekleyin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "138",
+    "userId": "userai",
+    "title": "Kuzu Bakla Ezmesi",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 260,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı haşlanmış bakla",
+      "1 diş sarımsak",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu",
+      "1 yemek kaşığı yoğurt"
+    ],
+    "steps": [
+      "Baklayı ezin.",
+      "Diğer malzemelerle karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "139",
+    "userId": "userai",
+    "title": "Kuzu Fava",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 25,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı haşlanmış bakla",
+      "1 soğan",
+      "Tuz, karabiber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı limon suyu",
+      "1 yemek kaşığı un"
+    ],
+    "steps": [
+      "Baklayı ezin.",
+      "Soğanla kavurun.",
+      "Diğer malzemelerle karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "140",
+    "userId": "userai",
+    "title": "Kuzu Kısır",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 300,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 su bardağı ince bulgur",
+      "1 soğan",
+      "2 domates",
+      "Tuz, karabiber, pul biber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça"
+    ],
+    "steps": [
+      "Bulguru ıslatın.",
+      "Sebzeleri doğrayın.",
+      "Tüm malzemeleri karıştırın.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "141",
+    "userId": "userai",
+    "title": "Kuzu Mercimek Köftesi",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 300,
+    "prepTime": 30,
+    "cookTime": 0,
+    "servings": 6,
+    "difficulty": "orta",
+    "ingredients": [
+      "1 su bardağı mercimek",
+      "1 su bardağı ince bulgur",
+      "1 soğan",
+      "Baharatlar",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Mercimeği haşlayın.",
+      "Diğer malzemelerle yoğurun.",
+      "Şekil verin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "142",
+    "userId": "userai",
+    "title": "Kuzu Fırında Nohut Cipsi",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı haşlanmış nohut",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik",
+      "1 çay kaşığı pul biber"
+    ],
+    "steps": [
+      "Nohutları baharat ve yağla karıştırın.",
+      "Fırında 200°C'de 20 dk pişirin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "143",
+    "userId": "userai",
+    "title": "Kuzu Ev Yapımı Granola Bar",
+    "description": "Geleneksel Türk yemeği. Enerji kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen"],
+    "image": "",
+    "calories": 300,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 8,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı yulaf",
+      "1/2 su bardağı bal",
+      "1/2 su bardağı fıstık ezmesi",
+      "1/4 su bardağı kuru meyve",
+      "1 yemek kaşığı chia tohumu"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Fırında 180°C'de 20 dk pişirin.",
+      "Soğuyunca dilimleyin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "144",
+    "userId": "userai",
+    "title": "Kuzu Kavrulmuş Badem",
+    "description": "Geleneksel Türk yemeği. E vitamini kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen"],
+    "image": "",
+    "calories": 260,
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı çiğ badem",
+      "1 tatlı kaşığı zeytinyağı",
+      "Tuz",
+      "1 çay kaşığı tarçın"
+    ],
+    "steps": [
+      "Bademleri yağ ve tuzla karıştırın.",
+      "Fırında 180°C'de 10 dk kavurun.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "145",
+    "userId": "userai",
+    "title": "Kuzu Yoğurtlu Dip Sos",
+    "description": "Geleneksel Türk yemeği. Probiyotik kaynağı.",
+    "category": ["atıştırmalık", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "Tuz, nane",
+      "1 yemek kaşığı limon suyu",
+      "1 çay kaşığı zeytinyağı"
+    ],
+    "steps": [
+      "Tüm malzemeleri karıştırın.",
+      "Sebzelerle servis edin.",
+      "Soğuk servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "146",
+    "userId": "userai",
+    "title": "Kuzu Fıstık Ezmeli Muz Dilimleri",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["atıştırmalık", "tatlı", "vejetaryen"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 muz",
+      "2 yemek kaşığı fıstık ezmesi",
+      "1 tatlı kaşığı kakao",
+      "1 yemek kaşığı bal"
+    ],
+    "steps": [
+      "Muzu dilimleyin.",
+      "Üzerine fıstık ezmesi ve kakao sürün.",
+      "Bal ekleyip servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "147",
+    "userId": "userai",
+    "title": "Kuzu Fit Muzlu Pancake",
+    "description": "Geleneksel Türk yemeği. Protein kaynağı.",
+    "category": ["tatlı", "vejetaryen"],
+    "image": "",
+    "calories": 380,
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 adet muz",
+      "2 adet yumurta",
+      "3 yemek kaşığı yulaf ezmesi",
+      "1 çay kaşığı tarçın",
+      "1 çay kaşığı vanilya özü",
+      "1 tutam tuz"
+    ],
+    "steps": [
+      "Muzu çatalla ezin.",
+      "Yumurtaları ve yulafı ekleyip karıştırın.",
+      "Tarçın, vanilya ve tuz ekleyin.",
+      "Tavada arkalı önlü pişirin.",
+      "Sıcak servis edin."
+    ],
+    "createdAt": "2024-06-10T12:00:00.000Z",
+    "updatedAt": "2024-06-10T12:00:00.000Z"
+  },
+  {
+    "_id": "148",
+    "userId": "userai",
+    "title": "Kuzu Çilekli Yoğurt Parfe",
+    "description": "Geleneksel Türk yemeği. Probiyotik kaynağı.",
+    "category": ["tatlı", "vejetaryen"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 1,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı yoğurt",
+      "1 avuç çilek",
+      "1 yemek kaşığı bal",
+      "2 yemek kaşığı yulaf",
+      "1 çay kaşığı vanilya özü"
+    ],
+    "steps": [
+      "Çilekleri doğrayın.",
+      "Tüm malzemeleri karıştırıp bardakta servis edin.",
+      "Buzdolabında 30 dk dinlendirin.",
+      "Soğuk servis edin."
     ],
     "createdAt": "2024-06-10T12:00:00.000Z",
     "updatedAt": "2024-06-10T12:00:00.000Z"

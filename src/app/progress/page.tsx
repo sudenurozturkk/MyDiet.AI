@@ -170,7 +170,7 @@ export default function ProgressPage() {
 
   // Ölçü inputlarında değişiklik olduğunda otomatik yağ oranı hesapla
   useEffect(() => {
-    if (!gender || !age) return;
+    if (!gender || !age || !measurements) return;
     const waist = measurements.waist;
     const height = measurements.height;
     const weightNum = Number(weight);
@@ -181,7 +181,7 @@ export default function ProgressPage() {
       gender,
     });
     if (bf && !isNaN(bf as number)) setBodyFat(String(bf));
-  }, [measurements.waist, measurements.height, weight, gender, age]);
+  }, [measurements?.waist, measurements?.height, weight, gender, age]);
 
   const resetForm = () => {
     setDate('');
@@ -311,7 +311,7 @@ export default function ProgressPage() {
                       <PencilIcon className="w-5 h-5" />
                     </button>
                     <button
-                      onClick={() => handleDeleteProgress(progress._id)}
+                      onClick={() => progress._id && handleDeleteProgress(progress._id)}
                       className="p-2 text-fitness-pink hover:text-fitness-orange rounded-full transition-colors"
                       aria-label="Sil"
                     >

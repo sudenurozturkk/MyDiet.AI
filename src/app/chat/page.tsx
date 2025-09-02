@@ -72,7 +72,7 @@ export default function ChatPage() {
       title: 'Yeni Sohbet',
       messages: [{
         id: 1,
-        content: 'Merhaba! FitTürkAI sağlık asistanınıza hoş geldiniz. Size nasıl yardımcı olabilirim?',
+        content: 'Merhaba! MyDiet Ai sağlık asistanınıza hoş geldiniz. Size nasıl yardımcı olabilirim?',
         isUser: false,
         timestamp: new Date(),
       }],
@@ -241,7 +241,7 @@ export default function ChatPage() {
       title: 'Yeni Sohbet',
       messages: [{
         id: 1,
-        content: 'Merhaba! FitTürkAI sağlık asistanınıza hoş geldiniz. Size nasıl yardımcı olabilirim? Beslenme, egzersiz, sağlık hedefleri konusunda sorularınızı paylaşabilirsiniz.',
+        content: 'Merhaba! MyDiet Ai sağlık asistanınıza hoş geldiniz. Size nasıl yardımcı olabilirim? Beslenme, egzersiz, sağlık hedefleri konusunda sorularınızı paylaşabilirsiniz.',
         isUser: false,
         timestamp: new Date(),
       }],
@@ -308,7 +308,7 @@ export default function ChatPage() {
                 {/* Başlık */}
                 <div className="text-center">
                   <h1 className="text-2xl font-bold bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent">
-                    FitTürkAI Asistanı
+                    MyDiet Ai Asistanı
                   </h1>
                   <p className="text-gray-600 dark:text-gray-300 text-sm font-medium">
                     Kişisel sağlık danışmanınız
@@ -366,9 +366,9 @@ export default function ChatPage() {
                         ⚕️ Önemli Sağlık Uyarısı
                       </h4>
                       <p className="text-xs text-amber-700 dark:text-amber-300 leading-relaxed">
-                        FitTürkAI bir yapay zeka asistanıdır ve gerçek bir sağlık uzmanı değildir. 
+                        MyDiet Ai bir yapay zeka asistanıdır ve gerçek bir sağlık uzmanı değildir. 
                         Verilen öneriler genel bilgi amaçlıdır ve hata yapabilir. Sağlık sorunlarınız için 
-                        mutlaka <strong>doktorunuza danışınız</strong>. Acil durumlarda 112'yi arayın.
+                        mutlaka <strong>doktorunuza danışınız</strong>. Acil durumlarda 112&apos;yi arayın.
                       </p>
                     </div>
                   </div>

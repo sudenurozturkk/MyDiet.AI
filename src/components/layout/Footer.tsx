@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-gray-100 dark:bg-fitness-dark py-4">
       <div className="container mx-auto text-center">
         <p className="text-gray-600 dark:text-gray-300">
-          © 2025 FitTurkAI. Tüm hakları saklıdır.
+          © 2025 MyDiet Ai. Tüm hakları saklıdır.
         </p>
       </div>
     </footer>

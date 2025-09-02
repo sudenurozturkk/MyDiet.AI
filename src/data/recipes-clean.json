@@ -1,0 +1,5198 @@
+[
+  {
+    "_id": "1",
+    "title": "Zeytinyağlı Taze Fasulye",
+    "description": "Klasik, hafif ve sağlıklı bir yaz yemeği. Lif ve vitamin deposu.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g taze fasulye",
+      "1 adet soğan",
+      "2 adet domates",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Fasulyeleri ayıklayıp yıkayın.",
+      "Soğanı yemeklik doğrayıp zeytinyağında kavurun.",
+      "Doğranmış domates ve sarımsağı ekleyin, birkaç dakika pişirin.",
+      "Fasulyeleri ekleyin, tuz ve karabiber serpin.",
+      "Üzerini geçecek kadar sıcak su ekleyip kısık ateşte pişirin.",
+      "Ilık veya soğuk servis edin."
+    ]
+  },
+  {
+    "_id": "2",
+    "title": "Mercimek Çorbası",
+    "description": "Protein ve lif kaynağı, klasik Türk çorbası.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 120,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı kırmızı mercimek",
+      "1 adet soğan",
+      "1 adet havuç",
+      "1 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı un",
+      "1 tatlı kaşığı salça",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Soğanı ve havucu doğrayıp zeytinyağında kavurun.",
+      "Un ve salçayı ekleyip karıştırın.",
+      "Mercimeği ekleyin, üzerini geçecek kadar su koyun.",
+      "Tuz, karabiber ve kimyon ekleyin.",
+      "Mercimekler yumuşayana kadar pişirin.",
+      "Blenderdan geçirip sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "3",
+    "title": "Tavuk Sote",
+    "description": "Pratik, protein açısından zengin ana yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 250,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "300g tavuk göğsü",
+      "1 adet soğan",
+      "1 adet kırmızı biber",
+      "1 adet yeşil biber",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavukları kuşbaşı doğrayın.",
+      "Soğanı ve biberleri doğrayıp zeytinyağında kavurun.",
+      "Tavukları ekleyip soteleyin.",
+      "Baharatları ekleyip pişirin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "4",
+    "title": "Karnıyarık",
+    "description": "Kıymalı, fırında pişen geleneksel Türk yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 320,
+    "prepTime": 20,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet patlıcan",
+      "250g dana kıyma",
+      "1 adet soğan",
+      "2 adet domates",
+      "2 adet yeşil biber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Patlıcanları alacalı soyup tuzlu suda bekletin.",
+      "Kıymayı soğan, biber ve domatesle kavurun.",
+      "Patlıcanları kurulayın, kızartın ve fırın kabına dizin.",
+      "Ortalarını açıp iç harcı doldurun.",
+      "Salçalı suyu ekleyip fırında pişirin."
+    ]
+  },
+  {
+    "_id": "5",
+    "title": "Bulgur Pilavı",
+    "description": "Lif ve vitamin kaynağı, geleneksel pilav.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1,5 su bardağı pilavlık bulgur",
+      "1 adet soğan",
+      "2 adet domates",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Soğanı doğrayıp zeytinyağında kavurun.",
+      "Domatesleri ekleyip pişirin.",
+      "Bulguru ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip kısık ateşte pişirin."
+    ]
+  },
+  {
+    "_id": "6",
+    "title": "Cacık",
+    "description": "Ferahlık veren, yoğurtlu geleneksel meze.",
+    "category": ["meze", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 60,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 su bardağı yoğurt",
+      "2 adet salatalık",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz, nane"
+    ],
+    "steps": [
+      "Salatalıkları rendeleyin.",
+      "Yoğurt, ezilmiş sarımsak ve tuzla karıştırın.",
+      "Üzerine zeytinyağı ve nane serpip servis edin."
+    ]
+  },
+  {
+    "_id": "7",
+    "title": "Fırında Sebzeli Somon",
+    "description": "Omega-3 kaynağı, fırında sağlıklı balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 dilim somon balığı",
+      "1 adet kabak",
+      "1 adet havuç",
+      "1 adet patates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Üzerine somonları yerleştirin.",
+      "Zeytinyağı ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "8",
+    "title": "Yoğurtlu Kabak Salatası",
+    "description": "Düşük kalorili, ferahlatıcı ve sağlıklı salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 90,
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 adet kabak",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz, dereotu"
+    ],
+    "steps": [
+      "Kabakları rendeleyip az yağda soteleyin.",
+      "Soğuyunca yoğurt, sarımsak ve tuzla karıştırın.",
+      "Üzerine dereotu serpip servis edin."
+    ]
+  },
+  {
+    "_id": "9",
+    "title": "Fırında Mücver",
+    "description": "Kızartmasız, hafif ve sağlıklı kabak mücveri.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 adet kabak",
+      "2 adet yumurta",
+      "3 yemek kaşığı un",
+      "1/2 demet dereotu",
+      "1 adet havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Kabak ve havucu rendeleyin.",
+      "Tüm malzemeleri karıştırın.",
+      "Yağlı kağıt serili tepsiye dökün.",
+      "180°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "10",
+    "title": "Ezogelin Çorbası",
+    "description": "Geleneksel, besleyici ve doyurucu bir çorba.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 130,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1/2 su bardağı kırmızı mercimek",
+      "1/4 su bardağı ince bulgur",
+      "1/4 su bardağı pirinç",
+      "1 adet soğan",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı",
+      "1 tatlı kaşığı nane",
+      "Tuz, karabiber, pul biber",
+      "6 su bardağı su"
+    ],
+    "steps": [
+      "Soğanı doğrayıp zeytinyağında kavurun.",
+      "Salçayı ekleyip karıştırın.",
+      "Mercimek, bulgur ve pirinci ekleyin.",
+      "Suyu ve baharatları ekleyip kısık ateşte pişirin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "11",
+    "title": "Menemen",
+    "description": "Kahvaltıların vazgeçilmezi, pratik ve lezzetli.",
+    "category": ["kahvaltı", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 adet yumurta",
+      "2 adet domates",
+      "2 adet yeşil biber",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Biberleri doğrayıp zeytinyağında kavurun.",
+      "Domatesleri ekleyip pişirin.",
+      "Yumurtaları kırıp karıştırın.",
+      "Tuz ve karabiber ekleyip sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "12",
+    "title": "Şakşuka",
+    "description": "Kızartılmış sebzelerle yapılan geleneksel meze.",
+    "category": ["meze", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 150,
+    "prepTime": 20,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "2 adet kabak",
+      "2 adet patates",
+      "2 adet domates",
+      "2 adet yeşil biber",
+      "3 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Sebzeleri küp doğrayıp kızartın.",
+      "Domates ve biberi ayrı kavurun.",
+      "Tüm sebzeleri karıştırıp servis edin."
+    ]
+  },
+  {
+    "_id": "13",
+    "title": "Fırında Tavuk But",
+    "description": "Fırında pişen, pratik ve lezzetli tavuk yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 260,
+    "prepTime": 10,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 adet tavuk but",
+      "2 adet patates",
+      "2 adet havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk butları ve sebzeleri doğrayın.",
+      "Baharat ve yağ ile harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 40 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "14",
+    "title": "Yoğurtlu Semizotu Salatası",
+    "description": "Omega-3 ve lif kaynağı, ferahlatıcı salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 80,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 demet semizotu",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Semizotunu ayıklayıp yıkayın.",
+      "Yoğurt, sarımsak ve tuzla karıştırın.",
+      "Üzerine zeytinyağı gezdirip servis edin."
+    ]
+  },
+  {
+    "_id": "15",
+    "title": "Fırında Kabak Sandal",
+    "description": "Kabakların içi doldurularak yapılan hafif ana yemek.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet kabak",
+      "1 adet soğan",
+      "2 adet domates",
+      "1 adet havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Kabakları ikiye bölüp içini oyun.",
+      "Soğan, domates ve havucu kavurun.",
+      "Kabakların içine doldurun.",
+      "Fırında 180°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "16",
+    "title": "Tarhana Çorbası",
+    "description": "Kış aylarının vazgeçilmezi, probiyotik ve besleyici çorba.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 110,
+    "prepTime": 5,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 yemek kaşığı tarhana",
+      "5 su bardağı su",
+      "1 yemek kaşığı salça",
+      "1 yemek kaşığı tereyağı",
+      "Tuz, nane"
+    ],
+    "steps": [
+      "Tarhanayı suda ezin.",
+      "Tereyağında salçayı kavurun.",
+      "Tarhanalı suyu ekleyin, karıştırarak pişirin.",
+      "Tuz ve nane ekleyip sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "17",
+    "title": "Kuru Fasulye",
+    "description": "Klasik Türk mutfağı, protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 60,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı kuru fasulye",
+      "1 adet soğan",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Fasulyeleri bir gece önceden ıslatın.",
+      "Soğanı kavurun, salça ekleyin.",
+      "Fasulyeleri ekleyip üzerini geçecek kadar su koyun.",
+      "Tuz ve karabiber ekleyip pişirin."
+    ]
+  },
+  {
+    "_id": "18",
+    "title": "Sebzeli Bulgur Pilavı",
+    "description": "Renkli sebzelerle zenginleştirilmiş sağlıklı pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1,5 su bardağı bulgur",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Bulguru ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip kısık ateşte pişirin."
+    ]
+  },
+  {
+    "_id": "19",
+    "title": "Fırında Levrek",
+    "description": "Fırında pişen, omega-3 kaynağı sağlıklı balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 adet levrek fileto",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Levrekleri yağ, limon ve baharatla ovun.",
+      "Fırın tepsisine dizin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "20",
+    "title": "Peynirli Omlet",
+    "description": "Kahvaltı için protein kaynağı pratik omlet.",
+    "category": ["kahvaltı", "vejetaryen"],
+    "image": "",
+    "calories": 170,
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 1,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 adet yumurta",
+      "2 yemek kaşığı beyaz peynir",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Yumurtaları çırpın.",
+      "Peynir ve baharatları ekleyin.",
+      "Yağda pişirip sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "21",
+    "title": "Yoğurtlu Havuç Salatası",
+    "description": "Rendelenmiş havuçla yapılan ferahlatıcı salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 90,
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 adet havuç",
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak",
+      "Tuz"
+    ],
+    "steps": [
+      "Havuçları rendeleyip az yağda soteleyin.",
+      "Soğuyunca yoğurt, sarımsak ve tuzla karıştırın.",
+      "Servis edin."
+    ]
+  },
+  {
+    "_id": "22",
+    "title": "Fırında Patates Mücveri",
+    "description": "Patatesle yapılan fırında hafif mücver.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 150,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 adet patates",
+      "2 adet yumurta",
+      "3 yemek kaşığı un",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, dereotu"
+    ],
+    "steps": [
+      "Patatesleri rendeleyin.",
+      "Tüm malzemeleri karıştırın.",
+      "Yağlı kağıt serili tepsiye dökün.",
+      "180°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "23",
+    "title": "Fırında Elmalı Tatlı",
+    "description": "Şekersiz, fırında hafif elmalı tatlı. Lif ve vitamin deposu.",
+    "category": ["tatlı", "vejetaryen"],
+    "image": "",
+    "calories": 120,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 elma",
+      "1 tatlı kaşığı tarçın",
+      "1 yemek kaşığı ceviz",
+      "1 yemek kaşığı bal",
+      "1 çay kaşığı limon suyu"
+    ],
+    "steps": [
+      "Elmaları dilimleyin.",
+      "Limon suyu ekleyin.",
+      "Üzerine tarçın, bal ve ceviz serpin.",
+      "Fırında 180°C'de 20 dk pişirin."
+    ]
+  },
+  {
+    "_id": "24",
+    "title": "Kısır",
+    "description": "Bulgur, yeşillik ve limonla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 6,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 su bardağı ince bulgur",
+      "1 adet soğan",
+      "2 adet domates",
+      "1/2 demet maydanoz",
+      "1/2 demet taze soğan",
+      "1/2 çay bardağı zeytinyağı",
+      "1 limon suyu",
+      "Tuz, pul biber"
+    ],
+    "steps": [
+      "Bulguru sıcak suyla ıslatın.",
+      "Soğanı kavurun, domatesi ekleyin.",
+      "Bulgur, yeşillik ve baharatları ekleyip karıştırın."
+    ]
+  },
+  {
+    "_id": "25",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "26",
+    "title": "Yoğurtlu Patates Salatası",
+    "description": "Haşlanmış patates ve yoğurtla yapılan pratik salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 110,
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 adet patates",
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı zeytinyağı",
+      "1/2 demet dereotu",
+      "Tuz"
+    ],
+    "steps": [
+      "Patatesleri haşlayıp doğrayın.",
+      "Yoğurt, yağ, dereotu ve tuzla karıştırın.",
+      "Servis edin."
+    ]
+  },
+  {
+    "_id": "27",
+    "title": "Fırında Kabak Graten",
+    "description": "Kabak ve peynirle yapılan fırında hafif yemek.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "3 adet kabak",
+      "1 su bardağı rendelenmiş kaşar peyniri",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Kabakları doğrayıp yağda soteleyin.",
+      "Fırın kabına alın, üzerine peynir serpin.",
+      "180°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "28",
+    "title": "Fırında Yoğurtlu Tavuk",
+    "description": "Yoğurt ve baharatla marine edilmiş fırında tavuk.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "1 su bardağı yoğurt",
+      "2 yemek kaşığı zeytinyağı",
+      "1 tatlı kaşığı kırmızı toz biber",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Tavukları yoğurt, yağ ve baharatla marine edin.",
+      "Fırın tepsisine dizin.",
+      "200°C fırında 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "29",
+    "title": "Fırında Karnabahar",
+    "description": "Karnabahar ve baharatlarla yapılan fırında sağlıklı yemek.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 120,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 küçük karnabahar",
+      "2 yemek kaşığı zeytinyağı",
+      "1 tatlı kaşığı kırmızı toz biber",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Karnabaharı çiçeklerine ayırın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "30",
+    "title": "Fırında Elmalı Yulaflı Tatlı",
+    "description": "Elma ve yulafla yapılan şekersiz hafif tatlı.",
+    "category": ["tatlı", "vejetaryen"],
+    "image": "",
+    "calories": 130,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 elma",
+      "4 yemek kaşığı yulaf ezmesi",
+      "1 yemek kaşığı bal",
+      "1 tatlı kaşığı tarçın",
+      "1 yemek kaşığı ceviz"
+    ],
+    "steps": [
+      "Elmayı doğrayıp fırın kabına alın.",
+      "Üzerine yulaf, bal, tarçın ve ceviz serpin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "31",
+    "title": "Fırında Sebzeli Hindi",
+    "description": "Hindi eti ve sebzelerle yapılan fırında sağlıklı yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 parça hindi göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Hindi ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 40 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "32",
+    "title": "Yoğurtlu Ispanak Salatası",
+    "description": "Ispanak ve yoğurtla yapılan demir kaynağı salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 70,
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 demet ıspanak",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Ispanakları yıkayıp doğrayın.",
+      "Az yağda soteleyin.",
+      "Soğuyunca yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "33",
+    "title": "Fırında Sebzeli Balık",
+    "description": "Çipura ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet çipura",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Balıkları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "34",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "35",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "36",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "37",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "38",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "39",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "40",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "41",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "42",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "43",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "44",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "45",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "46",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "47",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "48",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "49",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "50",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "51",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "52",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "53",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "54",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "55",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "56",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "57",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "58",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "59",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "60",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "61",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "62",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "63",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "64",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "65",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "66",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "67",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "68",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "69",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "70",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "71",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "72",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "73",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "74",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "75",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "76",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "77",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "78",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "79",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "80",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "81",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "82",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "83",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "84",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "85",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "86",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "87",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "88",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "89",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "90",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "91",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "92",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "93",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "94",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "95",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "96",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "97",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "98",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "99",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "100",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "101",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "102",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "103",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "104",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "105",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "106",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "107",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "108",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "109",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "110",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "111",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "112",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "113",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "114",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "115",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "116",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "117",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "118",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "119",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "120",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "121",
+    "title": "Mercimek Çorbası",
+    "description": "Protein ve lif kaynağı, klasik Türk çorbası.",
+    "category": ["çorba", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 120,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 su bardağı kırmızı mercimek",
+      "1 adet soğan",
+      "1 adet havuç",
+      "1 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı un",
+      "1 tatlı kaşığı salça",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Soğanı ve havucu doğrayıp zeytinyağında kavurun.",
+      "Un ve salçayı ekleyip karıştırın.",
+      "Mercimeği ekleyin, üzerini geçecek kadar su koyun.",
+      "Tuz, karabiber ve kimyon ekleyin.",
+      "Mercimekler yumuşayana kadar pişirin.",
+      "Blenderdan geçirip sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "122",
+    "title": "Fırında Sebzeli Pilav",
+    "description": "Sebzelerle zenginleştirilmiş fırında pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1,5 su bardağı pirinç",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Pirinci ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip fırında 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "123",
+    "title": "Yoğurtlu Patlıcan Salatası",
+    "description": "Fırında patlıcan ve yoğurtla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 100,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Patlıcanları fırında pişirin.",
+      "Kabuklarını soyup ezin.",
+      "Yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "124",
+    "title": "Fırında Sebzeli Köfte",
+    "description": "Sebzelerle zenginleştirilmiş fırında köfte yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "300g dana kıyma",
+      "1 adet soğan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı galeta unu",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kimyon"
+    ],
+    "steps": [
+      "Kıymayı, galeta unu ve baharatlarla yoğurun.",
+      "Sebzeleri doğrayıp köftelerle karıştırın.",
+      "Fırın tepsisine dizip 200°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "125",
+    "title": "Fırında Sebzeli Tavuk",
+    "description": "Tavuk ve sebzelerle yapılan fırında tek tepside yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "126",
+    "title": "Fırında Sebzeli Balık",
+    "description": "Çipura ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet çipura",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Balıkları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "127",
+    "title": "Yoğurtlu Ispanak Salatası",
+    "description": "Ispanak ve yoğurtla yapılan demir kaynağı salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 70,
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 demet ıspanak",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Ispanakları yıkayıp doğrayın.",
+      "Az yağda soteleyin.",
+      "Soğuyunca yoğurt, sarımsak ve tuzla karıştırın."
+    ]
+  },
+  {
+    "_id": "128",
+    "title": "Fırında Sebzeli Hindi",
+    "description": "Hindi eti ve sebzelerle yapılan fırında sağlıklı yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 parça hindi göğsü",
+      "2 adet patates",
+      "2 adet havuç",
+      "1 adet kabak",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Hindi ve sebzeleri doğrayın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 40 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "129",
+    "title": "Fırında Elmalı Yulaflı Tatlı",
+    "description": "Elma ve yulafla yapılan şekersiz hafif tatlı.",
+    "category": ["tatlı", "vejetaryen"],
+    "image": "",
+    "calories": 130,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 elma",
+      "4 yemek kaşığı yulaf ezmesi",
+      "1 yemek kaşığı bal",
+      "1 tatlı kaşığı tarçın",
+      "1 yemek kaşığı ceviz"
+    ],
+    "steps": [
+      "Elmayı doğrayıp fırın kabına alın.",
+      "Üzerine yulaf, bal, tarçın ve ceviz serpin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "130",
+    "title": "Fırında Karnabahar",
+    "description": "Karnabahar ve baharatlarla yapılan fırında sağlıklı yemek.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 120,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 küçük karnabahar",
+      "2 yemek kaşığı zeytinyağı",
+      "1 tatlı kaşığı kırmızı toz biber",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Karnabaharı çiçeklerine ayırın.",
+      "Yağ ve baharatlarla harmanlayın.",
+      "Fırın tepsisine dizip 180°C'de 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "131",
+    "title": "Fırında Yoğurtlu Tavuk",
+    "description": "Yoğurt ve baharatla marine edilmiş fırında tavuk.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 parça tavuk göğsü",
+      "1 su bardağı yoğurt",
+      "2 yemek kaşığı zeytinyağı",
+      "1 tatlı kaşığı kırmızı toz biber",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Tavukları yoğurt, yağ ve baharatla marine edin.",
+      "Fırın tepsisine dizin.",
+      "200°C fırında 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "132",
+    "title": "Fırında Kabak Graten",
+    "description": "Kabak ve peynirle yapılan fırında hafif yemek.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "3 adet kabak",
+      "1 su bardağı rendelenmiş kaşar peyniri",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Kabakları doğrayıp yağda soteleyin.",
+      "Fırın kabına alın, üzerine peynir serpin.",
+      "180°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "133",
+    "title": "Yoğurtlu Patates Salatası",
+    "description": "Haşlanmış patates ve yoğurtla yapılan pratik salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 110,
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 adet patates",
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı zeytinyağı",
+      "1/2 demet dereotu",
+      "Tuz"
+    ],
+    "steps": [
+      "Patatesleri haşlayıp doğrayın.",
+      "Yoğurt, yağ, dereotu ve tuzla karıştırın.",
+      "Servis edin."
+    ]
+  },
+  {
+    "_id": "134",
+    "title": "Fırında Elmalı Tatlı",
+    "description": "Şekersiz, fırında hafif elmalı tatlı. Lif ve vitamin deposu.",
+    "category": ["tatlı", "vejetaryen"],
+    "image": "",
+    "calories": 120,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 elma",
+      "1 tatlı kaşığı tarçın",
+      "1 yemek kaşığı ceviz",
+      "1 yemek kaşığı bal",
+      "1 çay kaşığı limon suyu"
+    ],
+    "steps": [
+      "Elmaları dilimleyin.",
+      "Limon suyu ekleyin.",
+      "Üzerine tarçın, bal ve ceviz serpin.",
+      "Fırında 180°C'de 20 dk pişirin."
+    ]
+  },
+  {
+    "_id": "135",
+    "title": "Kısır",
+    "description": "Bulgur, yeşillik ve limonla yapılan geleneksel salata.",
+    "category": ["salata", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 6,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 su bardağı ince bulgur",
+      "1 adet soğan",
+      "2 adet domates",
+      "1/2 demet maydanoz",
+      "1/2 demet taze soğan",
+      "1/2 çay bardağı zeytinyağı",
+      "1 limon suyu",
+      "Tuz, pul biber"
+    ],
+    "steps": [
+      "Bulguru sıcak suyla ıslatın.",
+      "Soğanı kavurun, domatesi ekleyin.",
+      "Bulgur, yeşillik ve baharatları ekleyip karıştırın."
+    ]
+  },
+  {
+    "_id": "136",
+    "title": "Ezogelin Çorbası",
+    "description": "Geleneksel, besleyici ve doyurucu bir çorba.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 130,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "1/2 su bardağı kırmızı mercimek",
+      "1/4 su bardağı ince bulgur",
+      "1/4 su bardağı pirinç",
+      "1 adet soğan",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı",
+      "1 tatlı kaşığı nane",
+      "Tuz, karabiber, pul biber",
+      "6 su bardağı su"
+    ],
+    "steps": [
+      "Soğanı doğrayıp zeytinyağında kavurun.",
+      "Salçayı ekleyip karıştırın.",
+      "Mercimek, bulgur ve pirinci ekleyin.",
+      "Suyu ve baharatları ekleyip kısık ateşte pişirin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "137",
+    "title": "Kuru Fasulye",
+    "description": "Klasik Türk mutfağı, protein ve lif kaynağı.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 60,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 su bardağı kuru fasulye",
+      "1 adet soğan",
+      "1 yemek kaşığı salça",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Fasulyeleri bir gece önceden ıslatın.",
+      "Soğanı kavurun, salça ekleyin.",
+      "Fasulyeleri ekleyip üzerini geçecek kadar su koyun.",
+      "Tuz ve karabiber ekleyip pişirin."
+    ]
+  },
+  {
+    "_id": "138",
+    "title": "Sebzeli Bulgur Pilavı",
+    "description": "Renkli sebzelerle zenginleştirilmiş sağlıklı pilav.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1,5 su bardağı bulgur",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet kırmızı biber",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp zeytinyağında kavurun.",
+      "Bulguru ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip kısık ateşte pişirin."
+    ]
+  },
+  {
+    "_id": "139",
+    "title": "Fırında Levrek",
+    "description": "Fırında pişen, omega-3 kaynağı sağlıklı balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 adet levrek fileto",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Levrekleri yağ, limon ve baharatla ovun.",
+      "Fırın tepsisine dizin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "140",
+    "title": "Peynirli Omlet",
+    "description": "Kahvaltı için protein kaynağı pratik omlet.",
+    "category": ["kahvaltı", "vejetaryen"],
+    "image": "",
+    "calories": 170,
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 1,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 adet yumurta",
+      "2 yemek kaşığı beyaz peynir",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Yumurtaları çırpın.",
+      "Peynir ve baharatları ekleyin.",
+      "Yağda pişirip sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "141",
+    "title": "Yoğurtlu Havuç Salatası",
+    "description": "Rendelenmiş havuçla yapılan ferahlatıcı salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 90,
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 adet havuç",
+      "1 su bardağı yoğurt",
+      "1 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak",
+      "Tuz"
+    ],
+    "steps": [
+      "Havuçları rendeleyip az yağda soteleyin.",
+      "Soğuyunca yoğurt, sarımsak ve tuzla karıştırın.",
+      "Servis edin."
+    ]
+  },
+  {
+    "_id": "142",
+    "title": "Fırında Patates Mücveri",
+    "description": "Patatesle yapılan fırında hafif mücver.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 150,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 adet patates",
+      "2 adet yumurta",
+      "3 yemek kaşığı un",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, dereotu"
+    ],
+    "steps": [
+      "Patatesleri rendeleyin.",
+      "Tüm malzemeleri karıştırın.",
+      "Yağlı kağıt serili tepsiye dökün.",
+      "180°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "143",
+    "title": "Tarhana Çorbası",
+    "description": "Kış aylarının vazgeçilmezi, probiyotik ve besleyici çorba.",
+    "category": ["çorba", "geleneksel"],
+    "image": "",
+    "calories": 110,
+    "prepTime": 5,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 yemek kaşığı tarhana",
+      "5 su bardağı su",
+      "1 yemek kaşığı salça",
+      "1 yemek kaşığı tereyağı",
+      "Tuz, nane"
+    ],
+    "steps": [
+      "Tarhanayı suda ezin.",
+      "Tereyağında salçayı kavurun.",
+      "Tarhanalı suyu ekleyin, karıştırarak pişirin.",
+      "Tuz ve nane ekleyip sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "144",
+    "title": "Fırında Kabak Sandal",
+    "description": "Kabakların içi doldurularak yapılan hafif ana yemek.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 160,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet kabak",
+      "1 adet soğan",
+      "2 adet domates",
+      "1 adet havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Kabakları ikiye bölüp içini oyun.",
+      "Soğan, domates ve havucu kavurun.",
+      "Kabakların içine doldurun.",
+      "Fırında 180°C'de 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "145",
+    "title": "Yoğurtlu Semizotu Salatası",
+    "description": "Omega-3 ve lif kaynağı, ferahlatıcı salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 80,
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1 demet semizotu",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz"
+    ],
+    "steps": [
+      "Semizotunu ayıklayıp yıkayın.",
+      "Yoğurt, sarımsak ve tuzla karıştırın.",
+      "Üzerine zeytinyağı gezdirip servis edin."
+    ]
+  },
+  {
+    "_id": "146",
+    "title": "Fırında Tavuk But",
+    "description": "Fırında pişen, pratik ve lezzetli tavuk yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 260,
+    "prepTime": 10,
+    "cookTime": 40,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "4 adet tavuk but",
+      "2 adet patates",
+      "2 adet havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavuk butları ve sebzeleri doğrayın.",
+      "Baharat ve yağ ile harmanlayın.",
+      "Fırın tepsisine dizip 200°C'de 40 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "147",
+    "title": "Şakşuka",
+    "description": "Kızartılmış sebzelerle yapılan geleneksel meze.",
+    "category": ["meze", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 150,
+    "prepTime": 20,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet patlıcan",
+      "2 adet kabak",
+      "2 adet patates",
+      "2 adet domates",
+      "2 adet yeşil biber",
+      "3 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Sebzeleri küp doğrayıp kızartın.",
+      "Domates ve biberi ayrı kavurun.",
+      "Tüm sebzeleri karıştırıp servis edin."
+    ]
+  },
+  {
+    "_id": "148",
+    "title": "Menemen",
+    "description": "Kahvaltıların vazgeçilmezi, pratik ve lezzetli.",
+    "category": ["kahvaltı", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "3 adet yumurta",
+      "2 adet domates",
+      "2 adet yeşil biber",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Biberleri doğrayıp zeytinyağında kavurun.",
+      "Domatesleri ekleyip pişirin.",
+      "Yumurtaları kırıp karıştırın.",
+      "Tuz ve karabiber ekleyip sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "149",
+    "title": "Fırında Mücver",
+    "description": "Kızartmasız, hafif ve sağlıklı kabak mücveri.",
+    "category": ["ana yemek", "vejetaryen"],
+    "image": "",
+    "calories": 140,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 adet kabak",
+      "2 adet yumurta",
+      "3 yemek kaşığı un",
+      "1/2 demet dereotu",
+      "1 adet havuç",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Kabak ve havucu rendeleyin.",
+      "Tüm malzemeleri karıştırın.",
+      "Yağlı kağıt serili tepsiye dökün.",
+      "180°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "150",
+    "title": "Yoğurtlu Kabak Salatası",
+    "description": "Düşük kalorili, ferahlatıcı ve sağlıklı salata.",
+    "category": ["salata", "vejetaryen"],
+    "image": "",
+    "calories": 90,
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 adet kabak",
+      "1 su bardağı yoğurt",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz, dereotu"
+    ],
+    "steps": [
+      "Kabakları rendeleyip az yağda soteleyin.",
+      "Soğuyunca yoğurt, sarımsak ve tuzla karıştırın.",
+      "Üzerine dereotu serpip servis edin."
+    ]
+  },
+  {
+    "_id": "151",
+    "title": "Fırında Sebzeli Somon",
+    "description": "Omega-3 kaynağı, fırında sağlıklı balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 dilim somon balığı",
+      "1 adet kabak",
+      "1 adet havuç",
+      "1 adet patates",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Üzerine somonları yerleştirin.",
+      "Zeytinyağı ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "152",
+    "title": "Bulgur Pilavı",
+    "description": "Lif ve vitamin kaynağı, geleneksel pilav.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "1,5 su bardağı pilavlık bulgur",
+      "1 adet soğan",
+      "2 adet domates",
+      "2 yemek kaşığı zeytinyağı",
+      "2,5 su bardağı sıcak su",
+      "Tuz"
+    ],
+    "steps": [
+      "Soğanı doğrayıp zeytinyağında kavurun.",
+      "Domatesleri ekleyip pişirin.",
+      "Bulguru ekleyip kavurun.",
+      "Sıcak su ve tuz ekleyip kısık ateşte pişirin."
+    ]
+  },
+  {
+    "_id": "153",
+    "title": "Cacık",
+    "description": "Ferahlık veren, yoğurtlu geleneksel meze.",
+    "category": ["meze", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 60,
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "ingredients": [
+      "2 su bardağı yoğurt",
+      "2 adet salatalık",
+      "1 diş sarımsak",
+      "1 yemek kaşığı zeytinyağı",
+      "Tuz, nane"
+    ],
+    "steps": [
+      "Salatalıkları rendeleyin.",
+      "Yoğurt, ezilmiş sarımsak ve tuzla karıştırın.",
+      "Üzerine zeytinyağı ve nane serpip servis edin."
+    ]
+  },
+  {
+    "_id": "154",
+    "title": "Tavuk Sote",
+    "description": "Pratik, protein açısından zengin ana yemek.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 250,
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "ingredients": [
+      "300g tavuk göğsü",
+      "1 adet soğan",
+      "1 adet kırmızı biber",
+      "1 adet yeşil biber",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tavukları kuşbaşı doğrayın.",
+      "Soğanı ve biberleri doğrayıp zeytinyağında kavurun.",
+      "Tavukları ekleyip soteleyin.",
+      "Baharatları ekleyip pişirin.",
+      "Sıcak servis edin."
+    ]
+  },
+  {
+    "_id": "155",
+    "title": "Karnıyarık",
+    "description": "Kıymalı, fırında pişen geleneksel Türk yemeği.",
+    "category": ["ana yemek", "geleneksel"],
+    "image": "",
+    "calories": 320,
+    "prepTime": 20,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet patlıcan",
+      "250g dana kıyma",
+      "1 adet soğan",
+      "2 adet domates",
+      "2 adet yeşil biber",
+      "2 yemek kaşığı zeytinyağı",
+      "1 yemek kaşığı salça",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Patlıcanları alacalı soyup tuzlu suda bekletin.",
+      "Kıymayı soğan, biber ve domatesle kavurun.",
+      "Patlıcanları kurulayın, kızartın ve fırın kabına dizin.",
+      "Ortalarını açıp iç harcı doldurun.",
+      "Salçalı suyu ekleyip fırında pişirin."
+    ]
+  },
+  {
+    "_id": "156",
+    "title": "Zeytinyağlı Taze Fasulye",
+    "description": "Klasik, hafif ve sağlıklı bir yaz yemeği. Lif ve vitamin deposu.",
+    "category": ["ana yemek", "vejetaryen", "geleneksel"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g taze fasulye",
+      "1 adet soğan",
+      "2 adet domates",
+      "2 yemek kaşığı zeytinyağı",
+      "1 diş sarımsak",
+      "Tuz, karabiber"
+    ],
+    "steps": [
+      "Fasulyeleri ayıklayıp yıkayın.",
+      "Soğanı yemeklik doğrayıp zeytinyağında kavurun.",
+      "Doğranmış domates ve sarımsağı ekleyin, birkaç dakika pişirin.",
+      "Fasulyeleri ekleyin, tuz ve karabiber serpin.",
+      "Üzerini geçecek kadar sıcak su ekleyip kısık ateşte pişirin.",
+      "Ilık veya soğuk servis edin."
+    ]
+  },
+  {
+    "_id": "157",
+    "title": "Fırında Sebzeli Hamsi",
+    "description": "Hamsi balığı ve sebzelerle yapılan fırında yemek.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "500g hamsi",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Hamsileri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Hamsileri üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "158",
+    "title": "Fırında Sebzeli Uskumru",
+    "description": "Uskumru ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet uskumru",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Uskumruları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "159",
+    "title": "Fırında Sebzeli Palamut",
+    "description": "Palamut ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim palamut",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Palamutları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "160",
+    "title": "Fırında Sebzeli Lüfer",
+    "description": "Lüfer ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 230,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet lüfer",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Lüferleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "161",
+    "title": "Fırında Sebzeli Sardalya",
+    "description": "Sardalya ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "8 adet sardalya",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Sardalyaları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Sardalyaları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "162",
+    "title": "Fırında Sebzeli Çipura",
+    "description": "Çipura ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet çipura",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Çipuraları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "163",
+    "title": "Fırında Sebzeli Mezgit",
+    "description": "Mezgit ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim mezgit",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Mezgitleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "164",
+    "title": "Fırında Sebzeli Kalkan",
+    "description": "Kalkan ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim kalkan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Kalkanları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "165",
+    "title": "Fırında Sebzeli Tekir",
+    "description": "Tekir ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet tekir",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tekirleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "166",
+    "title": "Fırında Sebzeli Barbun",
+    "description": "Barbun ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet barbun",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Barbunları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "167",
+    "title": "Fırında Sebzeli İstavrit",
+    "description": "İstavrit ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet istavrit",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "İstavritleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "168",
+    "title": "Fırında Sebzeli Kefal",
+    "description": "Kefal ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet kefal",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Kefalleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "169",
+    "title": "Fırında Sebzeli Dil",
+    "description": "Dil balığı ve sebzelerle yapılan fırında yemek.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim dil balığı",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Dil balıklarını temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "170",
+    "title": "Fırında Sebzeli Çinekop",
+    "description": "Çinekop ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "6 adet çinekop",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Çinekopları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "171",
+    "title": "Fırında Sebzeli Sarıkanat",
+    "description": "Sarıkanat ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet sarıkanat",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Sarıkanatları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "172",
+    "title": "Fırında Sebzeli Gümüş",
+    "description": "Gümüş balığı ve sebzelerle yapılan fırında yemek.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "8 adet gümüş",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Gümüşleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "173",
+    "title": "Fırında Sebzeli İzmarit",
+    "description": "İzmarit ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "6 adet izmarit",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "İzmaritleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "174",
+    "title": "Fırında Sebzeli Karagöz",
+    "description": "Karagöz ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet karagöz",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Karagözleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "175",
+    "title": "Fırında Sebzeli Sinarit",
+    "description": "Sinarit ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 230,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet sinarit",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Sinaritleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "176",
+    "title": "Fırında Sebzeli Mercan",
+    "description": "Mercan ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet mercan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Mercanları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "177",
+    "title": "Fırında Sebzeli Orfoz",
+    "description": "Orfoz ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 250,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim orfoz",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Orfozları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "178",
+    "title": "Fırında Sebzeli Lahos",
+    "description": "Lahos ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 260,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim lahos",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Lahosları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "179",
+    "title": "Fırında Sebzeli Akya",
+    "description": "Akya ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 270,
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim akya",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Akyaları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 35 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "180",
+    "title": "Fırında Sebzeli Kılıç",
+    "description": "Kılıç balığı ve sebzelerle yapılan fırında yemek.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 280,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim kılıç balığı",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Kılıç balıklarını temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "181",
+    "title": "Fırında Sebzeli Ton",
+    "description": "Ton balığı ve sebzelerle yapılan fırında yemek.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 290,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim ton balığı",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Ton balıklarını temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "182",
+    "title": "Fırında Sebzeli Uskumru",
+    "description": "Uskumru ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet uskumru",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Uskumruları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "183",
+    "title": "Fırında Sebzeli Palamut",
+    "description": "Palamut ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim palamut",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Palamutları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "184",
+    "title": "Fırında Sebzeli Lüfer",
+    "description": "Lüfer ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 230,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet lüfer",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Lüferleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "185",
+    "title": "Fırında Sebzeli Sardalya",
+    "description": "Sardalya ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "8 adet sardalya",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Sardalyaları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Sardalyaları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "186",
+    "title": "Fırında Sebzeli Çipura",
+    "description": "Çipura ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet çipura",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Çipuraları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "187",
+    "title": "Fırında Sebzeli Mezgit",
+    "description": "Mezgit ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim mezgit",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Mezgitleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "188",
+    "title": "Fırında Sebzeli Kalkan",
+    "description": "Kalkan ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim kalkan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Kalkanları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "189",
+    "title": "Fırında Sebzeli Tekir",
+    "description": "Tekir ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet tekir",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Tekirleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "190",
+    "title": "Fırında Sebzeli Barbun",
+    "description": "Barbun ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet barbun",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Barbunları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "191",
+    "title": "Fırında Sebzeli İstavrit",
+    "description": "İstavrit ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "4 adet istavrit",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "İstavritleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "192",
+    "title": "Fırında Sebzeli Kefal",
+    "description": "Kefal ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet kefal",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Kefalleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "193",
+    "title": "Fırında Sebzeli Dil",
+    "description": "Dil balığı ve sebzelerle yapılan fırında yemek.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 200,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 dilim dil balığı",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Dil balıklarını temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "194",
+    "title": "Fırında Sebzeli Çinekop",
+    "description": "Çinekop ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "6 adet çinekop",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Çinekopları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "195",
+    "title": "Fırında Sebzeli Sarıkanat",
+    "description": "Sarıkanat ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 210,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet sarıkanat",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Sarıkanatları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "196",
+    "title": "Fırında Sebzeli Gümüş",
+    "description": "Gümüş balığı ve sebzelerle yapılan fırında yemek.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 180,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "8 adet gümüş",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Gümüşleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "197",
+    "title": "Fırında Sebzeli İzmarit",
+    "description": "İzmarit ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 190,
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "6 adet izmarit",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet soğan",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "İzmaritleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ ve baharatları ekleyin.",
+      "180°C fırında 20 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "198",
+    "title": "Fırında Sebzeli Karagöz",
+    "description": "Karagöz ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 220,
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet karagöz",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Karagözleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 25 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "199",
+    "title": "Fırında Sebzeli Sinarit",
+    "description": "Sinarit ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 230,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet sinarit",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet kabak",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Sinaritleri temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  },
+  {
+    "_id": "200",
+    "title": "Fırında Sebzeli Mercan",
+    "description": "Mercan ve sebzelerle yapılan fırında balık yemeği.",
+    "category": ["ana yemek", "balık"],
+    "image": "",
+    "calories": 240,
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 2,
+    "difficulty": "orta",
+    "ingredients": [
+      "2 adet mercan",
+      "1 adet patates",
+      "1 adet havuç",
+      "1 adet limon",
+      "2 yemek kaşığı zeytinyağı",
+      "Tuz, karabiber, kekik"
+    ],
+    "steps": [
+      "Mercanları temizleyin.",
+      "Sebzeleri doğrayıp fırın kabına dizin.",
+      "Balıkları üzerine yerleştirin.",
+      "Yağ, limon ve baharatları ekleyin.",
+      "200°C fırında 30 dakika pişirin."
+    ]
+  }
+] 

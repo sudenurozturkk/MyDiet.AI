@@ -1,23 +1,23 @@
-# 🏥 FitTürkAI - Kişisel Sağlık ve Fitness Asistanı
+# 🏥 MyBodyRules - Kişisel Sağlık ve Fitness Asistanı
 
 <div align="center">
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Next.js](https://img.shields.io/badge/Next.js-14.1.0-black)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-009688)
+![Next.js](https://img.shields.io/badge/Next.js-15.0.0-black)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688)
 ![React](https://img.shields.io/badge/React-18-61dafb)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 **Türkçe konuşan AI destekli kişisel sağlık ve fitness takip uygulaması**
 
-[🎯 Demo](https://fitturkai-demo.vercel.app) • [📚 Dokümantasyon](#-özellikler) • [🤖 Hugging Face Space](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI) • [📞 Destek](#-iletişim)
+[🎯 Demo](https://mybodyrules-demo.vercel.app) • [📚 Dokümantasyon](#-özellikler) • [🤖 Hugging Face Space](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI) • [📞 Destek](#-iletişim)
 
 </div>
 
 ## 📖 Hakkında
 
-FitTürkAI, kullanıcıların sağlık ve fitness hedeflerini takip etmelerine, kişiselleştirilmiş öneriler almalarına ve ilerlemelerini görselleştirmelerine olanak tanıyan modern bir web uygulamasıdır. Türkçe konuşan AI asistanı ile desteklenen uygulama, sağlıklı yaşam yolculuğunuzda size rehberlik eder.
+MyDiet Ai, kullanıcıların sağlık ve fitness hedeflerini takip etmelerine, kişiselleştirilmiş öneriler almalarına ve ilerlemelerini görselleştirmelerine olanak tanıyan modern bir web uygulamasıdır. Türkçe konuşan AI asistanı ile desteklenen uygulama, sağlıklı yaşam yolculuğunuzda size rehberlik eder.
 
 ### 🎯 Hedef Kitle
 - Sağlıklı yaşam hedefleri olan bireyler
@@ -82,8 +82,8 @@ Bu seçenek ile AI modelini kendi bilgisayarınızda çalıştırmanıza gerek y
 
 #### 1. Projeyi Klonlayın
 ```bash
-git clone https://github.com/aiyildiz/fitturkai.git
-cd fitturkai
+git clone https://github.com/yourusername/mybodyrules.git
+cd mybodyrules
 ```
 
 #### 2. Frontend Kurulumu
@@ -130,10 +130,23 @@ llm = Llama(
 - **Storage:** 5-10GB boş alan
 - **CPU:** Modern işlemci (GPU opsiyonel)
 
+## Ortam Değişkenleri (.env)
+
+Aşağıdaki anahtarları `.env` dosyanıza ekleyin:
+
+```
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=<güçlü-bir-secret>
+GOOGLE_GENERATIVE_AI_API_KEY=<gemini-api-key>
+DATABASE_URL="file:./prisma/dev.db"
+```
+
+Geliştirmede SQLite kullanılır. Üretimde Postgres önerilir.
+
 ## 📁 Proje Yapısı
 
 ```
-fitturkai/
+MyDiet Ai/
 ├── 📁 src/                           # Frontend kaynak kodları
 │   ├── 📁 app/                      # Next.js App Router sayfaları
 │   │   ├── 📁 auth/                 # Authentication sayfaları
@@ -169,11 +182,13 @@ fitturkai/
 
 ### Environment Variables
 ```bash
-# Frontend (.env.local)
-NEXT_PUBLIC_API_URL=http://localhost:8000
-
-# Backend
-HUGGING_FACE_TOKEN=your_token_here  # Opsiyonel
+# Next.js
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=change-me
+GOOGLE_GENERATIVE_AI_API_KEY=your_gemini_key
+DATABASE_URL="mongodb+srv://USER:PASS@HOST/mybodyrules?retryWrites=true&w=majority&appName=APP"
+CORS_ORIGINS=http://localhost:3000
+SENTRY_DSN=
 ```
 
 ### Hugging Face Space Değiştirme
@@ -191,7 +206,7 @@ client = Client("your-username/your-space-name")
 
 ### 1. Hesap Oluşturma
 - E-posta adresi ile kayıt olun
-- Demo hesap: `fitturkai@demo.com` / `123456`
+- Demo hesap: `mydietai@demo.com` / `123456`
 
 ### 2. Profil Ayarlama
 - Kişisel bilgilerinizi girin
@@ -299,9 +314,7 @@ Bu proje **MIT Lisansı** altında lisanslanmıştır. Detaylar için [LICENSE](
 - **E-posta:** aiyildiz@gmail.com
 
 ### Destek
-- **Issues:** [GitHub Issues](https://github.com/aiyildiz/fitturkai/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/aiyildiz/fitturkai/discussions)
-- **Documentation:** [Wiki](https://github.com/aiyildiz/fitturkai/wiki)
+- Issues ve dokümantasyon için repo sayfasını kullanın.
 
 ### AI Model
 - **Hugging Face Space:** [AIYildiz/AIYildizFitTurkAI](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI)
@@ -318,22 +331,13 @@ Bu projeye katkıda bulunan herkese teşekkür ederiz:
 - **Open Source Community** - Kullanılan tüm paketler için
 
 ## 📊 İstatistikler
-
-<div align="center">
-
-![GitHub stars](https://img.shields.io/github/stars/aiyildiz/fitturkai?style=social)
-![GitHub forks](https://img.shields.io/github/forks/aiyildiz/fitturkai?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/aiyildiz/fitturkai?style=social)
-![GitHub issues](https://img.shields.io/github/issues/aiyildiz/fitturkai)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/aiyildiz/fitturkai)
-
-</div>
+Repo istatistik rozetleri kaldırıldı; platform üzerinde görüntülenebilir.
 
 ---
 
 <div align="center">
 
-**🏥 FitTürkAI ile sağlıklı yaşam yolculuğunuza başlayın!**
+**🏥 MyDiet Ai ile sağlıklı yaşam yolculuğunuza başlayın!**
 
 Made with ❤️ in Turkey 🇹🇷
 

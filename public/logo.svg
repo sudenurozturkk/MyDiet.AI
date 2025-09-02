@@ -1,0 +1,21 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="25" fill="url(#gradient1)"/>
+  
+  <!-- Body icon -->
+  <path d="M25 20C25 17.2386 27.2386 15 30 15C32.7614 15 35 17.2386 35 20C35 22.7614 32.7614 25 30 25C27.2386 25 25 22.7614 25 20Z" fill="white"/>
+  <path d="M20 35C20 32.2386 22.2386 30 25 30H35C37.7614 30 40 32.2386 40 35V40C40 42.7614 37.7614 45 35 45H25C22.2386 45 20 42.7614 20 40V35Z" fill="white"/>
+  
+  <!-- Text -->
+  <text x="70" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1F2937">MyBody</text>
+  <text x="70" y="42" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B82F6">Rules</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
+

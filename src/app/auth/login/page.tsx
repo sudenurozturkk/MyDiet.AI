@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Eye, EyeOff } from 'react-feather';
 import Link from 'next/link';
 import Logo from '@/components/Logo';
+import { signIn, useSession } from 'next-auth/react';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -15,17 +16,15 @@ export default function LoginPage() {
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [checked, setChecked] = useState(false);
+  const { data: session, status } = useSession();
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const userEmail = localStorage.getItem('userEmail');
-      if (userEmail) {
-        router.replace('/dashboard');
-      } else {
-        setChecked(true);
-      }
+    if (status === 'authenticated') {
+      router.replace('/chat');
+      return;
     }
-  }, [router]);
+    setChecked(true);
+  }, [router, status]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,7 +32,6 @@ export default function LoginPage() {
     setIsLoading(true);
 
     try {
-      // Basit localStorage tabanlı auth
       if (!email.trim()) {
         throw new Error('E-posta adresi boş olamaz');
       }
@@ -46,26 +44,12 @@ export default function LoginPage() {
         throw new Error('Şifre en az 6 karakter olmalıdır');
       }
 
-      // Demo kullanıcı kontrolü
-      const demoEmail = 'fitturkai@demo.com';
-      const demoPassword = '123456';
-
-      if (email === demoEmail && password === demoPassword) {
-        // Demo kullanıcı girişi
-        const token = 'demo-token-' + Date.now();
-        document.cookie = `token=${token}; path=/; max-age=2592000`;
-        localStorage.setItem('userEmail', email);
-        localStorage.setItem('userName', 'Demo Kullanıcı');
-        router.push('/chat');
-        return;
-      }
-
-      // Normal giriş - sadece e-posta kaydet
-      const token = 'user-token-' + Date.now();
-      document.cookie = `token=${token}; path=/; max-age=2592000`;
-      localStorage.setItem('userEmail', email);
-      localStorage.setItem('userName', email.split('@')[0]);
-      
+      const res = await signIn('credentials', {
+        email,
+        password,
+        redirect: false,
+      });
+      if (res?.error) throw new Error('Geçersiz e-posta veya şifre');
       router.push('/chat');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Bir hata oluştu');
@@ -91,7 +75,7 @@ export default function LoginPage() {
             Giriş Yap
           </h1>
           <p className="text-slate-600 dark:text-slate-300 mt-2">
-            FitTürkAI sağlık asistanınıza erişin
+            MyDiet Ai sağlık asistanınıza erişin
           </p>
         </div>
 
@@ -105,7 +89,7 @@ export default function LoginPage() {
           <div className="mb-6 p-4 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-xl border border-emerald-200 dark:border-emerald-800">
             <p className="text-sm">
               <strong>Demo Giriş:</strong><br />
-              E-posta: fitturkai@demo.com<br />
+              E-posta: mydietai@demo.com<br />
               Şifre: 123456
             </p>
           </div>

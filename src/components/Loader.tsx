@@ -29,7 +29,7 @@ export default function Loader() {
           </svg>
         </motion.div>
         <span className="mt-4 text-lg font-bold text-white dark:text-fitness-dark animate-fade-in">
-          FitTurkAI
+          MyDiet Ai
         </span>
       </motion.div>
     </div>

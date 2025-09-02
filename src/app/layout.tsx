@@ -8,7 +8,7 @@ import ClientLayout from './ClientLayout';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'FitTurkAI - Sağlıklı Yaşam Takip Uygulaması',
+  title: 'MyDiet Ai - Sağlıklı Yaşam Takip Uygulaması',
   description:
     'Sağlıklı yaşam ve fitness hedeflerinize ulaşmanıza yardımcı olan kişisel sağlık takip uygulaması.',
 };

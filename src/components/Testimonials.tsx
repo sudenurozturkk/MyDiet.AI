@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 const testimonials = [
   {
     name: 'Ayşe K.',
-    text: 'FitTurkAI sayesinde 6 ayda 12 kilo verdim ve çok daha enerjik hissediyorum! Planlar ve topluluk desteği harika.',
+    text: 'MyDiet Ai sayesinde 6 ayda 12 kilo verdim ve çok daha enerjik hissediyorum! Planlar ve topluluk desteği harika.',
     image: 'https://randomuser.me/api/portraits/women/44.jpg',
   },
   {

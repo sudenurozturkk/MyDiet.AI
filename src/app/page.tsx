@@ -200,7 +200,7 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          FitTurkAI
+          MyDiet Ai
         </motion.h1>
         <AnimatePresence mode="wait">
           <motion.div
@@ -235,7 +235,7 @@ export default function HomePage() {
             Sağlıklı Yaşam, Akıllı Takip!
           </h2>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 mb-6">
-            FitTurkAI, sağlıklı yaşam yolculuğunda sana rehberlik eden, tamamen
+            MyDiet Ai, sağlıklı yaşam yolculuğunda sana rehberlik eden, tamamen
             kişiselleştirilebilir ve yapay zeka destekli bir platformdur. Hedeflerine ulaşmak için
             ihtiyacın olan her şey tek bir yerde: Akıllı planlama, beslenme ve egzersiz takibi,
             motivasyon artırıcı topluluk, gelişmiş analizler ve daha fazlası!
@@ -362,7 +362,7 @@ export default function HomePage() {
           </h2>
           <div className="space-y-6 text-left text-gray-700 dark:text-gray-200">
             <div>
-              <b>FitTurkAI ücretsiz mi?</b>
+              <b>MyDiet Ai ücretsiz mi?</b>
               <p>
                 Evet, temel özellikler tamamen ücretsizdir. İsterseniz premium özelliklere
                 yükseltebilirsiniz.
@@ -452,7 +452,7 @@ export default function HomePage() {
           Şimdi Katıl!
         </motion.button>
         <p className="mt-6 text-gray-600 dark:text-gray-300 text-lg text-center max-w-2xl">
-          Hemen ücretsiz kaydol, sağlıklı yaşam yolculuğuna bugün başla! FitTurkAI ile hedeflerine
+          Hemen ücretsiz kaydol, sağlıklı yaşam yolculuğuna bugün başla! MyDiet Ai ile hedeflerine
           ulaşmak artık çok daha kolay ve eğlenceli.
         </p>
       </section>
