@@ -4,6 +4,8 @@ import { getMongoClient } from '@/lib/mongodb';
 import { hash } from 'bcrypt';
 import { z } from 'zod';
 import { badRequest } from '@/lib/errors';
+import sanitize from 'mongo-sanitize';
+import { encryptObject } from '@/lib/crypto';
 
 const RegisterSchema = z.object({
   name: z.string().min(1).max(100).optional(),
@@ -13,7 +15,7 @@ const RegisterSchema = z.object({
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json().catch(() => null);
+    const body = sanitize(await request.json().catch(() => null));
     const parsed = RegisterSchema.safeParse(body);
     if (!parsed.success) return badRequest('Eksik/Geçersiz alanlar', parsed.error.flatten());
 
@@ -29,7 +31,13 @@ export async function POST(request: Request) {
     const passwordHash = await hash(password, 10);
 
     // Prisma ile domain tablolarında profil oluştur, users kaydını MongoDB’de tut
-    const inserted = await users.insertOne({ name, email, passwordHash, createdAt: new Date() });
+    const inserted = await users.insertOne({
+      name,
+      email,
+      passwordHash,
+      profile: { __enc: encryptObject({ llmApiKey: '' }) },
+      createdAt: new Date(),
+    });
     const createdId = String(inserted.insertedId);
     await prisma.profile.create({ data: { userId: createdId } });
     return NextResponse.json({ ok: true });

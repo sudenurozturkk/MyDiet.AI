@@ -4,6 +4,7 @@ import { authOptions } from '@/lib/auth';
 import sanitize from 'mongo-sanitize';
 import { getMongoClient } from '@/lib/mongodb';
 import { z } from 'zod';
+import { encryptObject, decryptObject } from '@/lib/crypto';
 
 export async function GET() {
   try {
@@ -11,11 +12,16 @@ export async function GET() {
     if (!session?.user?.id) return NextResponse.json({ error: 'Yetkisiz' }, { status: 401 });
     const client = await getMongoClient();
     const db = client.db();
-    const plans = await db
+    const raw = await db
       .collection('meal_plans')
       .find({ userId: session.user.id })
       .sort({ createdAt: -1 })
       .toArray();
+    const plans = raw.map((p: any) => ({
+      ...p,
+      ...decryptObject<any>(p.__enc ?? '', {}),
+      __enc: undefined,
+    }));
     return NextResponse.json(plans);
   } catch (error) {
     console.error('Meal Plans API Error:', error);
@@ -41,7 +47,7 @@ export async function POST(request: Request) {
     const db = client.db();
     const doc = {
       userId: session.user.id,
-      ...parsed.data,
+      __enc: encryptObject(parsed.data),
       createdAt: new Date(),
       updatedAt: new Date(),
     };
